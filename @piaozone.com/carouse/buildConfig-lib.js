@@ -1,0 +1,44 @@
+/* eslint-disable */
+
+'use strict';
+const path = require('path');
+const rootDir = path.resolve(__dirname);
+const srcDir = path.join(__dirname, './src');
+const distDir = path.join(__dirname, './dist');
+const nodeModulesDir = path.join(__dirname, './node_modules');
+module.exports = {
+    rootDir, // 项目根路径
+    nodeModulesDir: nodeModulesDir,
+    includeDirs: [
+        srcDir,
+        distDir,
+        // path.join(nodeModulesDir, '@piaozone.com'),
+        path.join(nodeModulesDir)
+    ], // 需要loader处理的目录
+    srcDir: srcDir, // 前端源码需要webpack处理的目录
+    distDir: distDir, // 打包后输出的目录
+    useCache: true, // 是否开启缓存
+    disableStylelint: false, // 是否禁用stylelint, 建议false，一些旧项目旧代码无法快速修改好才开启
+    disableEslint: false, // 是否禁用eslint, 建议false，一些旧项目旧代码无法快速修改好才开启
+    disableCssModules: true, // 使用css模块
+    useHash: true,
+    library: 'ScanImages', // // 指定类库名,主要用于直接引用的方式(比如使用script 标签)
+    libraryExport: 'default', //libraryExport: 'default', // 和具体export有关系，如果使用了export default导出模块这里最好使用default，否则不要添加这个配置
+    libraryTarget: 'umd', // 定义打包方式Universal Module Definition,同时支持在CommonJS、AMD和全局变量使用
+    entry: {
+        scanImages: path.join(srcDir, 'index.jsx') // 可以修改打包出来的名称
+    },
+    copy: [{
+        from: path.join(rootDir, 'dist'),
+        to: path.join(rootDir, 'dev-test'),
+        globOptions: {
+            ignore: ['.*']
+        }
+    }],
+    extractCss: false,
+    externals: {
+        react: 'React',
+        'react-dom': 'ReactDOM'
+    }
+    // dllManifest: path.resolve(__dirname, 'dll-dist/manifest.json')
+};

@@ -1,0 +1,28 @@
+{
+  "name": "{{projectName}}",
+  "version": "1.0.0",
+  "description": "{{projectDescription}}",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pwy-webpack --dev --config=./buildConfig.js",
+    "build": "pwy-webpack --build --config=./buildConfig.js --progress",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "stylelint": "pwy-stylelint src/**/*.less src/**/*.css",
+    "stylelint-fix": "pwy-stylelint src/**/*.less src/**/*.css --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "{{author}}",
+  "license": "ISC",
+  "dependencies": {
+    "antd-mobile": "^2.3.1",
+    "dva": "^2.4.1",
+    "dva-loading": "^3.0.20",
+    "immutable": "^4.0.0-rc.12",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

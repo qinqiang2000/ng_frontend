@@ -1,0 +1,190 @@
+{
+  "title": "标准代码库工作台",
+  "subtitle": "管理标准代码库和映射关系",
+  "selectCodeType": "选择代码类型",
+
+  "codeTypes": {
+    "UOM": "计量单位",
+    "PRODUCT": "产品编码",
+    "COMPANY": "公司编码",
+    "PAYMENT_MEANS": "支付方式",
+    "CURRENCY": "货币",
+    "COUNTRY": "国家",
+    "ALLOWANCE_REASON": "折扣原因",
+    "CHARGE_REASON": "收费原因",
+    "TAX_EXEMPTION_REASON": "税收豁免原因"
+  },
+
+  "kpi": {
+    "standardEntries": "标准条目",
+    "mappingCoverage": "映射覆盖率",
+    "pendingFixes": "待修复项",
+    "completionRate": "完成度 {{rate}}%"
+  },
+
+  "tabs": {
+    "standardEntries": "标准条目",
+    "mappings": "映射关系"
+  },
+
+  "columns": {
+    "scope": "范围",
+    "code": "代码",
+    "name": "名称",
+    "description": "描述",
+    "status": "状态",
+    "givenCode": "外部代码",
+    "givenName": "外部名称",
+    "standardCode": "标准代码",
+    "confidence": "置信度",
+    "source": "来源",
+    "actions": "操作"
+  },
+
+  "toolbar": {
+    "searchPlaceholder": "搜索代码或名称...",
+    "allCountries": "所有国家",
+    "global": "全球",
+    "template": "模板",
+    "aiMapping": "AI映射",
+    "add": "添加",
+    "selectScope": "选择范围",
+    "selectStatus": "选择状态"
+  },
+
+  "scope": {
+    "default": "默认",
+    "global": "全球",
+    "singapore": "新加坡 (SG)",
+    "malaysia": "马来西亚 (MY)",
+    "germany": "德国 (DE)",
+    "france": "法国 (FR)",
+    "china": "中国 (CN)",
+    "brazil": "巴西 (BR)"
+  },
+
+  "status": {
+    "all": "全部状态",
+    "enabled": "已启用",
+    "disabled": "已禁用",
+    "active": "活跃",
+    "inactive": "非活跃"
+  },
+
+  "source": {
+    "manual": "手动",
+    "ai": "AI生成",
+    "import": "导入"
+  },
+
+  "actions": {
+    "delete": "删除"
+  },
+
+  "drawers": {
+    "addStandard": "添加标准条目",
+    "addMapping": "添加映射关系",
+    "editStandard": "编辑标准条目",
+    "editMapping": "编辑映射关系"
+  },
+
+  "forms": {
+    "code": "代码",
+    "name": "名称",
+    "description": "描述",
+    "scope": "范围",
+    "givenCode": "外部代码",
+    "givenName": "外部名称",
+    "standardCode": "标准代码",
+    "required": "必填",
+    "optional": "可选",
+    "codePlaceholder": "请输入代码",
+    "namePlaceholder": "请输入名称",
+    "descriptionPlaceholder": "请输入描述（可选）",
+    "givenCodePlaceholder": "请输入外部代码",
+    "givenNamePlaceholder": "请输入外部名称（可选）",
+    "selectStandardCode": "请选择标准代码",
+    "characterCount": "{{count}}/200"
+  },
+
+  "mapping": {
+    "scopeOptional": "范围（可选）",
+    "standardCodeOptional": "标准代码（可选）",
+    "aiMappingHint": "如果未选择标准代码，AI将自动匹配最佳的标准代码",
+    "loadingAllStandards": "正在加载所有标准代码...",
+    "showingAllStandards": "显示所有可用的标准代码",
+    "noStandardCodeSelected": "未选择标准代码 - 将使用AI映射",
+    "selectScopeToFilter": "选择范围来过滤标准代码，或留空显示所有代码",
+    "aiAutoMatch": "AI将根据您的输入自动找到最匹配的标准代码"
+  },
+
+  "import": {
+    "title": "导入{{type}}",
+    "fileFormat": "文件格式",
+    "selectFile": "选择文件",
+    "allowPartial": "允许部分导入（忽略错误继续）",
+    "uploadHint": "点击上传或拖拽文件到此处",
+    "fileTypeHint": "仅支持{{format}}格式文件",
+    "templateFields": "模板字段：",
+    "requiredFields": "必填字段",
+    "standardFields": "代码*、名称*、描述、范围",
+    "mappingFields": "外部代码*、外部名称、标准代码*、范围"
+  },
+
+  "errors": {
+    "validationIssues": "验证问题",
+    "errors": "错误",
+    "warnings": "警告",
+    "noIssuesFound": "未发现问题",
+    "allValidationsPassed": "所有验证已成功通过",
+    "affects": "影响{{count}}个{{type}}",
+    "entry": "条目",
+    "entries": "条目",
+    "autoFix": "自动修复问题",
+    "exportReport": "导出报告",
+    "lastChecked": "最后检查时间：{{time}}"
+  },
+
+  "messages": {
+    "addStandardSuccess": "标准条目添加成功！",
+    "addMappingSuccess": "映射关系添加成功！",
+    "importSuccess": "导入完成：新增{{added}}条，更新{{updated}}条，跳过{{skipped}}条",
+    "noData": "暂无数据",
+    "noStandardsAvailable": "无可用的标准代码。请先添加一些标准条目。",
+    "noMappingSupport": "此代码列表类型不支持映射关系。",
+    "fileRequired": "请选择要导入的文件",
+    "fieldsRequired": "代码和名称为必填项",
+    "importFailed": "导入失败，请重试。",
+    "loadFailed": "加载失败",
+    "fetchFailed": "无法获取代码类型列表，请稍后重试",
+    "loading": "加载中...",
+    "loadFailedWithError": "加载失败：{{error}}",
+    "reload": "重新加载",
+    "confirmDelete": "确定要删除这条记录吗？",
+    "confirmBatchDelete": "确定要删除选中的 {{count}} 条记录吗？",
+    "deleteSuccess": "删除成功",
+    "deleteFailed": "删除失败",
+    "recordDeleted": "记录已删除",
+    "batchDeleteSuccess": "成功删除 {{count}} 条记录",
+    "noSelection": "未选择记录",
+    "pleaseSelectRecords": "请先选择要删除的记录",
+    "validationFailed": "验证失败",
+    "givenCodeRequired": "外部代码是必填项",
+    "givenCodeTooLong": "外部代码不能超过64个字符",
+    "givenNameRequired": "外部名称是必填项",
+    "givenNameTooLong": "外部名称不能超过100个字符",
+    "descriptionTooLong": "描述不能超过255个字符"
+  },
+
+  "pagination": {
+    "showing": "显示{{start}}-{{end}}条，共{{total}}{{type}}",
+    "entries": "条",
+    "mappings": "条",
+    "previous": "上一页",
+    "next": "下一页",
+    "pageInfo": "第 {{current}} / {{total}} 页",
+    "showingTotal": "显示第 {{start}} - {{end}} 条，共 {{total}} 条"
+  },
+
+  "templateHint": "导入模板字段：代码*、名称、描述（代码为必填项）"
+}

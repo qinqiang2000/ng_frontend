@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.lqlyQrAuth {
+    position: relative;
+    padding: 16px;
+    box-sizing: border-box;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.lqlyQrAuth h1 {
+    font-family: 'PingFangSC', 'PingFang SC';
+    font-weight: 400;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 36px;
+    line-height: 17px;
+}
+
+.lqlyQrAuth h1 b {
+    color: #212121;
+    font-weight: normal;
+}
+
+.lqlyQrAuth .row {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.lqlyQrAuth .row.gap {
+    margin-bottom: 35px;
+}
+
+.lqlyQrAuth .row .label {
+    position: absolute;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666;
+    display: inline-block;
+    width: 100px;
+    left: 0;
+    top: 0;
+}
+
+.lqlyQrAuth .row .inputLabel {
+    top: 4px;
+}
+
+.lqlyQrAuth .row.radioRow .label {
+    top: 1px;
+}
+
+.lqlyQrAuth .radioRow .ant-radio-group {
+    width: 100%;
+}
+
+.lqlyQrAuth .radioRow .ant-radio-wrapper:first-child {
+    float: left;
+    margin: 0;
+}
+
+.lqlyQrAuth .radioRow .ant-radio-wrapper:last-child {
+    float: right;
+    margin: 0;
+}
+
+.lqlyQrAuth .radioRow span.ant-radio + * {
+    padding-right: 0;
+}
+
+.lqlyQrAuth .row .item {
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #212121;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.lqlyQrAuth .row .ant-select {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    padding-left: 0;
+}
+
+.lqlyQrAuth .row .ant-select .ant-select-selection__rendered {
+    margin-left: 0;
+}
+
+.lqlyQrAuth .row .ant-select-selection {
+    border: 0;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+    padding-left: 0;
+}
+
+.lqlyQrAuth .row .ant-input {
+    border: 0;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+    padding-left: 0;
+    color: #212121;
+    font-size: 16px;
+}
+
+.lqlyQrAuth .row .ant-select-selection:focus,
+.lqlyQrAuth .row .ant-input:focus {
+    outline: 0;
+    border-color: #5582f3;
+    box-shadow: none;
+}
+
+.lqlyQrAuth .ant-select-selection-selected-value {
+    font-weight: 400;
+    font-size: 16px;
+    color: #212121;
+}
+
+.lqlyQrAuth .btnRow {
+    margin-top: 61px;
+}
+
+.lqlyQrAuth .btnRow .btn {
+    width: 100%;
+    background: #5582f3;
+    border-radius: 4px;
+    height: 38px;
+    line-height: 38px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+.lqlyQrAuth .btnRow .btn[disabled] {
+    opacity: 0.6;
+}
+
+.lqlyQrAuth .btnRow .tip {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #999;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.lqlyQrAuth .qrBox {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.lqlyQrAuth .qrBox img {
+    width: 300px;
+    height: 300px;
+}
+
+.lqlyQrAuth .qrBox .btnRow {
+    margin-top: 40px;
+}
+
+.lqlyQrAuth .qrBox .successIcon {
+    width: 56px;
+    height: 56px;
+}
+
+.lqlyQrAuth .qrBox .successTip {
+    margin-bottom: 60px;
+}

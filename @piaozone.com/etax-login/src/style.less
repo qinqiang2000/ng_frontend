@@ -1,0 +1,213 @@
+.mr20 {
+    margin-right: 20px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.pwy-etax-login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .flexCenter {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pwy-etax-main {
+        max-width: 400px;
+        min-width: 300px;
+        width: 100%;
+
+        .loginForm {
+            .loginItem {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 32px;
+                margin-bottom: 24px;
+
+                .loginItem:last-child {
+                    margin-bottom: 0;
+                }
+
+
+                .loginLabel {
+                    flex: none;
+                    width: 100px;
+                    margin-right: 8px;
+                    text-align: right;
+                }
+
+                .loginInput {
+                    flex: 1;
+                    width: 0;
+                }
+
+                .loginCode {
+                    margin-left: 8px;
+                }
+
+                .loginDownload {
+                    margin: 0 auto 0 20px;
+                }
+
+                .instructions {
+                    font-size: 12px;
+                }
+
+                .ant-input-affix-wrapper {
+                    .ant-input:not(:last-child) {
+                        padding-right: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .pwy-etax-login {
+        font-size: 16px;
+        align-items: start;
+        color: #666;
+
+        .pwy-etax-main {
+            .loginForm {
+                padding-top: 20px;
+                background-color: #fff;
+
+                .loginItem {
+                    padding: 0 0 0 10px;
+                    margin-bottom: 18px;
+                    font-size: 16px;
+
+                    .loginLabel {
+                        width: 100px;
+                        text-align: left;
+                    }
+
+                    .ant-input {
+                        border: 0;
+                        appearance: none;
+                        outline: none;
+                        font-size: 15px;
+                    }
+
+                    .ant-input[disabled] {
+                        color: rgba(0, 0, 0, 0.65);
+                        background-color: transparent;
+                    }
+
+                    .ant-select-selection {
+                        font-size: 16px;
+                        background: transparent;
+                    }
+
+                    .ant-input-password {
+                        font-family: Arial;
+                        font-size: 16px;
+                    }
+
+                    .ant-input:focus {
+                        box-shadow: none;
+                        -webkit-box-shadow: none;
+                    }
+
+                    .loginInput {
+                        text-align: right;
+                        border: 0;
+                        appearance: none;
+                        outline: none;
+
+                        .ant-select-selection-selected-value {
+                            font-size: 16px;
+                            float: right;
+                            margin-right: 10px;
+                        }
+
+                        .ant-select-selection {
+                            border: 0;
+                            appearance: none;
+                            outline: none;
+
+                            &:focus {
+                                box-shadow: none;
+                                -webkit-box-shadow: none;
+                            }
+                        }
+
+                        .ant-select-dropdown-menu {
+                            width: 60%;
+                        }
+                    }
+
+                    .loginCode {
+                        margin-left: 8px;
+                        margin-right: 11px;
+                        font-size: 12px;
+                        padding-right: 6px !important;
+                        padding-left: 6px !important;
+                    }
+
+                    .loginDownload {
+                        margin: 0 auto 0 20px;
+                    }
+
+                    .instructions {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .pwy-etax-login {
+        font-size: 14px;
+
+        .pwy-etax-main {
+            .loginForm {
+                .loginItem {
+                    font-size: 14px;
+
+                    .loginLabel {
+                        width: 90px;
+                    }
+
+                    .ant-input {
+                        font-size: 14px;
+                    }
+
+                    .ant-select-selection {
+                        font-size: 14px;
+                    }
+
+                    .loginInput {
+                        .ant-select-selection-selected-value {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

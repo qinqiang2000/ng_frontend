@@ -1,0 +1,28 @@
+.orgTreeLayout{
+	padding: 15px 25px 50px 25px;
+	
+}
+
+.orgTreeLayout .layoutInner{	
+	position: relative;
+	height: 100%;
+	width:100%;
+}
+
+.orgTreeLayout .orgTreeWrapper .searchTree{
+	border-bottom: 1px solid #E1E1E1;	
+	padding: 10px;
+}
+
+.orgTreeLayout .orgTreeWrapper .searchTree input{
+	border: 1px solid #E1E1E1;
+	padding-right: 10px;
+}
+
+.orgTreeLayout .orgTreeWrapperTd,
+.orgTreeLayout .wrapperContent{
+	border:1px solid #E1E1E1;
+	padding-bottom: 30px;
+}
+
+

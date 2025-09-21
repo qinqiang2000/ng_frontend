@@ -1,0 +1,28 @@
+.rCheckbox{    
+    font-size: inherit;
+    color: #333;
+    text-align: left;
+}
+
+
+.rCheckbox .checkIcon{
+    display: inline-block;
+    background: #F5F5F5;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right:6px;
+    cursor: pointer;
+}
+
+.rCheckbox.disabled .checkIcon{
+    opacity: 0.3;
+    cursor: default;
+}
+
+
+.rCheckbox.checked .checkIcon{
+    background: url(./checked@1x.png) no-repeat 0 0;
+}

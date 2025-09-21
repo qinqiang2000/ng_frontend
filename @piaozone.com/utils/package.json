@@ -1,0 +1,25 @@
+{
+    "name": "@piaozone.com/utils",
+    "version": "1.1.42",
+    "description": "piaozone.com utils",
+    "main": "./src/index.js",
+    "types": "./src/index.d.ts",
+    "dependencies": {
+        "@piaozone.com/pwyConstants": "^1.0.7",
+        "setprototypeof": "^1.2.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "build": "pwy-webpack --build --type=lib --config=./buildConfig.js --progress",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "utils"
+    ],
+    "maintainers": [
+        "zhuoyu",
+        "hongbo_bi"
+    ],
+    "author": "Sunny.HB.Bi",
+    "license": "ISC"
+}

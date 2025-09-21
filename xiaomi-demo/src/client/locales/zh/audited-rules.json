@@ -1,0 +1,90 @@
+{
+  "title": "审核规则引擎",
+  "subtitle": "管理审核后的发票验证和处理规则",
+  "searchPlaceholder": "搜索规则...",
+  "addRule": "新增审核规则",
+  "loading": "正在加载规则数据...",
+  "noRuleData": "暂无规则数据",
+  "countryRegion": "国家/地区",
+  "filters": {
+    "country": "国家筛选",
+    "invoiceType": "发票类型",
+    "status": "规则状态",
+    "ruleType": "规则类型"
+  },
+  "ruleDetails": {
+    "ruleCode": "规则编码",
+    "ruleName": "规则名称",
+    "description": "规则描述",
+    "priority": "优先级",
+    "invoiceType": "发票类型",
+    "subInvoiceType": "发票子类型",
+    "jurisdiction": "税务管辖区",
+    "effectiveDate": "生效日期",
+    "expiryDate": "失效日期",
+    "ruleExpression": "JEXL表达式",
+    "applyTo": "应用对象",
+    "errorMessage": "错误信息",
+    "fieldPath": "字段路径",
+    "rulePrompt": "规则提示"
+  },
+  "ruleTypes": {
+    "validation": "验证规则",
+    "completion": "信息补全规则",
+    "transformation": "数据转换",
+    "calculation": "金额计算",
+    "formatting": "格式验证",
+    "business": "业务逻辑",
+    "compliance": "合规检查"
+  },
+  "status": {
+    "active": "激活状态",
+    "inactive": "无效",
+    "draft": "草稿",
+    "testing": "测试中",
+    "published": "已发布",
+    "deprecated": "已弃用"
+  },
+  "actions": {
+    "edit": "编辑规则",
+    "duplicate": "复制规则",
+    "test": "测试规则",
+    "activate": "激活",
+    "deactivate": "停用",
+    "delete": "删除",
+    "viewDetails": "查看详情",
+    "exportRule": "导出规则",
+    "saveRule": "保存规则"
+  },
+  "ruleEditor": {
+    "basicInfo": "基础信息",
+    "ruleLogic": "规则逻辑",
+    "ruleConfiguration": "规则配置",
+    "ruleExpression": "规则表达式",
+    "conditions": "条件",
+    "execute": "执行(当条件为真时)",
+    "testData": "测试数据",
+    "validateRule": "验证规则",
+    "saveRule": "保存规则",
+    "publishRule": "发布规则",
+    "testAndDebug": "测试和调试",
+    "testRun": "测试运行",
+    "executionResult": "执行结果",
+    "debugLog": "调试日志",
+    "clickTestRun": "点击\"测试运行\"加载测试数据",
+    "clickTestExecute": "点击\"测试运行\"执行验证",
+    "debugLogsWillAppear": "测试执行期间调试日志将显示在此处",
+    "testing": "测试中...",
+    "loadingTestData": "正在加载测试数据...",
+    "runningValidation": "正在运行验证...",
+    "conditionsPlaceholder": "输入规则应用条件的JEXL表达式...",
+    "ruleExpressionPlaceholder": "输入规则表达式代码..."
+  },
+  "messages": {
+    "ruleCreated": "审核规则创建成功",
+    "ruleUpdated": "审核规则更新成功",
+    "ruleDeleted": "审核规则删除成功",
+    "validationPassed": "规则验证通过",
+    "validationFailed": "规则验证失败"
+  }
+}

@@ -1,0 +1,100 @@
+.draggable-tree {
+    width: 100%;
+    height: 100%;
+}
+
+.draggable-tree .draggable-item {
+    display: flex;
+    align-items: center;
+}
+
+.draggable-tree .draggable-item-sign {
+    padding: 0 8px;
+    background-color: rgba(85, 130, 243, 0.15);
+    color: #5582f3;
+    font-size: 12px;
+    border-radius: 18px;
+    margin-right: 2px;
+}
+
+.draggable-tree .draggable-item-disabled {
+    background-color: #f2f2f2;
+    color: #666;
+}
+
+.draggable-tree .draggable-item-new {
+    width: 6px;
+    height: 6px;
+    background: #26b175;
+    border-radius: 50%;
+    margin-right: 4px;
+    flex-shrink: 0;
+}
+
+.draggable-tree .draggable-item-default {
+    opacity: 0;
+}
+
+.draggable-tree .draggable-item-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #212121;
+}
+
+.draggable-tree .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background-color: #f2f6ff;
+    color: #212121;
+}
+
+.draggable-tree .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected .draggable-item-disabled {
+    background: #999 !important;
+    color: #fff !important;
+}
+
+.draggable-tree .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected .draggable-item-sign {
+    background: #5582f3;
+    color: #fff;
+}
+
+.draggable-tree .ant-tree li .ant-tree-node-content-wrapper:hover {
+    background-color: rgba(242, 246, 255, 0.8);
+}
+
+.draggable-tree .draggable-tree-tips {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 6px 8px;
+    border-bottom: 1px solid #d9d9d9;
+    line-height: 1;
+}
+
+.draggable-tree .draggable-tree-tips .draggable-tree-tips-disabled {
+    background: #f2f2f2;
+    border-radius: 11px;
+    padding: 4px 6px;
+}
+
+.draggable-tree .draggable-tree-tips .draggable-tree-tips-edit {
+    background: rgba(85, 130, 243, 0.15);
+    border-radius: 11px;
+    color: #5582f3;
+    padding: 4px 6px;
+}
+
+.draggable-tree .draggable-tree-tips .draggable-tree-tips-new {
+    color: #212121;
+    display: flex;
+    align-items: center;
+}
+
+.draggable-tree .draggable-tree-tips .draggable-tree-tips-new-sign {
+    width: 6px;
+    height: 6px;
+    background: #26b175;
+    border-radius: 50%;
+    margin-right: 4px;
+}

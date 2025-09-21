@@ -1,0 +1,419 @@
+.draggable-box .draggable-tree {
+    background: #fff;
+}
+
+.draggable-box .draggable-item {
+    display: flex;
+    align-items: flex-start;
+    scroll-margin-top: 30px;
+}
+
+.draggable-box .draggable-item .draggable-item-left {
+    min-width: 100px;
+    width: 100px;
+    height: 68px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.draggable-box .draggable-item .draggable-img {
+    width: 100px;
+    height: 62px;
+    object-fit: scale-down;
+}
+
+.draggable-box .draggable-arrow {
+    width: 10px;
+    height: 10px;
+}
+
+.draggable-box .draggable-item-right {
+    height: auto;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.draggable-box .draggable-item-title {
+    margin-left: 0;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.draggable-box .draggable-item-right-sign {
+    height: 18px;
+    width: auto;
+    margin-right: 4px;
+}
+
+.draggable-box .draggable-item-right-signName {
+    font-size: 12px;
+    font-weight: 400;
+    color: #5582f3;
+    border: 1px solid #5582f3;
+    padding: 3px 7px;
+    line-height: 1;
+    border-radius: 10px;
+}
+
+.draggable-box .draggable-item-title .draggable-item-right-status {
+    margin-left: 20px;
+}
+
+.draggable-box .draggable-item-right .draggable-item-right-title {
+    word-break: break-word;
+    white-space: pre-wrap;
+    display: flex;
+    align-items: center;
+}
+
+.draggable-box .draggable-item-right-type {
+    width: 44px;
+    text-align: center;
+    margin-top: 8px;
+    background: #5582f3;
+    padding: 2px 0;
+    color: #fff;
+    border-radius: 20px;
+    display: none;
+}
+
+.draggable-box .draggable-item-right-match {
+    font-size: 12px;
+}
+
+.draggable-box .warning {
+    color: #faad14;
+}
+
+.draggable-box .draggable-item-right-status {
+    font-size: 12px;
+    color: #fb2323;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.draggable-box .draggable-item-right-status img {
+    vertical-align: middle;
+}
+
+.draggable-box .draggable-item .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    margin-top: -4px;
+}
+
+.draggable-box .draggable-item .oparate {
+    color: #5582f3;
+    margin-left: 8px;
+}
+
+.draggable-box .draggable-item .oparate:hover {
+    color: #3598ff;
+}
+
+.draggable-box .draggable-item .loading {
+    animation: rotate 2s infinite linear;
+}
+
+.draggable-box .draggable-item .draggable-input {
+    width: 250px;
+}
+
+.draggable-box .draggable-item .cover-icon {
+    height: 14px;
+    width: auto;
+    margin-right: 4px;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.draggable-box .ant-tree li span.ant-tree-switcher.ant-tree-switcher_open .ant-tree-switcher-icon {
+    font-size: 14px;
+}
+
+.draggable-box .ant-tree li span.ant-tree-switcher.ant-tree-switcher_open .ant-select-switcher-icon {
+    font-size: 14px;
+}
+
+.draggable-box .ant-tree .tree-child-item ul {
+    padding: 0;
+}
+
+.draggable-box .ant-tree li .ant-tree-node-content-wrapper {
+    height: auto;
+}
+
+.draggable-box .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background-color: #f2f6ff;
+}
+
+.draggable-box .ant-tree li .ant-tree-node-content-wrapper:hover {
+    background-color: rgba(242, 246, 255, 0.8);
+}
+
+.draggable-box .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+    background-color: #5582f3;
+    border-color: #5582f3;
+}
+
+.draggable-box .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner::after {
+    background-color: #5582f3;
+}
+
+.tree-child-item ul.ant-tree-child-tree {
+    margin-left: 20px;
+}
+
+.draggable-box .review-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% - 440px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.draggable-box .review-right {
+    border-left: 1px solid #d9d9d9;
+    width: 320px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.draggable-box .review-right .info-box {
+    border: 1px solid #d9d9d9;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.draggable-box .review-right .info-box .signStatus {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 12px;
+    padding: 0 3px;
+    border-radius: 4px;
+}
+
+.draggable-box .review-right .info-box .signStatus.error {
+    border: 1px solid #fb2323;
+    color: #fb2323;
+}
+
+.draggable-box .review-right .info-box .signStatus.success {
+    border: 1px solid #52c41a;
+    color: #52c41a;
+}
+
+.draggable-box .review-right .info-box .money {
+    color: #faad14;
+}
+
+.draggable-box .review-right .info-box .linkColor {
+    color: #3598ff
+}
+
+.draggable-box .review-right .info-box .edit-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.draggable-box .review-right .info-box .edit-box .edit {
+    color: #5582f3;
+    cursor: pointer;
+}
+
+.draggable-box .review-right .info-box .edit-box .edit:hover {
+    color: #3598ff;
+}
+
+.draggable-box .review-right .info-box label {
+    color: #666;
+}
+
+.draggable-box .review-right .info-box span {
+    color: #333;
+}
+
+.draggable-box .btn-box {
+    height: 40px;
+    background: #000;
+    border-radius: 20px;
+    opacity: 0.3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .draggable-box .btn-box {
+        height: 40px;
+        background: #000;
+        border-radius: 20px;
+        opacity: 0.3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        bottom: 50px;
+        transform: translateX(-50%);
+    }
+}
+
+.draggable-box .btn-box:hover {
+    opacity: 0.5;
+}
+
+.draggable-box .btn-box .btn {
+    width: 25px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0 13px;
+}
+
+.draggable-box .btn-box .btn:first-child {
+    margin-left: 20px;
+}
+
+.draggable-box .btn-box .btn:last-child {
+    margin-right: 20px;
+}
+
+.draggable-box .full-box {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.draggable-box .full-box img {
+    width: auto;
+    height: 100%;
+}
+
+.draggable-box .full-box .btn-box {
+    height: 40px;
+    background: #000;
+    border-radius: 20px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.draggable-box .tips {
+    width: 340px;
+    background: #fff1d4;
+    box-shadow: 0 1px 0 0 #ffe0a6;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #ff991c;
+    letter-spacing: 0;
+    font-weight: 400;
+    position: fixed;
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.draggable-box .tips .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    margin-left: 6px;
+}
+
+.draggable-box .tree-bottom {
+    width: 100%;
+    position: sticky;
+    z-index: 1000;
+    bottom: 0;
+}
+
+.draggable-box .explain {
+    background: #f5f4f4;
+    display: flex;
+    padding: 4px 10px;
+}
+
+.draggable-box .jump-box {
+    height: 40px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 25px 0 12px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+    box-shadow: inset 0 1px 0 0 #e2e2e2;
+}
+
+.draggable-box .jump-box-input {
+    width: 50px;
+    margin-right: 4px;
+}
+
+.draggable-box .jump-box-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    border: 1px solid #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.draggable-box .jump-box-icon img {
+    width: 14px;
+    height: 14px;
+}
+
+.draggable-box .jump-box .btn {
+    width: 48px;
+    height: 24px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5582f3;
+}
+
+.draggable-box .icon-right {
+    margin-right: 40px;
+}

@@ -1,0 +1,49 @@
+{
+    "root": true,
+    "globals": {
+        "__webpack_public_path__": true,
+        "document": true,
+        "navigator": true,
+        "window": true,
+        "location": true
+    },
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+	"settings": {
+		"react": {
+			"version": "16.0"
+		}
+	},
+	"parser": "babel-eslint",    
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },	
+    "plugins": [
+        "react",
+		"eslint-plugin-react"
+    ],
+    "extends": [],
+    "rules": {    	
+		"no-invalid-regexp": 2,
+		"no-redeclare": 2,
+ 	    "no-func-assign": 2,
+        "no-restricted-globals": 0,
+    	"no-dupe-args": 2,
+    	"no-duplicate-case": 2,
+    	"no-dupe-keys": 2,
+    	"no-const-assign": 2,
+		"react/jsx-no-duplicate-props": 2,
+    	"react/no-danger": 2,
+		"react/jsx-uses-react": 2,
+		"react/jsx-uses-vars": 2,
+		"react/react-in-jsx-scope": 2
+    }
+}

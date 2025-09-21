@@ -1,0 +1,175 @@
+.editScanInvoice .noneAddedBillForm {
+    padding: 0 10px;
+}
+
+.editScanInvoice .attachList .noneAddedBillForm {
+    padding: 0;
+}
+
+.editScanInvoice .noneAddedBillForm .clearfix {
+    margin-bottom: 0.7%;
+    font-family: Arial, 'Microsoft YaHei';
+}
+
+
+.editScanInvoice .noneAddedBillForm input[disabled] {
+    color: #888;
+}
+
+.editScanInvoice .noneAddedBillForm .outImg {
+    height: 450px;
+    text-align: center;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.editScanInvoice .noneAddedBillForm .outImg img {
+    max-height: 412px;
+    max-width: 100%;
+}
+
+
+.editScanInvoice .noneAddedBillForm .inputItems {
+    padding-top: 10px;
+}
+
+.editScanInvoice .noneAddedBillForm .inputItem {
+    width: 33%;
+    padding-left: 70px;
+    margin-left: 0;
+    border-left: 15px solid transparent;
+    font-size: 12px;
+}
+
+.editScanInvoice .noneAddedBillForm .inputItem .inputPicker,
+.editScanInvoice .noneAddedBillForm .inputItem input {
+    font-size: 12px;
+    height: 30px;
+    width: 100%;
+}
+
+.editScanInvoice .noneAddedBillForm .inputItem.paddLeft110 {
+    padding-left: 110px;
+}
+
+.editScanInvoice .noneAddedBillForm .inputItem.paddLeft90 {
+    padding-left: 90px;
+}
+
+.editScanInvoice .noneAddedBillForm .inputItem label {
+    text-align: left;
+    display: inline-block;
+    font-family: 'microsoft yahei';
+    position: absolute;
+    margin-left: -70px;
+    margin-top: 5px;
+    color: #333;
+}
+
+.editScanInvoice .noneAddedBillForm .inputItem label.require::before {
+    content: '*';
+    display: inline-block;
+    color: #f00;
+    position: absolute;
+    margin-left: -7px;
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+
+.editScanInvoice .noneAddedBillForm .inputItem.paddLeft110 label {
+    margin-left: -110px;
+}
+
+.editScanInvoice .noneAddedBillForm .inputItem.paddLeft90 label {
+    margin-left: -90px;
+}
+
+.editScanInvoice .noneAddedBillForm .inputItem label .require {
+    color: #f00;
+    vertical-align: middle;
+    margin-right: 1px;
+    font-weight: bold;
+}
+
+.editScanInvoice .noneAddedBillForm .inputItem.twoCols .colItem {
+    width: 50%;
+    display: inline-block;
+}
+
+.editScanInvoice .noneAddedBillForm .inputItem.twoCols .colItem.colItem1 {
+    padding-right: 10px;
+}
+
+.editScanInvoice .noneAddedBillForm .inputItem.twoCols .colItem input {
+    width: 100%;
+}
+
+.editScanInvoice .noneAddedBillForm .twoCols .joinCut {
+    position: absolute;
+    margin-left: -8px;
+    margin-top: 5px;
+}
+
+.editScanInvoice .noneAddedBillForm .tip {
+    color: #f93;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+
+.editScanInvoice .noneAddedBillForm .ant-time-picker {
+    width: auto;
+}
+
+.editScanInvoice .ant-select .ant-select-selection,
+.editScanInvoice .inputPicker .ant-input {
+    border-color: #d9d9d9;
+}
+
+.editScanInvoice .pwyTabs .ant-tabs-top-bar {
+    border: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.editScanInvoice .pwyTabs .ant-tabs-nav-wrap {
+    margin: 0;
+}
+
+.editScanInvoice .pwyTabs .ant-tabs-nav .ant-tabs-tab {
+    width: 130px;
+    text-align: center;
+    height: 26px;
+    line-height: 24px;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #3598ff;
+    border-right: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.editScanInvoice .pwyTabs .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active {
+    background-color: #3598ff;
+    color: #fff;
+}
+
+.editScanInvoice .pwyTabs .ant-tabs-nav .ant-tabs-tab:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.editScanInvoice .pwyTabs .ant-tabs-nav .ant-tabs-tab:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-right: 1px solid #3598ff;
+}
+
+.editScanInvoice .pwyTabs .ant-tabs-ink-bar {
+    display: none !important;
+}

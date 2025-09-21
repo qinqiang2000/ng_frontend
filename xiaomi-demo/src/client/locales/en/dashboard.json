@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "title": "Global Tax Invoice Management Platform",
+    "subtitle": "Unified tax rules engine, invoice processing, and compliance management solutions for multinational enterprises",
+    "cta": "Manage Tax Rules"
+  },
+  "stats": {
+    "activeStatusRules": "Active Status Rules",
+    "approvedStatusEngines": "Approved Status Engines",
+    "mandatorySubscriptions": "MANDATORY Subscriptions",
+    "ruleEngineInvocations": "Rule Engine Invocations",
+    "submittedStatusRequests": "Submitted Status Requests",
+    "enrichmentSuccess": "Enrichment Success",
+    "failedStatusRequests": "Failed Status Requests",
+    "validatedStatusRequests": "Validated Status Requests",
+    "rejectedStatusRequests": "Rejected Status Requests",
+    "deliverySuccessRate": "Delivery Success Rate",
+    "taxDeterminationPassRate": "Tax Determination Pass Rate",
+    "averageProcessingTime": "Average Processing Time"
+  },
+  "quickActions": {
+    "title": "Quick Actions Center",
+    "taxRules": {
+      "title": "Tax Rules Engine",
+      "subtitle": "Compliance Rule Configuration"
+    },
+    "invoiceRules": {
+      "title": "Invoice Processing Rules",
+      "subtitle": "Invoice Engine Parameters"
+    },
+    "corporateSubscriptions": {
+      "title": "Enterprise Subscription Services",
+      "subtitle": "Multi-Tenant Subscription Management"
+    },
+    "releaseCenter": {
+      "title": "Version Release Center",
+      "subtitle": "Rule Version Lifecycle Management"
+    }
+  },
+  "recentActivity": {
+    "title": "Recent Activity",
+    "viewAll": "View All Activities",
+    "types": {
+      "ruleVersionUpdate": "Rule Version Update",
+      "engineRelease": "Engine Release",
+      "corporateSubscription": "Corporate Subscription",
+      "invoiceRequest": "Invoice Request"
+    }
+  },
+  "invoiceDelivery": {
+    "title": "Invoice Delivery Performance by Country",
+    "columns": {
+      "buyer": "Buyer Information",
+      "taxInfo": "Tax Information",
+      "todayTasks": "Today's Tasks",
+      "pendingTasks": "Pending Tasks", 
+      "completedTasks": "Completed Tasks",
+      "invoiceCount": "Invoice Count",
+      "deliveredCount": "Delivered Count",
+      "pendingRatio": "Pending Ratio"
+    },
+    "registrationStatus": {
+      "active": "ACTIVE",
+      "suspended": "SUSPENDED"
+    }
+  },
+  "systemHealth": {
+    "title": "Tax Engine Runtime Status",
+    "taxEngine": "Tax Engine (Active)",
+    "invoiceEngine": "Invoice Engine (Active)", 
+    "apiGateway": "API Gateway (Staged)",
+    "deploymentPending": "Deployment pending activation"
+  }
+}

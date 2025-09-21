@@ -1,0 +1,12 @@
+.authDialog .ant-input{
+	width: 234px;
+	margin-left:5px;
+}
+
+.authDialog .row .download{
+    color:#3598ff;
+}
+
+.authDialog .row .download:hover{
+    text-decoration: underline;
+}

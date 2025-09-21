@@ -1,0 +1,43 @@
+@import '../variable.less';
+
+.mobileImageTabs {
+    text-align: center;
+    height: 49px;
+    line-height: 49px;
+    vertical-align: middle;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid #ededed;
+}
+
+.mobileImageTabs .tabItem {
+    display: inline-block;
+    width: 75px;
+    text-align: center;
+    border: 1px solid @mainColor;
+    color: @mainColor;
+    text-decoration: none;
+    border-right: 0;
+    font-size: 0.875rem;
+    min-height: 16px;
+    line-height: 16px;
+    padding: 3px 0;
+}
+
+.mobileImageTabs .tabItem.active {
+    background-color: @mainColor;
+    color: #fff;
+}
+
+.mobileImageTabs .tabItem:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.mobileImageTabs .tabItem:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-right: 1px solid @mainColor;
+}

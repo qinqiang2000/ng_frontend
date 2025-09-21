@@ -1,0 +1,192 @@
+.dkSearchBox {
+    background-color: #fff;
+}
+
+.dkSearchBox .topBtns {
+    min-height: 26px;
+    padding: 9px 8px;
+    position: relative;
+}
+
+.dkSearchBox .ant-input {
+    height: 26px;
+    padding: 2px 11px;
+    font-size: 12px;
+    color: #333;
+}
+
+.dkSearchBox .ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+    border-color: #40a9ff;
+}
+
+.dkSearchBox .title {
+    display: inline-block;
+    font-size: 14px;
+    color: #111;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.dkSearchBox .moreTip {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    color: #267dee;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dkSearchBox .moreBox {
+    background: #f3f8ff;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #d7e2f2;
+    margin-bottom: 10px;
+}
+
+
+.dkSearchBox .moreBox .tags {
+    display: inline-block;
+}
+
+.dkSearchBox .moreBox .tagName {
+    color: #333;
+    font-size: 12px;
+    display: inline-block;
+    width: 95px;
+}
+
+.dkSearchBox .moreBox .row {
+    padding: 8px 0;
+}
+
+.dkSearchBox .moreBox .bottomLine {
+    border-bottom: 1px solid #d7e2f2;
+}
+
+.dkSearchBox .moreBox .row .rowItem {
+    position: relative;
+    display: inline-block;
+}
+
+.dkSearchBox .moreBox .row .rowItem:first-child {
+    width: 50%;
+}
+
+.dkSearchBox .moreBox .row .rowItem:nth-child(2)::before {
+    display: block;
+    content: '';
+    height: 18px;
+    background-color: #ccc;
+    position: absolute;
+    width: 1px;
+    left: -23px;
+    top: 4px;
+}
+
+
+.dkSearchBox .moreBox .row .trivelTagName {
+    color: #333;
+    font-size: 12px;
+    display: inline-block;
+    width: 180px;
+}
+
+.dkSearchBox .moreBox .row .more {
+    color: #267dee;
+    font-size: 12px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dkSearchBox .moreBox .row .more::before,
+.dkSearchBox .moreBox .row .more::after {
+    display: inline-block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border: 0;
+    border-top: 1px solid #267dee;
+    border-right: 1px solid #267dee;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -6px;
+    top: 7px;
+}
+
+.dkSearchBox .moreBox .row .more::before {
+    right: -10px;
+}
+
+.dkSearchBox .btn {
+    border-radius: 2px;
+    height: 27px;
+    margin-right: 10px;
+}
+
+.dkSearchBox .btnCol {
+    background-color: #267dee;
+    color: #fff;
+    border: 0;
+}
+
+.dkSearchBox .btnCol:hover {
+    background-color: #85afe6;
+    color: #fff;
+}
+
+.dkSearchBox .btnCol[disabled] {
+    background-color: #85afe6 !important;
+    color: #fff;
+}
+
+.dkSearchBox .middleOperateBtns {
+    padding: 0 10px 10px 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.dkSearchBox .ant-tag-checkable-checked {
+    background-color: #fff;
+    border: 1px solid #3598ff;
+    color: #3598ff;
+}
+
+.dkSearchBox .search {
+    float: right;
+    position: relative
+}
+
+.dkSearchBox .search .searchList {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border: 1px solid #eaeaea;
+    z-index: 9;
+    background-color: #fff;
+}
+
+.dkSearchBox .search .searchList .searchListRow {
+    color: #333;
+    min-height: 24px;
+    line-height: 18px;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #eaeaea;
+    cursor: pointer;
+
+}
+
+.dkSearchBox .search .searchList .searchListRow .searchName {
+    color: #3598ff;
+}
+
+.dkSearchBox .search .searchList .searchListRow:nth-child(1) {
+    border-top: none;
+}
+
+.dkSearchBox .search .searchList .searchListRow:hover {
+    background-color: #8cbef3;
+    color: #fff;
+}

@@ -1,0 +1,14 @@
+.rScroll{
+    overflow-y: hidden;
+    border-bottom: 1px solid #E8E8E8;
+    position:relative;
+}
+
+.rScroll .hScroll{
+    position: absolute;
+    top:0;    
+    right: 1px;
+    width: 5px;
+    background: #D8D8D8;
+    border-radius: 4px;    
+}

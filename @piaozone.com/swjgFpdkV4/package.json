@@ -1,0 +1,25 @@
+{
+    "name": "@piaozone.com/swjgFpdkV4",
+    "version": "1.0.77",
+    "description": "piaozone.com swjgFpdk of no ui version",
+    "main": "src/index.js",
+    "dependencies": {
+      "@piaozone.com/utils": "^1.1.33"
+    },
+    "devDependencies": {
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "pwy-webpack --build --type=lib --config=./buildConfig.js --progress"
+    },
+    "keywords": [
+      "govFpdk"
+    ],
+    "author": "Sunny.HB.Bi",
+    "license": "ISC",
+    "files": [
+      "lib",
+      "src",
+      "src-cq"
+    ]
+  }

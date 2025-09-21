@@ -1,0 +1,23 @@
+{
+  "name": "@piaozone.com/{{projectName}}",
+  "version": "1.0.0",
+  "description": "{{projectDescription}}",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "pwy-webpack --build --type=lib --config=./buildConfig.js --progress",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "test": "pwy-jest --type=lib"
+  },
+  "files": [
+    "src",
+    "dist",
+    "test",
+    "buildConfig.js",
+    "readme.md",
+    "package.json"
+  ],
+  "keywords": [],
+  "author": "{{author}}",
+  "license": "ISC"
+}

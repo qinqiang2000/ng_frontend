@@ -1,0 +1,28 @@
+{
+  "name": "@piaozone.com/ck-scanfiles",
+  "version": "2.0.41",
+  "description": "scanner sdk for ruiqi",
+  "main": "index.js",
+  "scripts": {
+    "build": "pwy-webpack --build --type=lib --config=./buildConfig.js --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ryan@ke",
+  "maintainers": ["hongbo_bi", "lucy_wang"],
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-import": "^1.9.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {
+    "@piaozone.com/process-image": "^1.0.18",
+    "@piaozone.com/utils": "^1.1.39",
+    "async": "^2.6.3",
+    "moment": "^2.24.0"
+  }
+}

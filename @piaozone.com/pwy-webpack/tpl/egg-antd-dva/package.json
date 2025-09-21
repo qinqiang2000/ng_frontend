@@ -1,0 +1,58 @@
+{
+  "name": "{{projectName}}",
+  "version": "1.0.0",
+  "description": "{{projectDescription}}",
+  "private": true,
+  "dependencies": {
+    "@piaozone.com/egg-fw-webpack": "^1.0.9",
+    "antd": "^3.26.7",
+    "dva": "^2.4.1",
+    "dva-loading": "^3.0.20",
+    "egg": "^2.15.1",
+    "egg-redis": "^2.4.0",
+    "egg-scripts": "^2.11.0",
+    "egg-session-redis": "^2.1.0",
+    "egg-view-assets": "^1.6.0",
+    "egg-view-nunjucks": "^2.2.0",
+    "history": "^4.10.1",
+    "immutable": "^4.0.0-rc.12",
+    "moment": "^2.24.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "prop-types": "^15.7.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start-dev": "EGG_SERVER_ENV=dev egg-scripts start --port=7001 --daemon --title={{projectName}} --stdout=./logs/master-stdout.log --stderr=./logs/master-stderr.log",
+    "start-test": "EGG_SERVER_ENV=test egg-scripts start --port=7001 --daemon --title={{projectName}} --stdout=./logs/master-stdout.log --stderr=./logs/master-stderr.log",
+    "start": "EGG_SERVER_ENV=prod egg-scripts start --port=7001 --daemon --title={{projectName}} --stdout=./logs/master-stdout.log --stderr=./logs/master-stderr.log",
+    "stop": "egg-scripts stop --title={{projectName}}",
+    "build": "pwy-webpack --build --config=./config/buildConfig.js --progress",
+    "eslint": "pwy-eslint --ext .js,.jsx app",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx app --fix",
+    "stylelint": "pwy-stylelint app/assets/**/*.less app/assets/**/*.css",
+    "stylelint-fix": "pwy-stylelint app/assets/**/*.less app/assets/**/*.css --fix",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "{{author}}",
+  "license": "MIT",
+  "egg": {
+    "framework": "@piaozone.com/egg-fw-webpack"
+  }
+}

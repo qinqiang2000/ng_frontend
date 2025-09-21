@@ -1,0 +1,32 @@
+{
+    "name": "@piaozone.com/async-import",
+    "version": "1.0.1",
+    "description": "async import react component",
+    "main": "src/index.jsx",
+    "scripts": {
+        "dev": "pwy-webpack --dev --config=./buildConfig.js",
+        "eslint": "pwy-eslint --ext .js,.jsx src",
+        "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+        "test": "pwy-jest"
+    },
+    "devDependencies": {
+        "prop-types": "^15.7.2"
+    },
+    "files": [
+        "src",
+        "test",
+        "dev-test",
+        "buildConfig.js",
+        "readme.md",
+        "package.json",
+        "package-lock.json"
+    ],
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@piaozone.com/spin": "^1.0.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    }
+}

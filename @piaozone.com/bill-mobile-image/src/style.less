@@ -1,0 +1,89 @@
+@import './variable.less';
+
+* {
+    margin: 0;
+}
+
+.pwyMobileImage {
+    height: 100vh;
+}
+
+.pwyMobileImage .imgContent {
+    height: auto;
+    background: rgba(246, 247, 251, 1);
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+.pwyMobileImage .imgContent.active {
+    margin-top: 10px !important;
+    padding-top: 0 !important;
+}
+
+.pwyMobileImage .bottomBtns {
+    height: 46px;
+    line-height: 46px;
+    vertical-align: middle;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.pwyMobileImage .bottomBtns .btn {
+    display: inline-block;
+    width: 100%;
+    height: 46px;
+    font-size: 0.9375rem;
+    color: @mainColor;
+    text-decoration: none;
+}
+
+.pwyMobileImage .bottomBtns .btn:active {
+    background-color: #eee;
+}
+
+.pwyMobileImage .checkImg {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    bottom: 30px;
+    line-height: 50px;
+}
+
+.pwyMobileImage .checkImgBtn {
+    width: auto;
+    min-height: 34px;
+    line-height: 34px;
+    color: #fff;
+    background: #8a8376;
+    border-radius: 27px;
+    font-size: 14px;
+    padding: 4px 13px;
+    border: 0;
+}
+
+.pwyMobileImage .imgBtn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 2;
+    bottom: 75px;
+    right: 15px
+}
+
+.pwyMobileImage .loadFail {
+    margin-top: 40%;
+    height: inherit;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 0.875rem;
+}

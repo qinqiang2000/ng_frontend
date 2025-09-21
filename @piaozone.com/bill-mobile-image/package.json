@@ -1,0 +1,39 @@
+{
+    "name": "@piaozone.com/bill-mobile-image",
+    "version": "1.0.81",
+    "description": "bill-mobile-image",
+    "main": "src/index.jsx",
+    "scripts": {
+        "dev": "pwy-webpack --dev --config=./buildConfig.js",
+        "eslint": "pwy-eslint --ext .js,.jsx src",
+        "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+        "test": "pwy-jest",
+        "prepublish": "npm run eslint"
+    },
+    "dependencies": {
+        "@piaozone.com/mobile-carouse": "^1.0.6",
+        "@piaozone.com/mobile-scan-image": "^1.0.11",
+        "@piaozone.com/process-image": "^1.0.12",
+        "@piaozone.com/utils": "^1.1.40",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    },
+    "devDependencies": {
+        "prop-types": "^15.7.2"
+    },
+    "files": [
+        "src",
+        "test",
+        "dev-test",
+        "buildConfig.js",
+        "readme.md",
+        "package.json",
+        "package-lock.json"
+    ],
+    "maintainers": [
+        "hongbo_bi"
+    ],
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

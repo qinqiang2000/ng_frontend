@@ -1,0 +1,21 @@
+{
+  "name": "@piaozone.com/egg-eureka",
+  "version": "1.0.5",
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "eureka-js-client": "^4.5.0"
+  },
+  "description": "pwy egg eureka",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "src/index.js",
+  "keywords": [],
+  "author": "Sunny.HB.Bi",
+  "license": "ISC"
+}

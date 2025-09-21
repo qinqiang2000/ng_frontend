@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <div id='root'></div>
+    <script src="https://imgdev-master.piaozone.com/static/gallery/pwyPolyfill.js"></script>
+    <script src="./globalReact.js"></script>
+    <script src="../dist/testReact.js"></script>
+    <script>
+        console.log('TestReact', TestReact);
+        var Com = React.createElement(TestReact.default, {});
+        ReactDOM.render(Com, document.getElementById('root'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "title": "全球税务发票管理平台",
+    "subtitle": "为跨国企业提供统一的税务规则引擎、发票处理和合规管理解决方案",
+    "cta": "管理税务规则"
+  },
+  "stats": {
+    "activeStatusRules": "活跃状态规则",
+    "approvedStatusEngines": "已批准状态引擎",
+    "mandatorySubscriptions": "强制订阅",
+    "ruleEngineInvocations": "规则引擎调用次数",
+    "submittedStatusRequests": "已提交状态请求",
+    "enrichmentSuccess": "数据补全成功",
+    "failedStatusRequests": "失败状态请求",
+    "validatedStatusRequests": "已验证状态请求",
+    "rejectedStatusRequests": "已拒绝状态请求",
+    "deliverySuccessRate": "交付成功率",
+    "taxDeterminationPassRate": "税务确定通过率",
+    "averageProcessingTime": "平均处理时间"
+  },
+  "quickActions": {
+    "title": "快速操作中心",
+    "taxRules": {
+      "title": "税务规则引擎",
+      "subtitle": "合规规则配置管理"
+    },
+    "invoiceRules": {
+      "title": "发票处理规则",
+      "subtitle": "发票引擎参数配置"
+    },
+    "corporateSubscriptions": {
+      "title": "企业级订阅服务",
+      "subtitle": "多租户订阅管理"
+    },
+    "releaseCenter": {
+      "title": "版本发布中心",
+      "subtitle": "规则版本生命周期管理"
+    }
+  },
+  "recentActivity": {
+    "title": "最近活动",
+    "viewAll": "查看所有活动",
+    "types": {
+      "ruleVersionUpdate": "规则版本更新",
+      "engineRelease": "引擎发布",
+      "corporateSubscription": "企业订阅",
+      "invoiceRequest": "发票请求"
+    }
+  },
+  "invoiceDelivery": {
+    "title": "按国家/地区分类的发票交付性能",
+    "columns": {
+      "buyer": "买方信息",
+      "taxInfo": "税务信息",
+      "todayTasks": "今日任务",
+      "pendingTasks": "待处理任务",
+      "completedTasks": "已完成任务",
+      "invoiceCount": "发票数量",
+      "deliveredCount": "已交付数量",
+      "pendingRatio": "待处理比例"
+    },
+    "registrationStatus": {
+      "active": "有效",
+      "suspended": "暂停"
+    }
+  },
+  "systemHealth": {
+    "title": "税务引擎运行状态",
+    "taxEngine": "税务引擎（运行中）",
+    "invoiceEngine": "发票引擎（运行中）",
+    "apiGateway": "API网关（预备环境）",
+    "deploymentPending": "部署等待激活"
+  }
+}

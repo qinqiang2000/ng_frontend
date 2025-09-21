@@ -1,0 +1,24 @@
+{
+  "name": "@piaozone.com/process-image",
+  "version": "1.0.25",
+  "description": "process image",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "build": "pwy-webpack --build --type=lib --config=./buildConfig.js --progress",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run eslint"
+  },
+  "files": [
+    "src",
+    "dist",
+    "test",
+    "buildConfig.js",
+    "readme.md"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

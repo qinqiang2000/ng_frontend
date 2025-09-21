@@ -1,0 +1,20 @@
+{
+  "name": "@piaozone.com/egg-apollo",
+  "version": "1.0.2",
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+  },
+  "description": "pwy egg apollo",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "src/index.js",
+  "keywords": [],
+  "author": "Sunny.HB.Bi",
+  "license": "ISC"
+}

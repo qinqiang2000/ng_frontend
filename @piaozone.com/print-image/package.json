@@ -1,0 +1,26 @@
+{
+  "name": "@piaozone.com/print-image",
+  "version": "1.0.32",
+  "description": "piaozone.com print-image",
+  "main": "./src/index.jsx",
+  "dependencies": {
+    "antd": "^3.10.4",
+    "react": "^16.6.0"
+  },
+  "devDependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "scripts": {
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "prepublish": "npm run eslint"
+  },
+  "keywords": [
+    "print-image"
+  ],
+  "maintainers": [
+    "hongbo_bi"
+  ],
+  "author": "Sunny.HB.Bi",
+  "license": "ISC"
+}

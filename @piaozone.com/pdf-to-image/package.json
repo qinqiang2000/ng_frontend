@@ -1,0 +1,39 @@
+{
+  "name": "@piaozone.com/pdf-to-image",
+  "version": "1.0.38",
+  "description": "pdf tansform to images",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "pwy-webpack --dev --config=./dev-buildConfig.js",
+    "build-lib": "pwy-webpack --build --type=lib --config=./lib-buildConfig.js --progress",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "prepublish": "npm run build-lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "dist",
+    "src",
+    "test",
+    "dev-buildConfig.js",
+    "lib-buildConfig.js",
+    "readme.md"
+  ],
+  "dependencies": {
+    "@piaozone.com/process-image": "^1.0.3",
+    "@piaozone.com/utils": "^1.1.20",
+    "crypto-js": "^4.0.0",
+    "pdfjs-dist": "2.10.377"
+  },
+  "devDependencies": {
+    "antd": "^3.26.7",
+    "dva": "^2.4.1",
+    "dva-loading": "^3.0.20",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

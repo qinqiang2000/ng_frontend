@@ -1,0 +1,58 @@
+{
+  "name": "@piaozone.com/egg-fw-webpack",
+  "version": "1.0.33",
+  "description": "pwy egg framework",
+  "dependencies": {
+    "@piaozone.com/egg-apollo": "^1.0.2",
+    "@piaozone.com/egg-pwy-webpack": "^1.0.2",
+    "@piaozone.com/egg-eureka": "^1.0.5",
+    "egg": "^2.15.1",
+    "egg-next": "^1.0.2",
+    "egg-redis": "^2.0.0",
+    "egg-scripts": "^2.11.0",
+    "egg-session-redis": "^2.1.0",
+    "egg-view-nunjucks": "^2.2.0",
+    "formstream": "^1.1.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.14.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "eslint": "pwy-eslint .",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "8, 9"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "egg",
+    "egg-framework"
+  ],
+  "author": "bhb",
+  "files": [
+    "app",
+    "config",
+    "lib",
+    "agent.js",
+    "app.js",
+    "index.js"
+  ],
+  "eslintIgnore": [
+    "coverage",
+    "dist"
+  ],
+  "license": "MIT"
+}

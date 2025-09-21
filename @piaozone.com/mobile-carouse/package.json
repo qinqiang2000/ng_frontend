@@ -1,0 +1,32 @@
+{
+    "name": "@piaozone.com/mobile-carouse",
+    "version": "1.0.6",
+    "description": "移动端滑动组件",
+    "main": "src/index.jsx",
+    "scripts": {
+        "dev": "pwy-webpack --dev --config=./buildConfig.js",
+        "eslint": "pwy-eslint --ext .js,.jsx src",
+        "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+        "test": "pwy-jest"
+    },
+    "devDependencies": {
+        "@piaozone.com/mobile-scan-image": "^1.0.9",
+        "prop-types": "^15.7.2"
+    },
+    "files": [
+        "src",
+        "test",
+        "dev-test",
+        "buildConfig.js",
+        "readme.md",
+        "package.json",
+        "package-lock.json"
+    ],
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    }
+}

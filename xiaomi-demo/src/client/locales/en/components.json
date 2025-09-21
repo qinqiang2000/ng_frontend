@@ -1,0 +1,115 @@
+{
+  "statCard": {
+    "loading": "Loading statistics...",
+    "noData": "No data available",
+    "increase": "increase",
+    "decrease": "decrease",
+    "unchanged": "unchanged"
+  },
+  "statusBadge": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "draft": "Draft",
+    "published": "Published",
+    "archived": "Archived",
+    "processing": "Processing",
+    "completed": "Completed",
+    "failed": "Failed",
+    "cancelled": "Cancelled",
+    "expired": "Expired",
+    "suspended": "Suspended"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "first": "First",
+    "last": "Last",
+    "page": "Page",
+    "of": "of",
+    "showing": "Showing",
+    "to": "to",
+    "entries": "entries",
+    "records": "records",
+    "noResults": "No results found",
+    "loadMore": "Load more",
+    "loading": "Loading...",
+    "pageSize": "Page size:",
+    "showingRecords": "Showing {{start}}-{{end}} of {{total}} records"
+  },
+  "dateTimePicker": {
+    "selectDate": "Select Date",
+    "selectTime": "Select Time",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "tomorrow": "Tomorrow",
+    "thisWeek": "This Week",
+    "thisMonth": "This Month",
+    "clear": "Clear",
+    "apply": "Apply",
+    "cancel": "Cancel"
+  },
+  "countrySelector": {
+    "selectCountry": "Select Country/Region",
+    "searchPlaceholder": "Search countries...",
+    "noResults": "No countries found",
+    "allCountries": "All Countries",
+    "majorJurisdictions": "Major Tax Jurisdictions"
+  },
+  "invoiceTypeSelector": {
+    "selectInvoiceType": "Select Invoice Type",
+    "commercialInvoice": "Commercial Invoice",
+    "taxInvoice": "Tax Invoice",
+    "proformaInvoice": "Proforma Invoice",
+    "creditNote": "Credit Note",
+    "debitNote": "Debit Note"
+  },
+  "jexlEditor": {
+    "title": "JEXL Expression Editor",
+    "placeholder": "Enter your JEXL expression...",
+    "conditionsPlaceholder": "Enter JEXL expression for rule application conditions...",
+    "expressionPlaceholder": "Enter rule expression code...",
+    "validate": "Validate",
+    "format": "Format",
+    "test": "Test Expression",
+    "save": "Save Expression",
+    "clear": "Clear",
+    "syntaxHelp": "Syntax Help",
+    "examples": "Expression Examples",
+    "aiGenerated": "AI Generated Content",
+    "describeRequirements": "Describe Your Requirements",
+    "keyboardHint": "• Enter to send • Ctrl+K to format",
+    "examplePlaceholder": "e.g., When invoice type is VAT and contains buyer information...",
+    "send": "Send"
+  },
+  "toast": {
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Information",
+    "close": "Close"
+  },
+  "modal": {
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "loading": "Loading..."
+  },
+  "fileUpload": {
+    "dragDrop": "Drag and drop files here",
+    "browse": "Browse files",
+    "upload": "Upload",
+    "remove": "Remove",
+    "maxSize": "Max file size",
+    "allowedTypes": "Allowed file types",
+    "uploading": "Uploading...",
+    "success": "Upload successful",
+    "error": "Upload failed"
+  }
+}

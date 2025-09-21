@@ -1,0 +1,20 @@
+.ul {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 0;
+    border: solid 1px #333;
+}
+.li {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+.li:hover, .li.active {
+    background-color: #eee;
+}
+
+.active {
+    background-color: #eee;
+}

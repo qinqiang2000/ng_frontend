@@ -1,0 +1,129 @@
+#zc-header-container {
+    display: none;
+}
+
+.outerSmartCustomer {
+    position: fixed;
+    z-index: 1050;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: right 150ms ease;
+    .hidden {
+        display: none !important;
+    }
+}
+
+.innerSmartCustomerChat {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 555;
+    background-color: #fff;
+    .groupBox {
+        transition: height 50ms ease;
+    }
+    .groupHeader {
+        height: 46px;
+        background: #F5F7F8;
+        font-family: PingFangSC, PingFang SC;
+        font-weight: bold;
+        font-size: 16px;
+        color: #212121;
+        position: relative;
+        line-height: 46px;
+        vertical-align: middle;
+        padding: 0 16px;
+        z-index: 10;
+        .icon {
+            position: absolute;
+            display: block;
+            width: 26px;
+            height: 26px;
+            background-image: url('../img/icon_open.png');
+            right: 16px;
+            top: 10px;
+            cursor: pointer;
+            transform: rotate(0deg);
+            transition: transform 300ms ease;
+        }
+    }
+    .groupHeader .icon.closed {
+        transition: transform 300ms ease;
+        transform: rotate(-90deg);
+    }
+    .infoList {
+        padding: 8px 16px;
+        box-sizing: border-box;
+        overflow: auto;
+        position: relative;
+    }
+    .infoList p {
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        margin-bottom: 12px;
+        span.icon {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 18px;
+            width: 36px;
+            height: 18px;
+            margin-right: 4px;
+            background-size: 36px 18px;
+        }
+        span.zc {
+            background-image: url('../img/pic_zc.png');
+        }
+        span.wt {
+            background-image: url('../img/pic_wt.png');
+        }
+        span.kptz {
+            background-image: url('../img/pic_ka.png');
+        }
+        span.sptz {
+            background-image: url('../img/pic_sp.png');
+        }
+        span.tz {
+            background-image: url('../img/icon_tz.png');
+        }
+        a {
+            display: inline-block;
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 400;
+            font-size: 12px;
+            color: #666666;
+            overflow: hidden; /*自动隐藏文字*/
+            text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+            white-space: nowrap;/*强制不换行*/
+            max-width: 27em; /*不允许出现半汉字截断*/
+            text-decoration: none;
+            vertical-align: -3px;
+            cursor: pointer;
+            line-height: 14px;
+        }
+        a:hover {
+            color: #212121;
+            font-weight: bold;
+        }
+    }
+    .infoList p:last-child {
+        margin-bottom: 0;
+    }
+    .infoList .empty {
+        text-align: center;
+    }
+    .infoList .empty::before {
+        display: inline-block;
+        content: '';
+        width: 56px;
+        height: 56px;
+        background: url('../img/icon_zwsj.png') no-repeat center center;
+    }
+    .infoList .empty p {
+        font-size: 14px;
+        color: #666666;
+        text-align: center;
+    }
+}

@@ -1,0 +1,554 @@
+.selectInvoice .tabs {
+    text-align: center;
+    display: block;
+    padding-top: 6px;
+    margin: 0 auto;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+}
+
+.selectInvoice .tab {
+    min-width: 110px;
+    height: 28px;
+    background: rgba(255, 255, 255, 1);
+    border-color: #ccc;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(85, 85, 85, 1);
+    line-height: 28px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.selectInvoice .ant-table-thead > tr > th,
+.selectInvoice .ant-table-tbody > tr > td {
+    border-radius: 0 !important;
+    vertical-align: top;
+}
+
+.selectInvoice .ant-table-tbody tr.ant-table-expanded-row td > .ant-table-wrapper {
+    margin: 0;
+}
+
+.selectInvoice .ant-table-tbody .ant-table-expanded-row > td {
+    padding: 0;
+}
+
+.selectInvoice .ant-table-tbody .disabledExpand .ant-table-row-expand-icon-cell div {
+    display: none;
+}
+
+.selectInvoice .ant-table-tbody > tr > td .ant-table-wrapper .ant-table-tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.selectInvoice .ant-table-tbody > tr > td.xhf_mc {
+    max-width: 200px;
+}
+
+.selectInvoice .tab.ant-radio-button-wrapper-checked {
+    background: #3598ff;
+    border-color: #3598ff;
+    color: #fff;
+}
+
+.selectInvoice .expenseInfo {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.selectInvoice .deleteIcon {
+    cursor: pointer;
+}
+
+.selectInvoice .expenseInfo .row {
+    margin-bottom: 10px;
+}
+
+.selectInvoice .expenseInfo .row:last-child {
+    margin-bottom: 0;
+}
+
+.selectInvoice .expenseInfo .item {
+    display: inline-block;
+    width: 33.3%;
+    box-sizing: border-box;
+    padding-left: 90px;
+}
+
+.selectInvoice .expenseInfo .item .stuffer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 32px;
+    line-height: 32px;
+    text-indent: 12px;
+    font-size: 15px;
+    color: #ddd;
+}
+
+.selectInvoice .expenseInfo .item.full {
+    width: 100%;
+}
+
+.selectInvoice .expenseInfo .item textarea {
+    width: 100%;
+    border-color: #d9d9d9;
+    border-radius: 4px;
+    resize: none;
+    border: 1px solid #d9d9d9;
+}
+
+.selectInvoice .expenseInfo .item textarea:focus {
+    box-sizing: border-box;
+    box-shadow: 0 0 2px #3598ff;
+    border-color: #3598ff;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.selectInvoice .expenseInfo .item label {
+    display: inline-block;
+    position: absolute;
+    margin-left: -90px;
+    width: 90px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.selectInvoice .expenseInfo .item .ant-input {
+    width: 100%;
+}
+
+.selectInvoiceBox {
+    height: 429px;
+}
+
+.selectInvoice .pwyTabs .ant-tabs-top-bar {
+    border: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.selectInvoice .pwyTabs .ant-tabs-nav-wrap {
+    margin: 0;
+}
+
+.selectInvoice .pwyTabs .ant-tabs-nav .ant-tabs-tab {
+    width: 130px;
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #3598ff;
+    border-right: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.selectInvoice .pwyTabs .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active {
+    background-color: #3598ff;
+    color: #fff;
+}
+
+.selectInvoice .pwyTabs .ant-tabs-nav .ant-tabs-tab:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.selectInvoice .pwyTabs .ant-tabs-nav .ant-tabs-tab:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-right: 1px solid #3598ff;
+}
+
+.selectInvoice .pwyTabs .ant-tabs-ink-bar {
+    display: none !important;
+}
+
+
+body .selectInvoice .ant-table-thead > tr > th,
+body .selectInvoice .ant-table-tbody > tr > td {
+    padding: 8px 10px;
+    font-family: 'microsoft yahei';
+    word-break: break-all;
+    text-align: left;
+    font-size: 14px;
+}
+
+.selectInvoice .ant-tooltip-inner {
+    white-space: pre-line;
+}
+
+.selectInvoiceBox p {
+    margin: 0;
+}
+
+.selectInvoiceBox .search {
+    position: relative;
+    padding: 4px 0;
+    font-family: 'microsoft yahei';
+}
+
+.selectInvoiceBox.personal .searchbox {
+    width: 295px;
+    height: 30px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    position: relative;
+}
+
+.selectInvoiceBox.personal .searchbox::after {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: '';
+    background: url('../img/fdj.png');
+    left: 10px;
+    top: 3px;
+}
+
+.selectInvoiceBox.personal .searchbox input {
+    padding: 2px 0;
+    border: 0;
+    width: 240px;
+    position: absolute;
+    left: 40px;
+    top: 2px;
+    background: #fff;
+    font-size: 12px;
+}
+
+.selectInvoiceBox.personal .search .ant-input {
+    height: 30px;
+    font-size: 12px;
+}
+
+.selectInvoiceBox.personal .search .ant-select-selection--single {
+    height: 30px;
+    border: 1px solid #d9d9d9;
+}
+
+.selectInvoiceBox.personal .search .ant-calendar-picker {
+    vertical-align: top;
+}
+
+.selectInvoiceBox .search .ant-btn {
+    height: 30px;
+    z-index: 10;
+}
+
+.selectInvoiceBox .search a.file,
+.relevancyDialog .search a.file {
+    position: relative;
+    display: inline-block;
+    background: #3598ff;
+    border: 1px solid #3598ff;
+    text-indent: 0;
+    line-height: 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 13px;
+    height: 30px;
+    margin-left: 15px;
+    padding: 0 10px;
+}
+
+.selectInvoiceBox .search a.file.upload,
+.relevancyDialog .search a.file.upload {
+    background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    color: #b8b8b8;
+}
+
+.selectInvoiceBox .search .file input,
+.relevancyDialog .search .file input {
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    padding: 15px 50px;
+    height: 1px;
+}
+
+.selectInvoiceBox .search .file input:hover,
+.relevancyDialog .search .file input:hover {
+    cursor: pointer
+}
+
+.selectInvoiceBox.personal input.xfmc {
+    padding: 3px 0;
+    width: 255px;
+    background: #fff;
+}
+
+body .selectInvoice .ant-table-thead > tr > th {
+    background: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.selectInvoiceBox.company .search input.text {
+    width: 145px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    padding: 4px 0 4px 15px;
+}
+
+.selectInvoiceBox.company .search input.text:focus {
+    border-color: #3598ff;
+}
+
+.selectInvoiceBox.company .search input.fpdm {
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.selectInvoiceBox .money {
+    color: #ff9524;
+}
+
+
+.selectInvoiceBox tr.invoiceTitleError:hover td,
+.selectInvoiceBox tr.invoiceTitleError td {
+    background: #fdffd5 !important;
+}
+
+.selectInvoiceBox tr.unSaveFlag:hover td,
+.selectInvoiceBox tr.unSaveFlag td,
+.selectInvoiceBox tr.err:hover td,
+.selectInvoiceBox tr.err td {
+    background: #ffeaea !important;
+}
+
+.relevancyDialog .icons img,
+.selectInvoiceBox .icons img {
+    margin-right: 8px;
+}
+
+.relevancyDialog .icons img:last-child,
+.selectInvoiceBox .icons img:last-child {
+    margin-right: 0 !important;
+}
+
+.noBoxShadow .ant-modal-content {
+    box-shadow: none;
+}
+
+
+.noBoxShadow .ant-modal-body {
+    padding: 0;
+}
+
+.selectInvoiceBox .ant-spin-container::after {/* ie11以下列表无法删除 */
+    display: none;
+}
+
+.selectInvoiceBox.upload .ant-tabs-tab {
+    margin-right: 5px;
+}
+
+.invoiceTabsBox .ant-tabs-bar {
+    margin-bottom: 0;
+}
+
+.ant-badge-count.ant-scroll-number {
+    z-index: 10;
+}
+
+
+.selectInvoiceBox .ant-badge {
+    margin-right: 20px;
+}
+
+
+.tableUploadBtn {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 21px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.category .errTip {
+    font-size: 14px;
+    color: #e75856;
+    margin: 15px 0 5px 10px;
+}
+
+.category .successTip {
+    font-size: 14px;
+    color: #3598ff;
+    margin: 15px 0 5px 10px;
+}
+
+.categoryBox .noData {
+    font-size: 16px;
+    text-align: center;
+    color: #aaa;
+    padding-top: 20px;
+}
+
+.careful {
+    position: absolute;
+    right: 35px;
+}
+
+.careful .col {
+    color: #ff9524;
+}
+
+.careful .imgCls {
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.selectInvoice .fpzyInfo {
+    max-width: 15%;
+    box-sizing: border-box;
+}
+
+
+.selectInvoice .bottomInfo {
+    height: 59px;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+.selectInvoice .bottomInfo .info {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.selectInvoice .bottomInfo .info p {
+    margin: 0;
+    line-height: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.selectInvoice .bottomInfo .info p:first-child {
+    margin-top: 5px;
+}
+
+.selectInvoice .bottomInfo .info .num {
+    font-size: 18px;
+    vertical-align: baseline;
+    color: #ff9524;
+    margin: 0 3px;
+}
+
+.selectInvoice .bottomInfo img {
+    vertical-align: text-top;
+    margin-right: 8px;
+}
+
+.selectInvoice .bottomInfo .info .choosed {
+    width: 84px;
+    height: 24px;
+    vertical-align: top;
+    border: 1px solid #2f88e5;
+    border-radius: 4px;
+    color: #3598ff;
+    font-size: 12px;
+    margin-left: 15px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-align: center;
+}
+
+.selectInvoice .bottomInfo a.btn {
+    background-color: #fff;
+    color: #fff;
+    width: 120px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size: 14px;
+    cursor: default;
+}
+
+.selectInvoice .bottomInfo a.btn.active {
+    background-color: #ff9524;
+    cursor: pointer;
+}
+
+.selectInvoice .bottomInfo a.btn.returnHome {
+    border: 1px solid #bebebe;
+    background-color: #fff;
+    color: #666;
+    cursor: pointer;
+}
+
+.selectInvoice .bottomInfo a.btn.returnHome.enabled {
+    background-color: #3598ff;
+    color: #fff;
+    border: 0;
+}
+
+.selectInvoice .bottomInfo a.btn.returnHome.enabled:hover {
+    opacity: 0.75;
+}
+
+.selectInvoice .bottomInfo a.btn.import {
+    width: 140px;
+}
+
+.selectInvoice .bottomInfo a.select.btn {
+    background-color: #3598ff;
+}
+
+.selectInvoice .bottomInfo a.btn.active:hover {
+    opacity: 0.75;
+}
+
+.selectInvoice .bottomInfo a.btn.empty {
+    background: #fff;
+    border: 1px solid #bebebe;
+    color: #666;
+}
+
+.selectInvoice .bottomInfo .homeImportBtn {
+    width: 140px;
+    background-color: #ff9524;
+    color: #fff;
+    border-color: #ff9524;
+    height: 38px;
+    line-height: 38px;
+    margin: 10px 20px 0 0;
+}
+
+.selectInvoice .bottomInfo .homeImportBtn[disabled] {
+    background: #d9d9d9;
+    cursor: default;
+    color: #999;
+    border-color: #d9d9d9;
+}
+
+.selectInvoice .bottomInfo .homeImportBtn:hover {
+    opacity: 0.75;
+}
+
+.selectInvoice .bottomInfo .homeImportBtn:hover[disabled] {
+    opacity: 1;
+}

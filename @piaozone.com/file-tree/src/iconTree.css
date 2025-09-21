@@ -1,0 +1,62 @@
+.icon-tree {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-tree .icon-item {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.icon-tree .icon-item-title-first {
+    font-size: 14px;
+}
+
+.icon-tree .icon-item-tip {
+    margin-left: 4px;
+    transform: scale(0.8);
+    border-radius: 2px;
+    height: 18px;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-tree .icon-item-title {
+    height: 16px;
+    line-height: 15px;
+    color: #212121;
+}
+
+/* .icon-tree .ant-tree li {
+    padding: 6px 0;
+} */
+
+.icon-tree .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background-color: rgba(85, 130, 243, 0.1);
+    color: #5582f3;
+}
+
+.icon-tree .ant-tree li .ant-tree-node-content-wrapper {
+    padding: 7px 5px;
+    height: 32px;
+}
+
+.icon-tree .ant-tree li .ant-tree-node-content-wrapper:hover {
+    background-color: #f5f5f5;
+}
+
+.icon-tree .ant-tree-child-tree > li:first-child {
+    padding-top: 0 !important;
+}
+
+.icon-tree .ant-tree li {
+    padding: 0 !important;
+}
+
+.icon-tree .ant-tree li span.ant-tree-switcher,
+.ant-tree li span.ant-tree-iconEle {
+    margin-top: 3px;
+}

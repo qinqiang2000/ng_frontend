@@ -1,0 +1,90 @@
+{
+  "title": "Audited Rules Engine",
+  "subtitle": "Manage audited invoice validation and processing rules",
+  "searchPlaceholder": "Search rules...",
+  "addRule": "Add New Audited Rule",
+  "loading": "Loading rule data...",
+  "noRuleData": "No rule data available",
+  "countryRegion": "Country/Region",
+  "filters": {
+    "country": "Country Filter",
+    "invoiceType": "Invoice Type",
+    "status": "Rule Status",
+    "ruleType": "Rule Type"
+  },
+  "ruleDetails": {
+    "ruleCode": "Rule Code",
+    "ruleName": "Rule Name",
+    "description": "Rule Description",
+    "priority": "Priority",
+    "invoiceType": "Invoice Type",
+    "subInvoiceType": "Sub Invoice Type",
+    "jurisdiction": "Jurisdiction",
+    "effectiveDate": "Effective Date",
+    "expiryDate": "Expiry Date",
+    "ruleExpression": "JEXL Expression",
+    "applyTo": "Apply To",
+    "errorMessage": "Error Message",
+    "fieldPath": "Field Path",
+    "rulePrompt": "Rule Prompt"
+  },
+  "ruleTypes": {
+    "validation": "Validation Rule",
+    "completion": "Information Completion Rule",
+    "transformation": "Data Transformation",
+    "calculation": "Amount Calculation",
+    "formatting": "Format Validation",
+    "business": "Business Logic",
+    "compliance": "Compliance Check"
+  },
+  "status": {
+    "active": "Activated",
+    "inactive": "Inactive",
+    "draft": "Draft",
+    "testing": "Under Testing",
+    "published": "Published",
+    "deprecated": "Deprecated"
+  },
+  "actions": {
+    "edit": "Edit Rule",
+    "duplicate": "Duplicate Rule",
+    "test": "Test Rule",
+    "activate": "Activate",
+    "deactivate": "Deactivate",
+    "delete": "Delete",
+    "viewDetails": "View Details",
+    "exportRule": "Export Rule",
+    "saveRule": "Save Rule"
+  },
+  "ruleEditor": {
+    "basicInfo": "Basic Information",
+    "ruleLogic": "Rule Logic",
+    "ruleConfiguration": "Rule Configuration",
+    "ruleExpression": "Rule Expression",
+    "conditions": "Conditions",
+    "execute": "EXECUTE(When condition is true)",
+    "testData": "Test Data",
+    "validateRule": "Validate Rule",
+    "saveRule": "Save Rule",
+    "publishRule": "Publish Rule",
+    "testAndDebug": "Test and Debug",
+    "testRun": "Test Run",
+    "executionResult": "Execution Result",
+    "debugLog": "Debug Log",
+    "clickTestRun": "Click \"Test Run\" to load test data",
+    "clickTestExecute": "Click \"Test Run\" to execute validation",
+    "debugLogsWillAppear": "Debug logs will appear here during test execution",
+    "testing": "Testing...",
+    "loadingTestData": "Loading test data...",
+    "runningValidation": "Running validation...",
+    "conditionsPlaceholder": "Enter JEXL expression for rule application conditions...",
+    "ruleExpressionPlaceholder": "Enter rule expression code..."
+  },
+  "messages": {
+    "ruleCreated": "Audited rule created successfully",
+    "ruleUpdated": "Audited rule updated successfully",
+    "ruleDeleted": "Audited rule deleted successfully",
+    "validationPassed": "Rule validation passed",
+    "validationFailed": "Rule validation failed"
+  }
+}

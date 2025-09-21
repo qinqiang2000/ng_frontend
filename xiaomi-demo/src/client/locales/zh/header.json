@@ -1,0 +1,33 @@
+{
+  "brandName": "TaxFlow Pro",
+  "menu": {
+    "rulesEngine": {
+      "title": "规则引擎",
+      "overview": "规则引擎概览",
+      "taxRules": "税务规则引擎",
+      "invoiceRules": "发票规则引擎",
+      "auditedRules": "审核规则引擎",
+      "ruleGroups": "规则组管理"
+    },
+    "corporateSubscription": {
+      "title": "企业订阅",
+      "management": "企业订阅管理",
+      "settings": "规则订阅设置"
+    },
+    "invoiceManagement": {
+      "title": "发票管理",
+      "requests": "发票请求",
+      "results": "发票结果"
+    },
+    "poManagement": {
+      "title": "订单管理",
+      "auditedRequests": "审核请求"
+    },
+    "releaseCenter": "发布中心",
+    "piaozoneStudio": "发票云标注平台"
+  },
+  "userActions": {
+    "notifications": "通知",
+    "profile": "用户资料"
+  }
+}

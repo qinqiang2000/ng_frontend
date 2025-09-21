@@ -1,0 +1,36 @@
+{
+  "name": "@piaozone.com/invoice-client-plugin-common-route",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "pwy-webpack5 --build --type=node-ts --config=./buildConfig.js --progress --pwy-env=prod --node-env=production",
+    "dev": "pwy-webpack5 --watch --build --type=node-ts --config=./buildConfig.js --pwy-env=prod --node-env=production",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "test": "pwy-jest --type=lib"
+  },
+  "files": [
+    "src",
+    "dist",
+    "test",
+    "buildConfig.js",
+    "readme.md",
+    "package.json"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "maintainers": [
+    "hongbo_bi"
+  ],
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.16.0"
+  }
+}

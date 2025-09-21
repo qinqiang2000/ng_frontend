@@ -1,0 +1,18 @@
+{
+  "name": "polyfill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "pwy-webpack --build --type=lib --config=./buildConfig.js --progress",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sunnt.HB.Bi",
+  "license": "ISC",
+  "dependencies": {
+    "es6-promise": "^4.2.8"
+  }
+}

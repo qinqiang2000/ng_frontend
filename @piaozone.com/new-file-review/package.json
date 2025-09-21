@@ -1,0 +1,39 @@
+{
+  "name": "@piaozone.com/new-file-review",
+  "version": "1.0.4",
+  "description": "影像新文件预览组件",
+  "main": "src/index.jsx",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "dev": "pwy-webpack --dev --config=./buildConfig.js",
+    "build": "pwy-webpack --build --config=./buildConfig.js --progress",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "stylelint": "pwy-stylelint src/**/*.less src/**/*.css",
+    "stylelint-fix": "pwy-stylelint src/**/*.less src/**/*.css --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "maintainers": [
+    "fan_lei"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@piaozone.com/scan-image": "^1.0.40",
+    "@piaozone.com/spin": "^1.0.4",
+    "pdfjs-dist": "2.11.338",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "files": [
+    "src",
+    "test",
+    "index.js",
+    "index.html",
+    "buildConfig.js",
+    "package-lock.json",
+    "readme.md"
+  ]
+}

@@ -1,0 +1,136 @@
+
+.home {
+    .common {
+        margin: 10px;
+        max-height: 335px;
+        min-height: 210px;
+        overflow-y: scroll;
+        background-color: #FFF;
+        .title {
+            padding: 14px 0 0 20px;
+            color: #212121;
+            font-size: 14px;
+        }
+        .apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            box-sizing: border-box;
+            padding: 50px 20px 10px;
+
+            .box {
+                width: 96px;
+                padding-bottom: 40px;
+                text-align: center;
+                cursor: pointer;
+
+                .icon {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                }
+
+                .name {
+                    width: 82px;
+                    margin: 6px 8px;
+
+                    color: #666666;
+                    font-size: 12px;
+                    text-align: center;
+
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .news {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 30px;
+            text-align: center;
+            cursor: pointer;
+
+            .number {
+                font-size: 48px;
+                color: #FF7F00;
+            }
+            .status {
+                font-size: 14px;
+                color: #666666;
+            }
+        }
+    }
+    .news-container {
+        overflow: hidden;
+    }
+}
+:global(.layout-tree-left) {
+    width: 260px;
+    height: 100%;
+    border-right: 1px solid rgb(228, 230, 234)
+}
+
+:global(.layout-tree-left .ant-tree.ant-tree-directory > li.ant-tree-treenode-selected > span.ant-tree-node-content-wrapper::before) 
+{
+    background: #5582F3 !important;
+}
+
+:global(.fpy-layout-modal) {
+    // display: flex;
+    // justify-content: start;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.layout-tree-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    box-sizing: border-box;
+    padding: 20px 0px 10px;
+
+    .box {
+        position: relative;
+        width: 96px;
+        padding-bottom: 40px;
+        text-align: center;
+        cursor: pointer;
+
+        .icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 4px;
+        }
+
+        .name {
+            width: 82px;
+            margin: 6px 8px;
+
+            color: #666666;
+            font-size: 12px;
+            text-align: center;
+
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .radio {
+            position: absolute;
+            top: -10px;
+            right: 6px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

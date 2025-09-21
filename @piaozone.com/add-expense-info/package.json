@@ -1,0 +1,41 @@
+{
+    "name": "@piaozone.com/add-expense-info",
+    "version": "1.0.18",
+    "description": "",
+    "main": "src/index.jsx",
+    "scripts": {
+        "dev": "pwy-webpack --dev --config=./buildConfig.js",
+        "eslint": "pwy-eslint --ext .js,.jsx src",
+        "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+        "test": "pwy-jest"
+    },
+    "devDependencies": {
+        "prop-types": "^15.7.2"
+    },
+    "files": [
+        "src",
+        "test",
+        "dev-test",
+        "buildConfig.js",
+        "readme.md",
+        "package.json",
+        "package-lock.json"
+    ],
+    "keywords": [],
+    "author": "",
+    "maintainers": [
+        "hongbo_bi"
+    ],
+    "license": "ISC",
+    "dependencies": {
+        "@piaozone.com/carouse": "^1.0.7",
+        "@piaozone.com/pwyConstants": "^1.0.20",
+        "@piaozone.com/scan-image": "^1.0.22",
+        "@piaozone.com/scroll-wrapper": "^1.0.1",
+        "@piaozone.com/spin": "^1.0.2",
+        "@piaozone.com/utils": "^1.1.25",
+        "antd": "^3.25.3",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    }
+}

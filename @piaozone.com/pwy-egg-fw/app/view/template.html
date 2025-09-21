@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+  		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  	{% if ctx.app.config.env !== 'local' -%}
+    	{{ helper.assets.getStyle() | safe }}
+    {%- endif %}
+  </head>
+  
+  <body>
+    <div id="root"></div>
+    <script>
+		  window.routerBase = '/';
+		  window.resourceBaseUrl = '{{ helper.assets.resourceBase }}';
+		</script>		
+    {% if ctx.app.config.env !== 'local' -%}
+    		{{ helper.assets.getScript() | safe }}
+    	{% else %}
+    		<script type="text/javascript" src='{{ helper.assets.config.devServer.env.PUBLIC_PATH }}/index.js'></script>    		
+    {%- endif %}
+  </body>
+</html>

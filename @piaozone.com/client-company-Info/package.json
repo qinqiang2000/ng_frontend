@@ -1,0 +1,35 @@
+{
+  "name": "@piaozone.com/client-company-info",
+  "version": "1.0.1",
+  "description": "",
+  "main": "src/index.jsx",
+  "scripts": {
+    "dev": "pwy-webpack --dev --config=./buildConfig.js",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "test": "pwy-jest"
+  },
+  "devDependencies": {
+    "@piaozone.com/utils": "^1.1.37",
+    "antd": "^3.26.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "files": [
+    "src",
+    "test",
+    "dev-test",
+    "buildConfig.js",
+    "readme.md",
+    "package.json",
+    "package-lock.json"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

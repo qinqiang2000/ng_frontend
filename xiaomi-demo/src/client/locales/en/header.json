@@ -1,0 +1,33 @@
+{
+  "brandName": "TaxFlow Pro",
+  "menu": {
+    "rulesEngine": {
+      "title": "Rules Engine",
+      "overview": "Rules Engine Overview",
+      "taxRules": "Tax Rules Engine", 
+      "invoiceRules": "Invoice Rules Engine",
+      "auditedRules": "Audited Rules engine",
+      "ruleGroups": "Rule Group Management"
+    },
+    "corporateSubscription": {
+      "title": "Corporate Subscription",
+      "management": "Corporate Subscription Management",
+      "settings": "Rules Subscription Settings"
+    },
+    "invoiceManagement": {
+      "title": "Invoice Management",
+      "requests": "Invoice Requests",
+      "results": "Invoice Results"
+    },
+    "poManagement": {
+      "title": "Po Management",
+      "auditedRequests": "Audited Request"
+    },
+    "releaseCenter": "Release Center",
+    "piaozoneStudio": "Piaozone Studio"
+  },
+  "userActions": {
+    "notifications": "Notifications",
+    "profile": "User Profile"
+  }
+}

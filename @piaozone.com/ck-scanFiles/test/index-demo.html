@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睿琪SDK演示</title>
+</head>
+<body>
+    <div>
+        <button class="button" id='startBtn'>启动扫描</button>
+        <div id='progress'></div>
+        <div id='stepFinishResult'></div>
+        <div id='finishResult'></div>
+    </div>
+    <script src="http://img.piaozone.com/static/gallery/jquery.min-normal.js"></script>
+    <script src="https://imgdev-master.piaozone.com/static/gallery/pwyPolyfill.js"></script>
+    <script src="../dist/scanFiles.js"></script>
+    <script>
+        /**
+         * 1. 首先安装 lib/JsScanner.msi程序.
+         * 2. 指定JsScanner-min.js加载地址,通过scanFileStaticJs进行配置
+         * 3. 可以将安装程序放入downloadUrl指定的服务器地址.检测到没有安装会提示下载(项目中需自行实现)
+        */
+        var scannerIndex = '';
+        var sourceName = '';
+		var fullScanSources = [];
+        var scanner = new ScanFiles.scanFiles({
+            debug: true,
+			//扫描仪sdk.js
+			scanFileStaticJs: ['https://imgdev-master.piaozone.com/static/gallery/scanner-ruizhen/JsScanner-min.js'],
+			// 软件下载地址
+			downloadUrl: 'https://imgdev-master.piaozone.com/static/gallery/scanner-ruizhen/JsScanner_1.3.msi',
+			needRegonizeQr: false, // 是否需要二维码识别(暂未处理)
+			uploadUrl: 'http://localhost:90/test1', //文件上传接口地址
+			locale: 'en_US',
+			limit: 3, // 测试并发数是2
+			ifDuplexEnabled: false, // 是否双面扫描
+        });
+        // 启动扫描
+        function startScan(){
+            document.getElementById('finishResult').innerHTML = '';
+            document.getElementById('stepFinishResult').innerHTML = '';
+            document.getElementById('progress').innerHTML = '扫描中...';
+            scanner.startScan({
+                data: '',
+                addUploadProgress: function(fileInfo) {
+                    var curHtml = document.getElementById('stepFinishResult').innerHTML;
+                    document.getElementById('stepFinishResult').innerHTML = curHtml + '<p><span>' + fileInfo.index + '</span>&nbsp;' + fileInfo.name + '</p>';
+                },
+                stepUploadStart: function(item) {
+                    console.log('stepUploadStart', item)
+                },
+                stepUploadFinish: function(res, fileInfo, otherData){
+                    console.log('stepUploadFinish', res, fileInfo, otherData);
+                },
+                uploadFinish: function(res) {
+                    document.getElementById('progress').innerHTML = '';
+                    document.getElementById('finishResult').innerHTML = JSON.stringify(res);
+                }
+            });
+        }
+        $(document).on('click', '#startBtn', startScan);
+    </script>
+</body>
+</html>

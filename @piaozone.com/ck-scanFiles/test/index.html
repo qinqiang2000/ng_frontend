@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睿琪SDK演示</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div>
+        <button class="button" onclick="startScan()">启动扫描</button>
+    </div>
+    <div id='mask'>
+        <div class="box">
+            <h2 class="title">选择扫描源:</h2>
+            <ul id='sources'></ul>
+        </div>
+    </div>
+    <script src="https://imgdev-master.piaozone.com/static/gallery/pwyPolyfill.js"></script>
+    <script src="./scanFiles.js"></script>
+    <script>
+        /**
+         * 1. 首先安装 lib/JsScanner.msi程序.
+         * 2. 指定JsScanner-min.js加载地址,通过scanFileStaticJs进行配置
+         * 3. 可以将安装程序放入downloadUrl指定的服务器地址.检测到没有安装会提示下载(项目中需自行实现)
+        */
+        var scanner = null;
+        // 启动扫描
+        initScan();
+        function initScan(){
+            scanner = new ScanFiles.scanFiles({
+                //扫描仪sdk.js
+                scanFileStaticJs: ['https://imgdev-master.piaozone.com/static/gallery/scanner-ruizhen/JsScanner-min.js'],
+                // 软件下载地址
+                downloadUrl: 'https://imgdev-master.piaozone.com/static/gallery/scanner-ruizhen/JsScanner.msi',
+                needRegonizeQr: false, // 是否需要二维码识别(暂未处理)
+                uploadUrl: '', //文件上传接口地址
+                locale: 'en_US',
+                limit: 3, // 测试并发数是2
+                ifDuplexEnabled: false, // 是否双面扫描
+            });
+            console.log('scanner',scanner);
+            startScan();
+        }
+
+        function startScan(sourceName = '', sourceIndex = 0){
+            scanner.startScan({
+                sourceInfo: {
+                    sourceName,
+                    sourceIndex
+                },
+                data: '',
+                onConnected: (sources) => {
+                    console.log('sources', sources);
+                    // ws连接成功后,获取扫描源列表
+                    const scanSources = JSON.parse(localStorage['scanSources']);
+                    appendToList(scanSources);
+                },
+                addUploadProgress: async (item) => {
+                    console.log('addUploadProgress', item)
+                },
+                stepUploadStart: async (item) => {
+                    console.log('stepUploadStart', item)
+                },
+                stepUploadFinish: async (res, fileInfo, otherData) => {
+                    console.log('stepUploadFinish', res, fileInfo, otherData)
+                },
+                uploadFinish: (res) => {
+                    console.log('uploadFinish', res);
+                    const { errcode, description } = res;
+                    if(errcode != '0000'){
+                        alert(description);
+                    }
+                }
+            });
+        }
+
+        // 处理扫描源数据
+        function appendToList(sources){
+            var maskLayer = document.getElementById('mask');
+            var ulDom = document.getElementById('sources');
+            var liDomStr = '';
+            for(var i = 0; i < sources.length; i++){
+                var scannerName = sources[i];
+                liDomStr += "<li class='li'>"+ scannerName +"</li>";
+            };
+            ulDom.innerHTML = liDomStr;
+            maskLayer.style.display = 'block';
+            var liEvts = document.getElementsByClassName('li');
+            var lis = [].slice.call(liEvts);
+            for(let i = 0; i < lis.length; i++){
+                var item = lis[i];
+                item.onclick = function(e){
+                    AcquireImage(sources[i], i);
+                }
+            }
+        }
+        // 执行扫描
+        function AcquireImage(sourceName, sourceIndex){
+            startScan(sourceName, sourceIndex);
+        }
+    </script>
+</body>
+</html>

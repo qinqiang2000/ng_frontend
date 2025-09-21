@@ -1,0 +1,14 @@
+.myLabel{    
+    font-size: inherit;
+    color: #333;    
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.myLabel .requireFlag{
+    color:#E75856;
+    vertical-align: middle;
+    margin-right:3px;
+}

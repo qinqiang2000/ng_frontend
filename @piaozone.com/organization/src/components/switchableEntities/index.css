@@ -1,0 +1,41 @@
+.SwitchableEntitiesPanel {
+    max-height: 330px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    width: 360px;
+    border: 1px solid #d9d9d9;
+    overflow: auto;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.SwitchableEntitiesPanel .searchContainer {
+    border-bottom: 1px solid #e1e1e1;
+    height: 54px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.SwitchableEntitiesPanel .main {
+    padding: 15px;
+}
+
+.SwitchableEntitiesPanel .main .entity {
+    height: 30px;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.SwitchableEntitiesPanel .main .entity.current {
+    background: #3598FF;
+    border-radius: 2px;
+    color: #fff;
+}

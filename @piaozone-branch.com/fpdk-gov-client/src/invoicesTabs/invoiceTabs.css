@@ -1,0 +1,71 @@
+.invoiceTabs {
+    border-top: 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.invoiceTabs .tabItem {
+    display: inline-block;
+    position: relative;
+    padding: 6px 15px;
+    color: #333;
+    margin-right: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    background: #f6f9fe;
+}
+
+.invoiceTabs .tabItemLoading {
+    color: rgba(0,0,0,.25);
+    background: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.invoiceTabs .tabItemLoading:hover {
+    color: rgba(0,0,0,.25) !important;
+}
+
+.invoiceTabs .tabItemLoading:active {
+    color: rgba(0,0,0,.25) !important;
+}
+
+.invoiceTabs .tabItem.active {
+    background: #3598ff;
+    color: #fff;
+}
+
+.invoiceTabs .tabItem:hover {
+    color: #3598ff;
+}
+
+.invoiceTabs .tabItem.active:hover {
+    background: #3598ff;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.invoiceTabs .tabItem .num {
+    position: absolute;
+    display: inline-block;
+    border-radius: 4px;
+    background: #f3625f;
+    color: #fff;
+    top: -8px;
+    padding: 0 5px;
+    height: 18px;
+    font-size: 11px;
+    right: -5px;
+}
+
+.invoiceTabs .tabItem .yellow {
+    position: absolute;
+    display: inline-block;
+    border-radius: 4px;
+    background: #ff9524;
+    color: #fff;
+    top: -8px;
+    padding: 0 5px;
+    height: 18px;
+    font-size: 11px;
+    right: -5px;
+}

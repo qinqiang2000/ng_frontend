@@ -1,0 +1,42 @@
+{
+    "name": "@piaozone.com/etax-login-newtimeai",
+    "version": "1.1.12",
+    "description": "新时代登录与扫脸认证",
+    "main": "src/index.jsx",
+    "scripts": {
+        "dev": "pwy-webpack --dev --config=./buildConfig.js",
+        "dev-dll": "pwy-webpack --dev --type=lib --config=./buildConfig-dll.js",
+        "build": "pwy-webpack --build --type=lib --config=./buildConfig-dll.js",
+        "eslint": "pwy-eslint --ext .js,.jsx src",
+        "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+        "test": "pwy-jest"
+    },
+    "devDependencies": {
+        "prop-types": "^15.7.2"
+    },
+    "files": [
+        "src",
+        "test",
+        "dev-test",
+        "buildConfig.js",
+        "readme.md",
+        "package.json",
+        "package-lock.json"
+    ],
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "maintainers": [
+        "zhuoyu",
+        "yuling_h",
+        "hongbo_bi",
+        "wbdeng_wei"
+    ],
+    "dependencies": {
+        "@piaozone.com/utils": "^1.1.36",
+        "antd": "^3.26.7",
+        "jsencrypt": "3.0.0-rc.1",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    }
+}

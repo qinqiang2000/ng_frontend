@@ -1,0 +1,138 @@
+.showImageBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.showImageBox .showImage.controll {
+    position: absolute;
+    display: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 16px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.showImageBox:hover .showImage.controll {
+    display: block;
+}
+
+.showImageBox .btns {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #eee;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.showImageBox .btns .disabled {
+    color: #ccc;
+    cursor: default;
+}
+
+.showImageBox .loadErr {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.showImageBox a {
+    color: #3598ff;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.showImageBox a:hover {
+    text-decoration: underline;
+}
+
+.showImageBox *,
+.showImageBox ::before,
+.showImageBox ::after {
+    box-sizing: border-box;
+}
+
+.showImageBox .btn-box {
+    height: 40px;
+    background: #000;
+    border-radius: 20px;
+    opacity: 0.3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .showImageBox .btn-box {
+        height: 40px;
+        background: #000;
+        border-radius: 20px;
+        opacity: 0.3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        bottom: 30px;
+        transform: translateX(-50%);
+    }
+}
+
+.showImageBox .btn-box:hover {
+    opacity: 0.5;
+}
+
+.showImageBox .btn-box .btn {
+    width: 25px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0 13px;
+}
+
+.showImageBox .btn-box .btn:first-child {
+    margin-left: 20px;
+}
+
+.showImageBox .btn-box .btn:last-child {
+    margin-right: 20px;
+}
+
+.showImageBox .full-box {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.showImageBox .full-box .close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 1999;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.showImageBox .full-box .btn-box {
+    opacity: 0.8;
+}
+
+.showImageBox .full-box .btn-box:hover {
+    opacity: 1;
+}

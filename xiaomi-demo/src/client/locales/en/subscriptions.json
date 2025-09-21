@@ -1,0 +1,48 @@
+{
+  "title": "Enterprise Subscription Management",
+  "subtitle": "Manage corporate tax service subscriptions",
+  "newSubscription": "Create Subscription",
+  "subscriptionTiers": {
+    "mandatory": "MANDATORY Tier",
+    "groupEnforced": "GROUP_ENFORCED Tier", 
+    "custom": "CUSTOM Tier"
+  },
+  "subscriptionDetails": {
+    "subscriptionId": "Subscription ID",
+    "companyName": "Company Name",
+    "businessEntity": "Business Entity",
+    "subscriptionTier": "Subscription Tier",
+    "serviceLevel": "Service Level",
+    "effectiveDate": "Effective Date",
+    "renewalDate": "Renewal Date",
+    "status": "Status",
+    "coverage": "Geographic Coverage",
+    "taxTypes": "Covered Tax Types",
+    "features": "Included Features"
+  },
+  "status": {
+    "active": "Active",
+    "provisioned": "Provisioned",
+    "pending": "Pending Approval",
+    "suspended": "Suspended",
+    "expired": "Expired",
+    "cancelled": "Cancelled"
+  },
+  "actions": {
+    "upgrade": "Upgrade Subscription",
+    "downgrade": "Downgrade Subscription", 
+    "renew": "Renew Subscription",
+    "suspend": "Suspend Subscription",
+    "cancel": "Cancel Subscription",
+    "viewUsage": "View Usage Analytics"
+  },
+  "features": {
+    "taxCalculation": "Tax Calculation Engine",
+    "invoiceGeneration": "Invoice Generation",
+    "complianceReporting": "Compliance Reporting",
+    "auditSupport": "Audit Support",
+    "apiAccess": "API Access",
+    "customRules": "Custom Rule Engine",
+    "multiJurisdiction": "Multi-Jurisdiction Support"
+  }
+}

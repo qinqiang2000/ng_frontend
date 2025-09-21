@@ -1,0 +1,39 @@
+{
+  "name": "@piaozone.com/diagram",
+  "version": "1.0.5",
+  "description": "",
+  "main": "src/index.jsx",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "dev": "pwy-webpack --dev --config=./buildConfig.js",
+    "build": "pwy-webpack --build --config=./buildConfig.js --progress",
+    "build-lib": "pwy-webpack --build --type=lib --config=./buildConfig-lib.js --progress",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "stylelint": "pwy-stylelint src/**/*.less src/**/*.css",
+    "stylelint-fix": "pwy-stylelint src/**/*.less src/**/*.css --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "maintainers": [
+    "lucy_wang",
+    "hongbo_bi"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "echarts": "^5.4.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "files": [
+    "src",
+    "dev-test",
+    "index.js",
+    "index.html",
+    "buildConfig.js",
+    "package-lock.json",
+    "readme.md"
+  ]
+}

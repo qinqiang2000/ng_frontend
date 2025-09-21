@@ -1,0 +1,80 @@
+{
+  "title": "规则引擎概览",
+  "buttons": {
+    "newRule": "新增规则"
+  },
+  "subtitle": "管理和监控所有税务及发票引擎运行状态",
+  "tabs": {
+    "invoiceEngine": "发票引擎",
+    "taxEngine": "税务引擎"
+  },
+  "stats": {
+    "activeRules": "活跃规则",
+    "validationPassed": "验证通过",
+    "errorCount": "错误数量",
+    "fieldCoverage": "字段覆盖"
+  },
+  "tableHeaders": {
+    "ruleCode": "规则代码",
+    "ruleName": "规则名称",
+    "regionJurisdiction": "地区/司法管辖区",
+    "ruleType": "规则类型",
+    "priority": "优先级",
+    "version": "版本"
+  },
+  "businessTypes": {
+    "all": "所有业务类型",
+    "validationRules": "验证规则",
+    "informationCompletion": "信息补全",
+    "formatValidation": "格式验证",
+    "taxValidation": "税务验证",
+    "vatProcessing": "增值税处理",
+    "salesTaxValidation": "销售税验证",
+    "exportTrade": "出口贸易",
+    "manufacturing": "制造业",
+    "generalRules": "通用规则",
+    "digitalServicesTaxCompletion": "数字服务税补全"
+  },
+  "sections": {
+    "invoiceEngineRules": "发票引擎规则",
+    "taxEngineRules": "税务引擎规则",
+    "invoiceRulesSubtitle": "管理发票验证和格式规则",
+    "taxRulesSubtitle": "管理税务补全和验证规则"
+  },
+  "quickActions": {
+    "title": "快速操作",
+    "ruleConfiguration": "规则配置",
+    "ruleConfigurationDesc": "详细设置",
+    "batchTesting": "批量测试",
+    "batchTestingDesc": "规则验证",
+    "exportRules": "导出规则",
+    "exportRulesDesc": "备份配置",
+    "importRules": "导入规则",
+    "importRulesDesc": "批量导入"
+  },
+  "engineStatus": {
+    "title": "引擎状态",
+    "taxRulesEngine": "税务规则引擎",
+    "invoiceValidationEngine": "发票验证引擎",
+    "runningNormally": "运行正常",
+    "apiCalls": "API调用",
+    "responseNormal": "响应正常",
+    "dataSync": "数据同步",
+    "minorDelay": "轻微延迟"
+  },
+  "messages": {
+    "loadingFailed": "失败",
+    "minutesAgo": "分钟前"
+  },
+  "statuses": {
+    "draft": "草稿",
+    "testPassed": "测试通过",
+    "published": "已发布",
+    "active": "活跃",
+    "disabled": "已禁用",
+    "enabled": "已启用",
+    "staged": "预发布",
+    "testing": "测试中",
+    "unknown": "未知"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "title": "企业订阅服务管理",
+  "subtitle": "管理企业税务服务订阅",
+  "newSubscription": "创建订阅",
+  "subscriptionTiers": {
+    "mandatory": "强制级订阅",
+    "groupEnforced": "集团执行级订阅", 
+    "custom": "定制级订阅"
+  },
+  "subscriptionDetails": {
+    "subscriptionId": "订阅编号",
+    "companyName": "公司名称",
+    "businessEntity": "业务实体",
+    "subscriptionTier": "订阅级别",
+    "serviceLevel": "服务等级",
+    "effectiveDate": "生效日期",
+    "renewalDate": "续约日期",
+    "status": "状态",
+    "coverage": "地理覆盖范围",
+    "taxTypes": "涵盖税种",
+    "features": "包含功能"
+  },
+  "status": {
+    "active": "有效",
+    "provisioned": "已配置",
+    "pending": "待审批",
+    "suspended": "已暂停",
+    "expired": "已过期",
+    "cancelled": "已取消"
+  },
+  "actions": {
+    "upgrade": "升级订阅",
+    "downgrade": "降级订阅", 
+    "renew": "续约订阅",
+    "suspend": "暂停订阅",
+    "cancel": "取消订阅",
+    "viewUsage": "查看使用分析"
+  },
+  "features": {
+    "taxCalculation": "税额计算引擎",
+    "invoiceGeneration": "发票生成",
+    "complianceReporting": "合规报告",
+    "auditSupport": "审计支持",
+    "apiAccess": "API访问",
+    "customRules": "定制规则引擎",
+    "multiJurisdiction": "多管辖区支持"
+  }
+}

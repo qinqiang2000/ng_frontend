@@ -1,0 +1,101 @@
+.pwyToolTip {
+    max-width: 350px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+    position: absolute;
+    z-index: 1060;
+    display: block;
+    visibility: visible;
+    margin-bottom: 20px;
+
+    .pwyToolTipHidden {
+        display: none;
+    }
+
+    .pwy-tooltip-inner {
+        min-width: 30px;
+        min-height: 32px;
+        color: #333;
+        text-align: left;
+        text-decoration: none;
+        word-wrap: break-word;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 2px 8px rgb(0, 0, 0, 0.3);
+    }
+
+    .pwy-tooltip-content {
+        padding-right: 8px;
+        margin-bottom: 10px;
+    }
+
+
+    .pwy-tooltip-arrow {
+        position: absolute;
+        display: block;
+        width: 13.07106781px;
+        height: 13.07106781px;
+        overflow: hidden;
+        background: transparent;
+        pointer-events: none;
+    }
+
+    .pwy-tooltip-arrow.topLeft {
+        top: -13px;
+        left: 7px;
+    }
+
+    .pwy-tooltip-arrow.topRight {
+        top: -13px;
+        right: 15px;
+    }
+
+    .pwy-tooltip-arrow.bottomLeft {
+        bottom: -4px;
+        left: 7px;
+        transform: rotate(180deg);
+    }
+
+    .pwy-tooltip-arrow.bottomRight {
+        bottom: -4px;
+        right: 15px;
+        transform: rotate(180deg);
+    }
+
+    .pwy-tooltip-arrow::before {
+        background: #aaa;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        content: '';
+        pointer-events: auto;
+        transform: translateY(6.53553391px) rotate(45deg);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        outline-offset: -2px;
+        border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+}
+

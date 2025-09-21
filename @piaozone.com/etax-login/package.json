@@ -1,0 +1,41 @@
+{
+    "name": "@piaozone.com/etax-login",
+    "version": "1.0.66",
+    "description": "数电登录",
+    "main": "src/index.jsx",
+    "scripts": {
+        "dev": "pwy-webpack --dev --config=./buildConfig.js",
+        "dev-dll": "pwy-webpack --dev --type=lib --config=./buildConfig-dll.js",
+        "build": "pwy-webpack --build --type=lib --config=./buildConfig-dll.js",
+        "eslint": "pwy-eslint --ext .js,.jsx src",
+        "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+        "test": "pwy-jest"
+    },
+    "devDependencies": {
+        "prop-types": "^15.7.2"
+    },
+    "files": [
+        "src",
+        "test",
+        "dev-test",
+        "buildConfig.js",
+        "readme.md",
+        "package.json",
+        "package-lock.json"
+    ],
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "maintainers": [
+        "hongbo_bi",
+        "zhuoyu",
+        "yuling_h"
+    ],
+    "dependencies": {
+        "@piaozone.com/utils": "^1.1.36",
+        "antd": "^3.26.7",
+        "jsencrypt": "3.0.0-rc.1",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    }
+}

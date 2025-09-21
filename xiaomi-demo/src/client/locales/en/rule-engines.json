@@ -1,0 +1,80 @@
+{
+  "title": "Rules Engine Overview",
+  "buttons": {
+    "newRule": "New Rule"
+  },
+  "subtitle": "Manage and monitor all tax and invoice engine operational status",
+  "tabs": {
+    "invoiceEngine": "Invoice Engine",
+    "taxEngine": "Tax Engine"
+  },
+  "stats": {
+    "activeRules": "Active Rules",
+    "validationPassed": "Validation Passed",
+    "errorCount": "Error Count",
+    "fieldCoverage": "Field Coverage"
+  },
+  "tableHeaders": {
+    "ruleCode": "Rule Code",
+    "ruleName": "Rule Name",
+    "regionJurisdiction": "Region/Jurisdiction",
+    "ruleType": "Rule Type",
+    "priority": "Priority",
+    "version": "Version"
+  },
+  "businessTypes": {
+    "all": "All Business Types",
+    "validationRules": "Validation Rules",
+    "informationCompletion": "Information Completion",
+    "formatValidation": "Format Validation",
+    "taxValidation": "Tax Validation",
+    "vatProcessing": "VAT Processing",
+    "salesTaxValidation": "Sales Tax Validation",
+    "exportTrade": "Export Trade",
+    "manufacturing": "Manufacturing",
+    "generalRules": "General Rules",
+    "digitalServicesTaxCompletion": "Digital Services Tax Completion"
+  },
+  "sections": {
+    "invoiceEngineRules": "Invoice Engine Rules",
+    "taxEngineRules": "Tax Engine Rules",
+    "invoiceRulesSubtitle": "Manage invoice validation and format rules",
+    "taxRulesSubtitle": "Manage tax completion and validation rules"
+  },
+  "quickActions": {
+    "title": "Quick Actions",
+    "ruleConfiguration": "Rule Configuration",
+    "ruleConfigurationDesc": "Detailed setup",
+    "batchTesting": "Batch Testing",
+    "batchTestingDesc": "Rule validation",
+    "exportRules": "Export Rules",
+    "exportRulesDesc": "Backup configuration",
+    "importRules": "Import Rules",
+    "importRulesDesc": "Batch import"
+  },
+  "engineStatus": {
+    "title": "Engine Status",
+    "taxRulesEngine": "Tax Rules Engine",
+    "invoiceValidationEngine": "Invoice Validation Engine",
+    "runningNormally": "Running normally",
+    "apiCalls": "API Calls",
+    "responseNormal": "Response normal",
+    "dataSync": "Data Sync",
+    "minorDelay": "Minor delay"
+  },
+  "messages": {
+    "loadingFailed": "Failed",
+    "minutesAgo": "minutes ago"
+  },
+  "statuses": {
+    "draft": "Draft",
+    "testPassed": "TestPassed",
+    "published": "Published",
+    "active": "Active",
+    "disabled": "Disabled",
+    "enabled": "Enabled",
+    "staged": "Staged",
+    "testing": "Testing",
+    "unknown": "Unknown"
+  }
+}

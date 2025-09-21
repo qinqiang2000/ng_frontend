@@ -1,0 +1,91 @@
+{
+  "title": "发票结果管理",
+  "subtitle": "查看开票结果和税务机关报告状态",
+  "searchPlaceholder": "按发票号码搜索...",
+  "invoiceResultsList": "发票结果列表",
+  "statusDistribution": "发票状态分布",
+  "filingPerformance": "税务机关申报绩效",
+  "timeRanges": {
+    "today": "今天",
+    "week": "本周",
+    "month": "本月",
+    "quarter": "本季度"
+  },
+  "statusLabels": {
+    "all": "全部状态",
+    "invoiceReady": "发票就绪",
+    "reporting": "报告中",
+    "reported": "已报告",
+    "reportFailed": "报告失败",
+    "delivering": "交付中",
+    "delivered": "已交付",
+    "deliverFailed": "交付失败",
+    "unknown": "未知"
+  },
+  "statCards": {
+    "invoiceReady": "发票就绪",
+    "reporting": "报告中",
+    "reported": "已报告", 
+    "reportFailed": "报告失败",
+    "delivering": "交付中",
+    "delivered": "已交付",
+    "deliverFailed": "交付失败",
+    "totalAmount": "总金额（美元）",
+    "totalTaxAmount": "总税额",
+    "totalCount": "总数量",
+    "successRate": "成功率"
+  },
+  "tableHeaders": {
+    "resultId": "结果ID",
+    "companyName": "公司名称",
+    "invoiceInfo": "发票信息",
+    "taxInfo": "税务信息",
+    "status": "状态",
+    "issueDate": "开具日期",
+    "actions": "操作"
+  },
+  "actions": {
+    "view": "查看",
+    "download": "下载",
+    "resubmit": "重新提交",
+    "viewPdf": "查看PDF",
+    "viewInvoice": "查看发票",
+    "downloadPdf": "下载PDF",
+    "refresh": "刷新",
+    "retry": "重试"
+  },
+  "messages": {
+    "loading": "加载中...",
+    "noData": "暂无数据",
+    "loadingResults": "正在加载发票结果...",
+    "noResults": "未找到发票结果",
+    "loadError": "加载发票结果失败",
+    "filingPerformanceError": "加载申报绩效数据失败",
+    "usdTotalError": "加载美元总额数据失败",
+    "statusDataError": "加载发票状态数据失败",
+    "dataLoadingFailed": "数据加载失败",
+    "errorLoadingFilingData": "加载申报绩效数据错误",
+    "noFilingData": "无申报绩效数据",
+    "displayingFallbackData": "显示演示用的后备数据。"
+  },
+  "charts": {
+    "count": "数量",
+    "percentage": "百分比",
+    "totalInvoices": "总发票数",
+    "successfulFilings": "成功申报",
+    "failedFilings": "申报失败",
+    "firstSubmissionSuccess": "首次提交成功",
+    "correctedResubmissionSuccess": "纠正重新提交成功",
+    "filingFailed": "申报失败"
+  },
+  "info": {
+    "invoiceNumber": "发票号码",
+    "amount": "金额",
+    "taxAmount": "税额",
+    "currency": "币种",
+    "country": "国家/地区",
+    "taxType": "税种",
+    "company": "公司",
+    "createTime": "创建时间"
+  }
+}

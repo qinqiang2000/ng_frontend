@@ -1,0 +1,53 @@
+{
+  "title": "Rule Groups",
+  "subtitle": "Manage rule groups and execution order",
+  "searchGroups": "Search Groups",
+  "searchGroupsPlaceholder": "Search group names...",
+  "searchRulesPlaceholder": "Search available rules...",
+  "loading": "Loading rule groups...",
+  "loadingRules": "Loading available rules...",
+  "loadingOrder": "Loading execution order...",
+  "noGroups": "No rule groups found",
+  "noRules": "No available rules found",
+  "noExecutionOrder": "No rules in execution order",
+  "addRulesHint": "Add rules from the Available Rules Library",
+  "save": "Save",
+  "cancel": "Cancel",
+  "addGroup": "Add Group",
+  "addNewGroup": "Add New Rule Group",
+  "groupName": "Group Name",
+  "groupNamePlaceholder": "Enter group name",
+  "description": "Description",
+  "descriptionPlaceholder": "Enter group description",
+  "priority": "Priority",
+  "availableRulesLibrary": "Available Rules Library",
+  "currentRuleGroup": "Current Rule Group",
+  "ruleExecutionOrder": "Rule Execution Order",
+  "organizationAssignment": "Organization Assignment",
+  "assignedToOrgs": "Assigned to {{count}} organizations",
+  "ruleTypes": {
+    "validation": "Validation Rules",
+    "completion": "Information Completion Rules"
+  },
+  "status": {
+    "draft": "Draft",
+    "testPassed": "Test Passed", 
+    "published": "Published",
+    "activated": "Activated",
+    "unknown": "Unknown"
+  },
+  "messages": {
+    "loadFailed": "Load Failed",
+    "loadRulesFailed": "Load Available Rules Failed",
+    "loadGroupRulesFailed": "Load Group Rules Failed",
+    "createFailed": "Create Rule Group Failed",
+    "saveFailed": "Save Failed",
+    "groupNameRequired": "Group name is required",
+    "groupCreated": "Rule Group Created",
+    "groupCreatedSuccess": "Rule group \"{{name}}\" has been created successfully",
+    "failedToLoadGroups": "Failed to load rule groups",
+    "failedToLoadRules": "Failed to load available rules",
+    "failedToLoadGroupRules": "Failed to load rules in group",
+    "unknownError": "Unknown error"
+  }
+}

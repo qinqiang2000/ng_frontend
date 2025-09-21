@@ -1,0 +1,120 @@
+{
+  "pageTitle": "Audited Request Management",
+  "pageSubtitle": "View and manage all audited request processing status",
+  "detailTitle": "Audited Request Validation Details",
+  "stats": {
+    "pending": "Pending",
+    "inProgress": "In Progress", 
+    "approved": "Approved",
+    "rejected": "Rejected"
+  },
+  "buttons": {
+    "refreshStats": "Refresh",
+    "exportReport": "Export",
+    "submitForAudit": "Submit",
+    "submitting": "Submitting...",
+    "refreshList": "Refresh List",
+    "retry": "Retry"
+  },
+  "filters": {
+    "searchPlaceholder": "Search by bill number"
+  },
+  "statusOptions": {
+    "allStatus": "All Status",
+    "pending": "1-Pending",
+    "inProgress": "2-In Progress", 
+    "approved": "3-Approved",
+    "rejected": "4-Rejected"
+  },
+  "timeOptions": {
+    "today": "Today",
+    "week": "This Week",
+    "month": "This Month",
+    "quarter": "This Quarter"
+  },
+  "table": {
+    "title": "Audited Request List",
+    "headers": {
+      "requestId": "Request ID",
+      "companyName": "Company Name",
+      "country": "Country", 
+      "billNo": "Bill No",
+      "billName": "Bill Name",
+      "ruleGroups": "Rule Groups",
+      "status": "Status",
+      "auditTime": "Audit Time",
+      "actions": "Actions"
+    }
+  },
+  "messages": {
+    "loading": "Loading audited requests...",
+    "noData": "No audited requests found",
+    "successSubmit": "Successfully submitted {{count}} bill(s) for audit!",
+    "failedSubmit": "Successfully submitted {{successCount}} bill(s). {{failedCount}} failed: {{failedInfo}}",
+    "submitError": "Failed to submit bills for audit"
+  },
+  "tooltips": {
+    "submitForAudit": "Submit for Audit",
+    "refreshStats": "Refresh Statistics",
+    "exportReport": "Export Report",
+    "ruleGroupDetails": "Click to view rule group details: {{codes}}"
+  },
+  "components": {
+    "fileDependencies": {
+      "title": "File Dependencies",
+      "uploadText": "Drop files here or click to upload",
+      "dropToUpload": "Release files to upload",
+      "supportedFormats": "Supports PDF, Word, Excel, image formats",
+      "uploading": "Uploading...",
+      "chooseFile": "Choose File"
+    },
+    "informationAnalysis": {
+      "title": "Information Analysis",
+      "subtitle": "Compliance Review & Evidence Analysis",
+      "refreshData": "Refresh Data",
+      "selectedField": "Selected Field",
+      "fieldId": "Field ID: {{fieldId}}",
+      "relatedFields": "Related fields and evidence chain highlighted",
+      "expenseAuditChecklist": "Expense Audit Checklist",
+      "loading": "Loading...",
+      "loadingFailed": "Loading failed: {{error}}",
+      "noAuditRecords": "No audit rule records",
+      "quickActions": "Quick Actions",
+      "resubmitAudit": "Resubmit Audit",
+      "submitting": "Submitting...",
+      "exportReport": "Export Report",
+      "generateReview": "Generate Review",
+      "markAsReviewed": "Mark as Reviewed",
+      "evidenceAnalysisDetails": "Evidence Analysis Details",
+      "relationshipType": "Relationship Type",
+      "amountMatchingVerification": "Amount Matching Verification",
+      "confidenceLevel": "Confidence Level",
+      "evidenceStrength": "Evidence Strength",
+      "strongEvidenceChain": "Strong Evidence Chain"
+    },
+    "canvas": {
+      "loadingBillFiles": "Loading bill files...",
+      "failedToLoadFiles": "Failed to Load Files",
+      "retry": "Retry",
+      "noFilesFound": "No Files Found",
+      "noFilesForId": "No bill files found for ID: {{billId}}",
+      "highlightedRelatedFields": "Highlighted related fields and evidence chain",
+      "filePreview": "File Preview",
+      "noFilePathAvailable": "No file path available for preview",
+      "confirmDelete": "Are you sure you want to delete this {{type}}?\n\nFile: {{title}}\n\nThis action cannot be undone.",
+      "deleteSuccessful": "Delete Successful",
+      "fileDeletedSuccessfully": "File deleted successfully",
+      "deleteFailed": "Delete Failed",
+      "onlyAttachmentCanDelete": "Only attachment and invoice nodes can be deleted",
+      "invalidFileId": "Invalid file ID",
+      "invalidFileIdFormat": "Invalid file ID format",
+      "uploadFailed": "上传失败",
+      "invalidBillId": "无效的账单ID",
+      "uploadSuccessful": "上传成功",
+      "successfullyUploaded": "成功上传 {{count}} 个文件",
+      "partialUploadSuccess": "部分上传成功",
+      "uploadPartialResult": "成功: {{successCount}}, 失败: {{failedCount}}\n失败文件: {{failedFiles}}",
+      "unknownError": "未知错误"
+    }
+  }
+}
