@@ -1,0 +1,38 @@
+{
+  "main": "src/index.js",
+  "name": "@piaozone.com/fpdk-gov-h5",
+  "version": "1.3.50",
+  "description": "piaozone.com fpdk-gov-h5",
+  "scripts": {
+    "setup": "set BROWSER=none",
+    "dev": "pwy-webpack --dev --config=./buildConfig.js",
+    "build-dev": "cross-env BABEL_ENV=production webpack --config webpack.config.js --env dev",
+    "build": "cross-env BABEL_ENV=production webpack --config webpack.config.js --env prod",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "stylelint": "pwy-stylelint src/**/*.less src/**/*.css",
+    "stylelint-fix": "pwy-stylelint src/**/*.less src/**/*.css --fix",
+    "prepublish": "npm run eslint"
+  },
+  "dependencies": {
+    "@piaozone.com/add-expense-info": "^1.0.5",
+    "@piaozone.com/checkInvoiceByInput": "^1.0.3",
+    "@piaozone.com/editInvoice-pc": "^1.0.39",
+    "@piaozone.com/multi-select": "^1.0.4",
+    "@piaozone.com/print-image": "^1.0.11",
+    "@piaozone.com/pwyConstants": "^1.0.20",
+    "@piaozone.com/scanFiles": "^1.0.54",
+    "@piaozone.com/scan-invoices": "^1.0.12",
+    "@piaozone.com/slideMenu": "^1.0.1",
+    "@piaozone.com/swjgFpdkV4": "^1.0.64",
+    "@piaozone.com/utils": "^1.1.24",
+    "antd": "^3.26.7",
+    "dva": "^2.4.1",
+    "immutable": "^4.0.0-rc.12",
+    "jsqr": "^1.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {}
+}

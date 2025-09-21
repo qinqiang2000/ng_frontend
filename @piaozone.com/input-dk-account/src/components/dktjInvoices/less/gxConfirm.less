@@ -1,0 +1,174 @@
+.gxConfirm {
+    width: 1200px;
+    margin: 10px auto 0 auto;
+}
+
+.gxConfirm .topInfo {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.gxConfirm .topInfo .ant-btn {
+    margin-left: 10px;
+}
+
+.gxConfirm .topInfo b {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.gxConfirm .topInfo .ssq {
+    font-size: 20px;
+    color: #d75452;
+    font-weight: bold;
+}
+
+.gxConfirm .topInfo .floatLeft {
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.gxConfirmProcess {
+    position: relative;
+    height: 50px;
+}
+
+.gxConfirmProcess::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 12px;
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.gxConfirmProcess .dotArea {
+    width: 33.3%;
+    position: absolute;
+    color: #333;
+    text-align: center;
+    top: 20px;
+    line-height: 15px;
+}
+
+.gxConfirmProcess .dotArea .dot {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background: #ccc;
+    top: -27px;
+    left: 50%;
+    margin-left: -10px;
+    text-align: center;
+    color: #fff;
+    line-height: 24px;
+    vertical-align: middle;
+    border: 1px solid #fff;
+}
+
+
+.gxConfirmProcess .dotArea.active .dot {
+    background: #3598ff;
+}
+
+.gxConfirmProcess .dotArea.active::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 12px;
+    background: #3598ff;
+    top: -20px;
+}
+
+.gxConfirmProcess .dotArea .time {
+    display: block;
+    color: #999;
+    font-size: 12px;
+}
+
+.gxConfirmProcess .dotArea.step2 {
+    left: 33.3%;
+}
+
+.gxConfirmProcess .dotArea.step3 {
+    left: 66.6%;
+}
+
+.gxConfirm .tableTitle {
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    margin: 0;
+}
+
+.gxConfirm .tableSubTitle {
+    margin: 0;
+    padding: 8px 0;
+    color: #999;
+    font-size: 12px;
+}
+
+.gxConfirm table {
+    width: 100%;
+}
+
+.gxConfirm .tableSubTitle .item {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.gxConfirm table th,
+.gxConfirm table td {
+    border: 1px solid #ccc;
+    text-align: center;
+    background: #fff;
+    color: #333;
+    font-weight: normal;
+}
+
+.gxConfirm table th {
+    background: #56627f;
+    color: #fff;
+}
+
+.gxConfirm table th .category {
+    position: relative;
+    border-top: 6em #56627f solid;
+    border-left: 200px #fff solid;
+}
+
+.gxConfirm table th .category .fplx {
+    display: block;
+    color: #333;
+    position: absolute;
+    top: -50px;
+    left: -195px;
+    width: 200px;
+    text-align: left;
+}
+
+.gxConfirm table th .category .fpyt {
+    display: block;
+    position: absolute;
+    top: -55px;
+    left: -209px;
+    width: 200px;
+    color: #fff;
+    text-align: right;
+}
+
+
+.gxConfirm table th .out {
+    width: 200px;
+    overflow: hidden;
+    margin-right: -143px;
+}

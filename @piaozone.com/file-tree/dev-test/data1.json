@@ -1,0 +1,80 @@
+[  
+ {  
+   "id": "15803237422763868161",  
+   "title": "会计凭证",  
+   "tipBackgroup": "#f6ebdf",  
+   "tipColor": "#5A79EE",  
+   "tipTitle": "异常",  
+   "children": [  
+     {  
+       "id": "158032374227638681623",  
+       "title": "报表",  
+       "tipBackgroup": "#f6ebdf",  
+       "tipColor": "#5A79EE",  
+       "tipTitle": "异常", 
+       "active": "true",
+       "children": [  
+          {  
+            "id": "158032374227638681624",  
+            "title": "凭证",  
+            "tipBackgroup": "#f6ebdf",  
+            "tipColor": "#5A79EE",  
+            "tipTitle": "异常", 
+            "active": "true"
+          },  
+          {  
+            "id": "158032374227638681653",  
+            "title": "单据",  
+            "tipBackgroup": "#f6ebdf",  
+            "tipColor": "#fff",  
+            "tipTitle": "异常"  
+          }
+        ]  
+     },  
+     {  
+       "id": "15803237422763868163",  
+       "title": "凭证",  
+       "tipBackgroup": "#f6ebdf",  
+       "tipColor": "#fff",  
+       "tipTitle": "异常",
+       "children": [
+          {  
+            "id": "15803237422763868166",  
+            "title": "凭证",  
+            "tipBackgroup": "#eaf7f1",  
+            "tipColor": "#9cdbbf",  
+            "tipTitle": "件"
+          },  
+          {  
+            "id": "15803237422763868167",  
+            "title": "账簿",  
+            "tipBackgroup": "#f6ebdf",  
+            "tipColor": "#fff",  
+            "tipTitle": "件"
+          },  
+          {  
+            "id": "15803237422763868168",  
+            "title": "其他",  
+            "tipBackgroup": "#f6ebdf",  
+            "tipColor": "#fff",  
+            "tipTitle": "卷"
+          }  
+       ]
+     },  
+     {  
+       "id": "15803237422763868164",  
+       "title": "账簿",  
+       "tipBackgroup": "#f6ebdf",  
+       "tipColor": "#fff",  
+       "tipTitle": ""  
+     },  
+     {  
+       "id": "15803237422763868165",  
+       "title": "其他",  
+       "tipBackgroup": "#f6ebdf",  
+       "tipColor": "#fff",  
+       "tipTitle": ""  
+     }  
+   ]
+ }
+]

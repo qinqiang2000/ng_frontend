@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+.inputDkAccount {
+    height: 100vh;
+    font-family: 'Microsoft YaHei', 'PingFangSC-Regular', 'PingFang SC';
+}
+
+.pwyTableContent {
+    background-color: #e2e7ef;
+}
+
+.inputDkAccount .pwyTabs .ant-tabs-top-bar {
+    margin-bottom: 0;
+}
+
+.inputDkAccount .invoiceContent {
+    background-color: #fff;
+    margin: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.inputDkAccount .invoiceContent .ant-empty-normal {
+    margin: 0;
+    padding: 30px 0;
+}

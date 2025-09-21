@@ -1,0 +1,97 @@
+.apps {
+    margin: 12px 20px 20px;
+
+    .system {
+        display: flex;
+        padding-top: 10px;
+
+        .header {
+
+            position: relative;
+            width: 120px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin-bottom: 12px;
+            margin-right: 12px;
+
+            color: #fff;
+            font-size: 18px;
+            border-radius: 2px;
+            background-color: #2c3e61;
+            overflow: hidden;
+
+            .img {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                max-height: 370px;
+                margin: auto;
+                top: 0;
+                right: 0;
+            }
+
+            .name {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                line-height: 25px;
+                color: #bfc4cd;
+                text-align: center;
+                width: 100px;
+                word-break: break-word;
+            }
+        }
+
+        .module-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .module {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 310px;
+            height: 100px;
+            box-sizing: border-box;
+            margin-right: 12px;
+            margin-bottom: 12px;
+
+            box-shadow: 0 4px 12px 0 rgba(134,162,210,.2);
+            background-color: #fff;
+            cursor: pointer;
+
+            .icon {
+                width: 48px;
+                height: 48px;
+                margin-right: 10px;
+                margin-left: 15px;
+                border-radius: 6px;
+            }
+
+            .content {
+                .title {
+                    margin-bottom: 8px;
+                    font-size: 16px;
+                    color: #333;
+                }
+                .desc {
+                    width: 175px;
+                    margin: 0;
+                    font-size: 12px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    color: #999;
+                }
+                
+            }
+        }
+
+        .module:hover {
+            box-shadow: 0 4px 12px 0 rgba(134,162,210,.4);
+        }
+
+    }
+}

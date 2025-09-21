@@ -1,0 +1,14 @@
+@keyframes scrollLoop {
+    0% {
+        transform: translateX(calc(100% + 59px));
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.notice-track {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: scrollLoop 20s linear infinite;
+}

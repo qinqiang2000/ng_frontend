@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/javascript" src="https://img.piaozone.com/static/gallery/pwyPolyfill.js"></script>
+    <script src="./globalReact.js"></script>
+    <script src="../dist/smartCustomer.js"></script>
+    <script>
+        var Com = React.createElement(SmartCustomer, {});
+        ReactDOM.render(Com, document.getElementById('root'));
+
+        /**
+         * 单据初始化函数
+         * 执行初始化相关事务，比如注册组件事件监听、设置数据、执行DOM操作等。
+         * 此函数在单据加载服务端插件后自动调用。
+         */
+
+        function didMount () {
+        console.log('this.model', this);
+            // this.triggerCustomMsgEvent('dataChange', {name: '名称1', code: '888'});
+            this.$('zhichi_customer').onCustomMsgEvent((data) => {
+            console.log('data', data);
+            });
+            (function (w, d) {
+            console.log('this.model', this);
+                x = d.createElement("script");
+                x.async = true;
+                // x.id = "zhichiScript";
+                // ***为您的自定义域名
+                x.src = "https://img-sit.piaozone.com/static/public/js/smartCustomer.min.js";
+                d.body.appendChild(x);
+                x.onload = function() {
+                const st = new w.SmartCustomer();
+                st.init();
+                }
+            })(window, document);
+        }
+
+        /**
+         * 单据卸载函数
+         * 执行资源释放等事务，比如移除DOM事件监听/定时器、销毁UI元素、删除全局变量等。
+         * 此函数在单据关闭(销毁)时自动调用。
+         */
+        function willUnmount () {
+
+        }
+
+    </script>
+</body>
+</html>

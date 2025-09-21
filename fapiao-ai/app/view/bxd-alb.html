@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fapiao AI</title>
+    <link rel="shortcut icon" href="/public/images/logo.ico" type="image/x-icon" />
+    {% if env === 'local' %}
+        <link rel="stylesheet" href="/public/bxd-alb/bxdAlb.min.css" />
+    {% endif %}
+</head>
+<body>
+    <div id="root"></div>
+    <script src="/public/js/jquery-2.1.4.min-normal.js"></script>
+    {% if env === 'local' %}
+        <script src="/public/bxd-alb/bxdAlb.min.js"></script>
+    {% else %}
+        <script src="http://localhost:9000/static/js/bundle.js"></script>
+    {% endif %}
+    <script>
+        if (typeof window.getFapiaoAiBxdAlbInstance === 'function') {
+            var st = getFapiaoAiBxdAlbInstance();
+            var taskId = '{{ taskId }}';
+            $.ajax({
+                url: `/api/chat/task/${taskId}`,
+                type: 'GET',
+                success: function(res) {
+                    var taskResult = res.data.result.data.steps.reimbursementForm;
+                    var formConfig = {
+                        userInfo: taskResult.formData.userInfo,
+                        formOptions: taskResult.formData.formOptions,
+                        checkboxOptions: taskResult.formData.checkboxOptions
+                    };
+                    var expenseData = taskResult.formData.expenseData;
+                    var invoiceData = taskResult.formData.invoiceData;
+                    var paymentData = taskResult.formData.paymentData;
+
+                    var props = {
+                        config: formConfig,
+                        expenseData,
+                        invoiceData,
+                        paymentData
+                    };
+                    st.init(props);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

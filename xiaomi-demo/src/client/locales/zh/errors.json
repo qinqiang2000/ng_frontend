@@ -1,0 +1,35 @@
+{
+  "general": {
+    "unknownError": "发生未知错误",
+    "networkError": "网络连接错误",
+    "timeoutError": "请求超时",
+    "serverError": "服务器错误"
+  },
+  "api": {
+    "invalidRequest": "无效请求",
+    "unauthorized": "未授权访问",
+    "forbidden": "访问被禁止",
+    "notFound": "资源不存在",
+    "methodNotAllowed": "方法不被允许",
+    "internalError": "内部服务器错误"
+  },
+  "form": {
+    "validationFailed": "表单验证失败",
+    "requiredField": "此字段为必填项",
+    "invalidFormat": "格式无效",
+    "tooShort": "输入过短",
+    "tooLong": "输入过长"
+  },
+  "translation": {
+    "loadFailed": "翻译加载失败",
+    "missingKey": "未找到翻译键"
+  },
+  "permission": {
+    "denied": "没有访问权限",
+    "deniedMessage": "您没有访问该页面的权限，即将跳转到首页...",
+    "checking": "正在检查权限...",
+    "checkError": "权限校验异常",
+    "checkErrorMessage": "无法验证您的权限，请重试",
+    "redirectCountdown": "系统将在3秒后自动跳转到首页..."
+  }
+}

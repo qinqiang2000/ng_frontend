@@ -1,0 +1,35 @@
+{
+  "general": {
+    "unknownError": "An unknown error occurred",
+    "networkError": "Network connection error",
+    "timeoutError": "Request timeout",
+    "serverError": "Server error"
+  },
+  "api": {
+    "invalidRequest": "Invalid request",
+    "unauthorized": "Unauthorized access",
+    "forbidden": "Access forbidden",
+    "notFound": "Resource not found",
+    "methodNotAllowed": "Method not allowed",
+    "internalError": "Internal server error"
+  },
+  "form": {
+    "validationFailed": "Form validation failed",
+    "requiredField": "This field is required",
+    "invalidFormat": "Invalid format",
+    "tooShort": "Input too short",
+    "tooLong": "Input too long"
+  },
+  "translation": {
+    "loadFailed": "Failed to load translations",
+    "missingKey": "Translation key not found"
+  },
+  "permission": {
+    "denied": "Access Denied",
+    "deniedMessage": "You don't have permission to access this page. Redirecting to homepage...",
+    "checking": "Checking permissions...",
+    "checkError": "Permission Check Error",
+    "checkErrorMessage": "Failed to verify your permissions. Please try again.",
+    "redirectCountdown": "System will automatically redirect to homepage in 3 seconds..."
+  }
+}

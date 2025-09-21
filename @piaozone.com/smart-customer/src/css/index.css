@@ -1,0 +1,13 @@
+#zc__sdk__container {
+    top: 0;
+    height: calc(100% + 0px) !important;
+    display: none;
+    box-shadow: none !important;
+    transition: none !important;
+    border-radius: 0 !important;
+    max-height: 1000px !important;
+    position: absolute !important
+}
+#zc__sdk__sys__btnbox {
+    display: none !important;
+}

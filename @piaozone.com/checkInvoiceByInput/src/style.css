@@ -1,0 +1,24 @@
+.checkInvoiceByInput {
+    padding: 15px;
+}
+
+.checkInvoiceByInput .row {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 80px;
+}
+
+.checkInvoiceByInput label {
+    display: inline-block;
+    margin-left: -80px;
+    width: 80px;
+}
+
+.checkInvoiceByInput input {
+    display: inline-block;
+}
+
+.checkInvoiceByInput .ant-calendar-picker {
+    width: 100%;
+}
+

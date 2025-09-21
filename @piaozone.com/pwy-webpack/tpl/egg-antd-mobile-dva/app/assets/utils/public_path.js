@@ -1,0 +1,1 @@
+__webpack_public_path__ = window.__INITIAL_STATE__.webpackPublicPath;

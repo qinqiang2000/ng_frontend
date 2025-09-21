@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "es2019",
+      "allowJs": true,
+      "declaration": true,
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "sourceMap": false,
+      "baseUrl": ".",
+      "outDir": "dist/client",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "paths": {
+        "$utils/*": ["./src/utils/*"],
+        "$client/*": ["./src/*"],
+        "*": ["node_modules/*"]
+      }
+    },
+    "include": [
+        "src/**/*"
+    ]
+  }

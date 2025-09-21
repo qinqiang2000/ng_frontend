@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+html .clearfix {
+    zoom: 1;
+    *display: table;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+body .ant-table-thead > tr > th,
+body .ant-table-tbody > tr > td {
+    border: none;
+    padding: 6px 8px;
+    font-family: 'microsoft yahei';
+    border-bottom: 1px solid #eee;
+    word-break: break-all;
+    font-size: 12px;
+}
+
+body .ant-table-thead > tr > th {
+    background-color: #d7dae1;
+    color: #333;
+}
+
+body .ant-table-tbody > tr > td {
+    vertical-align: top;
+}
+
+.red {
+    color: #f00;
+}
+
+.truncateText {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+::placeholder {
+    color: #999;
+}

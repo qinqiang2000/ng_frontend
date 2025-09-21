@@ -1,0 +1,69 @@
+
+#sidebarContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    visibility: hidden;
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+}
+
+html[dir='ltr'] #sidebarContainer {
+    -webkit-transition-property: left;
+    transition-property: left;
+    left: -200px;
+}
+
+html[dir='rtl'] #sidebarContainer {
+    -webkit-transition-property: right;
+    transition-property: right;
+    right: -200px;
+}
+
+#outerContainer.sidebarMoving > #sidebarContainer,
+#outerContainer.sidebarOpen > #sidebarContainer {
+    visibility: visible;
+}
+
+html[dir='ltr'] #outerContainer.sidebarOpen > #sidebarContainer {
+    left: 0;
+}
+
+html[dir='rtl'] #outerContainer.sidebarOpen > #sidebarContainer {
+    right: 0;
+}
+
+html[dir='ltr'] #outerContainer.sidebarOpen > #mainContainer {
+    -webkit-transition-property: left;
+    transition-property: left;
+    left: 200px;
+}
+
+html[dir='rtl'] #outerContainer.sidebarOpen > #mainContainer {
+    -webkit-transition-property: right;
+    transition-property: right;
+    right: 200px;
+}
+
+#sidebarContent {
+    top: 32px;
+    bottom: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    width: 200px;
+    background-color: hsla(0, 0%, 0%, 0.1);
+}
+
+html[dir='ltr'] #sidebarContent {
+    left: 0;
+    box-shadow: inset -1px 0 0 hsla(0, 0%, 0%, 0.25);
+}
+
+html[dir='rtl'] #sidebarContent {
+    right: 0;
+    box-shadow: inset 1px 0 0 hsla(0, 0%, 0%, 0.25);
+}

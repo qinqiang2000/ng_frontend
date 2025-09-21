@@ -1,0 +1,22 @@
+{
+  "name": "@piaozone.com/print-snapshot",
+  "version": "1.0.8",
+  "description": "piaozone.com print-snapshot only image-system",
+  "main": "./src/index.jsx",
+  "dependencies": {
+    "react": "^16.6.0"
+  },
+  "devDependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "scripts": {
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "prepublish": "npm run eslint"
+  },
+  "keywords": [
+    "print-snapshot"
+  ],
+  "author": "",
+  "license": "ISC"
+}

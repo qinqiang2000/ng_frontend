@@ -1,0 +1,64 @@
+{
+  "title": "Tax Rules Engine",
+  "searchPlaceholder": "Search tax rules...",
+  "addRule": "Add New Tax Rule",
+  "categories": {
+    "vatRules": "VAT Rules",
+    "corpTaxRules": "Corporate Tax Rules",
+    "personalTaxRules": "Personal Tax Rules",
+    "tariffRules": "Tariff Rules",
+    "withholdingTaxRules": "Withholding Tax Rules"
+  },
+  "ruleDetails": {
+    "ruleId": "Rule ID",
+    "ruleName": "Rule Name",
+    "description": "Description", 
+    "status": "Status",
+    "type": "Type",
+    "jurisdiction": "Tax Jurisdiction",
+    "effectiveDate": "Effective Date",
+    "expiryDate": "Expiry Date",
+    "priority": "Priority Level"
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "draft": "Draft",
+    "pending": "Pending Review",
+    "deprecated": "Deprecated"
+  },
+  "types": {
+    "validation": "Validation Rule",
+    "calculation": "Calculation Rule",
+    "determination": "Tax Determination",
+    "exemption": "Tax Exemption",
+    "rate": "Tax Rate Rule"
+  },
+  "actions": {
+    "edit": "Edit Rule",
+    "duplicate": "Duplicate Rule",
+    "delete": "Delete Rule",
+    "activate": "Activate Rule",
+    "deactivate": "Deactivate Rule",
+    "test": "Test Rule",
+    "export": "Export Rule",
+    "viewHistory": "View Change History"
+  },
+  "toolbar": {
+    "filterByStatus": "Filter by Status",
+    "filterByJurisdiction": "Filter by Jurisdiction",
+    "sortBy": "Sort by",
+    "viewMode": "View Mode",
+    "bulkActions": "Bulk Actions"
+  },
+  "ruleEditor": {
+    "title": "Tax Rule Editor",
+    "conditions": "Rule Conditions",
+    "actions": "Rule Actions",
+    "expression": "JEXL Expression",
+    "testData": "Test Data",
+    "validateRule": "Validate Rule",
+    "saveRule": "Save Rule",
+    "publishRule": "Publish Rule"
+  }
+}

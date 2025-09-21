@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index-demo</title>
+</head>
+
+<body>
+    <div style="display:inline-block;" class="outTipsText">
+            <img
+                class="tipIcon"
+                src="https://feature.kingdee.com:1026/devscm/icons/pc/state/remind_28_28.png"
+            />
+            <div class="tipsText" style="display: none">
+                悬浮提示内容
+            </div>
+        </div>
+    <div style="display:inline-block;width:28px;height:28px" class="outTipsText">
+            <img
+                class="tipIcon"
+                src="https://feature.kingdee.com:1026/devscm/icons/pc/state/remind_28_28.png"
+            />
+        <div class="tipsText" style="display: none">
+            <div class="content" id="tipTxt0" style="max-height: 300px; overflow: auto;">
+                <div class="subTitle"> <img src="./kingdee/imc/datagrid/icons/waring_icon.png" width="16px" height="16px">
+                    轻度提醒：</div>
+                <div style="margin-left: 20px; margin-bottom: 6px;">
+                    <p style="margin-left: 3px;">发票抬头: <span>金蝶软件(中国)有限公司</span></p>
+                    <p style="margin-left: 3px;">企业名称: <span>深圳金蝶账无忧网络科技有限公司</span><span
+                            style="color: rgb(255, 0, 0); font-weight: bold; margin-left: 10px;">不一致</span></p>
+                </div>
+                <div style="margin-left: 20px; margin-bottom: 6px;">
+                    <p style="margin-left: 3px;"><span>跨年报销</span></p>
+                </div>
+                <div style="margin-left: 20px; margin-bottom: 6px;">
+                    <p style="margin-left: 3px;"><span>上述test上述test上述test上述test上述test上述test上述test上述test上述</span></p>
+                </div>
+                <div style="margin-left: 20px; margin-bottom: 6px;">
+                    <p style="margin-left: 3px;"><span>超过企业设置的报销期限</span></p>
+                </div>
+                <div style="margin-left: 20px; margin-bottom: 6px;">
+                    <p style="margin-left: 3px;">发票税号: <span>914403006188392540</span></p>
+                    <p style="margin-left: 3px;">企业税号: <span>91440300358768292H</span><span
+                            style="color: rgb(255, 0, 0); font-weight: bold; margin-left: 10px;">不一致</span></p>
+                </div>
+                <div style="margin-left: 20px; margin-bottom: 6px;">
+                    <p style="margin-left: 3px;"><span>包含敏感词"[123213, 的, 商, 服, 务, 啊士大夫看见回家路上扩大飞机离开洒家了, 十三点范德萨打发手动阀撒旦,
+                            啊手动阀手动阀撒飞洒地方, 阿斯顿发射点范德萨发士大夫撒旦, 撒旦飞洒地方萨芬士大夫十大, 车, *]"</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://imgdev-master.piaozone.com/static/gallery/jquery.min-normal.js"></script>
+    <script src="../dist/pwyToolTip.min.js"></script>
+    <script>
+        pwyToolTip({
+            selector: '.outTipsText',
+            tipOuterCls: 'outerPwyTip',
+            tipsCls: 'tipsText'
+        });
+    </script>
+</body>
+
+</html>

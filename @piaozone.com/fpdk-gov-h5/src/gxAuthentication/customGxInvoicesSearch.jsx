@@ -1,0 +1,248 @@
+import React from 'react';
+import { Input, Button, Radio, DatePicker, Tag } from 'antd';
+import moment from 'moment';
+import PropTypes from 'prop-types';
+import './less/invoicesSearch.less';
+const { CheckableTag } = Tag;
+const { RangePicker } = DatePicker;
+var entryDate = [{ checked: false, value: 'all', text: '全部' }];
+var data = new Date();
+data.setMonth(data.getMonth() + 1, 1); //获取到当前月份,设置月份
+for (var i = 0; i < 12; i++) {
+    data.setMonth(data.getMonth() - 1); //每次循环一次 月份值减1
+    var m = data.getMonth() + 1;
+    m = m < 10 ? '0' + m : m + '';
+    entryDate.push({ checked: false, value: data.getFullYear() + m, text: data.getFullYear() + '/' + m });
+}
+class GxInvoicesSearch extends React.Component {
+    constructor(props) {
+        super(...arguments);
+        this.state = {
+            gxzt: '0',
+            fpzt: '0',
+            customDeclarationNo: '',
+            deptName: '',
+            declareNo: '',
+            collectUser: '',
+            //isEntryVoucher: '1', // 0未入凭证、1入凭证
+            accountDate: null,
+            fplx: '21',
+            allChecked: true,
+            rangeDate: [moment().startOf('month'), moment()],
+            collectorTime: [moment().startOf('month'), moment()]
+        };
+    }
+
+    handleChangeTag = (i) => {
+        if (i == '0') {
+            const { allChecked } = this.state;
+            if (!allChecked) {
+                entryDate.forEach((item, j) => {
+                    item.checked = true;
+                });
+            } else {
+                entryDate.forEach((item, j) => {
+                    item.checked = false;
+                });
+            }
+        } else {
+            entryDate.forEach((item, j) => {
+                if (i == j) {
+                    item.checked = !item.checked;
+                }
+            });
+        }
+        let all = true;
+        const accountDateArr = [];
+        for (var j = 0; j < entryDate.length; j++) {
+            if (entryDate[j].checked) {
+                accountDateArr.push(entryDate[j].value);
+            }
+            if (!entryDate[j].checked && j > 0) {
+                all = false;
+            }
+        }
+        if (!all) {
+            entryDate[0].checked = false;
+        } else {
+            entryDate[0].checked = true;
+        }
+        this.props.changeOpt('accountDate', accountDateArr.join(','));
+        this.setState({
+            accountDate: accountDateArr.join(''),
+            allChecked: all
+        });
+    }
+
+    render() {
+        const {
+            customDeclarationNo,
+            deptName,
+            declareNo,
+            // fplx,
+            rangeDate,
+            fpzt,
+            gxzt,
+            collectorTime,
+            collectUser
+            //isEntryVoucher,
+            // preSelector
+        } = this.props.searchOpt;
+        const { skssq = '', clientType } = this.props || {};
+        const ssq = skssq.substr(0, 6);
+        const deadLineDate = skssq.substr(7, 8);
+        const minDate = moment('2017-01-01', 'YYYY-MM-DD');
+        const maxDate = moment();
+        const changeOpt = this.props.changeOpt;
+        return (
+            <div className='gxInvoicesSearch'>
+                <div className='tip'>
+                    <div style={{ display: 'inline-block' }}>
+                        <span>当前税控所属期：<span className='ssq'>{skssq ? moment(ssq, 'YYYYMM').format('YYYY年MM月') : '--'}</span></span>
+                        <span className='gray'>(当前可进行勾选操作的截止日期为：{skssq ? moment(deadLineDate, 'YYYYMMDD').format('YYYY年MM月DD日') : '--'})</span>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='inputItem'>
+                        <label>缴款书号码：</label>
+                        <Input
+                            style={{ width: 228 }}
+                            value={customDeclarationNo}
+                            onChange={(e) => changeOpt('customDeclarationNo', e.target.value.trim())}
+                            maxLength={60}
+                        />
+                    </div>
+                    <div className='inputItem'>
+                        <label style={{ width: 100 }}>缴款单位名称：</label>
+                        <Input
+                            style={{ width: 228 }}
+                            value={deptName}
+                            onChange={(e) => changeOpt('deptName', e.target.value.trim())}
+                        />
+                    </div>
+
+                    <Button type='primary' onClick={this.props.onSearch} style={{ margin: '0 15px 0 25px' }}>查询发票</Button>
+                    <Button onClick={this.props.onReset}>重置条件</Button>
+                </div>
+
+                <div className='row'>
+                    <div className='inputItem'>
+                        <label>报关单编号：</label>
+                        <Input
+                            style={{ width: 228 }}
+                            value={declareNo}
+                            onChange={(e) => changeOpt('declareNo', e.target.value.trim())}
+                        />
+                    </div>
+                    <div className='inputItem'>
+                        <label style={{ width: 100 }}>{gxzt === '0' ? '填发日期：' : '勾选日期：'}</label>
+                        <RangePicker
+                            allowClear={false}
+                            value={rangeDate}
+                            format='YYYY-MM-DD'
+                            onChange={(d) => changeOpt('rangeDate', d)}
+                            disabledDate={(c) => {
+                                return c.format('X') < minDate.format('X') || c.format('X') > maxDate.format('X');
+                            }}
+                        />
+                    </div>
+                </div>
+                <div className='row fplxRow'>
+                    <div className='inputItem' style={{ display: clientType === 1 ? 'inline-block' : 'none' }}>
+                        <label>采集人：</label>
+                        <Input
+                            value={collectUser}
+                            onChange={(e) => changeOpt('collectUser', e.target.value.trim())}
+                            style={{ width: 228 }}
+                            placeholder='输入手机号'
+                        />
+                    </div>
+                    <div className='inputItem'>
+                        <label style={{ width: 100 }}>采集日期：</label>
+                        <RangePicker
+                            allowClear={false}
+                            value={collectorTime}
+                            format='YYYY-MM-DD'
+                            onChange={(d) => changeOpt('collectorTime', d)}
+                            disabledDate={(c) => {
+                                return c > moment();
+                            }}
+                        />
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='inputItem'>
+                        <label>勾选状态：</label>
+                        <Radio.Group onChange={(e) => changeOpt('gxzt', e.target.value)} value={gxzt}>
+                            <Radio value='0'>未勾选</Radio>
+                            {/* {
+                                clientType === 1 ? (
+                                    <Radio value='5'>预勾选</Radio>
+                                ) : null
+                            } */}
+                            <Radio value='1'>已勾选</Radio>
+                        </Radio.Group>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='inputItem'>
+                        <label>发票状态：</label>
+                        <Radio.Group onChange={(e) => changeOpt('fpzt', e.target.value)} value={fpzt}>
+                            <Radio value='-1'>全部</Radio>
+                            <Radio value='0'>正常</Radio>
+                            <Radio value='1'>失控</Radio>
+                            <Radio value='2'>作废</Radio>
+                            <Radio value='3'>红冲</Radio>
+                            <Radio value='4'>异常</Radio>
+                        </Radio.Group>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='inputItem'>
+                        <label>入账属期：</label>
+                        <div className='tags' style={{ display: 'inline-block' }}>
+                            {
+                                entryDate.length > 0 ? (
+                                    <div className='region'>
+                                        {
+                                            entryDate.map((item, i) => {
+                                                if (i < 13) {
+                                                    return (
+                                                        <CheckableTag
+                                                            key={i}
+                                                            checked={item.checked}
+                                                            className={item.checked ? 'invoicesTag checked' : 'invoicesTag'}
+                                                            onChange={(e) => this.handleChangeTag(i)}
+                                                            style={{ backgroundColor: 'none' }}
+                                                        >
+                                                            {item.text}
+                                                        </CheckableTag>
+                                                    );
+                                                }
+                                            })
+                                        }
+                                        {/* <label
+                                            className='more'
+                                            onClick={() => { this.setState({ moreEntryDate: !moreEntryDate }); }}
+                                        >
+                                            {moreEntryDate ? '收起' : '更多'}
+                                        </label> */}
+                                    </div>
+                                ) : null
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
+
+GxInvoicesSearch.propTypes = {
+    searchOpt: PropTypes.object,
+    onSearch: PropTypes.func.isRequired,
+    changeOpt: PropTypes.func,
+    onReset: PropTypes.func
+};
+
+export default GxInvoicesSearch;

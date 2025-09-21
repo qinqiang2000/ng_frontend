@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        (function (w, d, e, x) {
+            w[e] = function () {
+                w.cbk = w.cbk || [];
+                w.cbk.push(arguments);
+            };
+            x = d.createElement('script');
+            x.async = true;
+            x.id = 'zhichiScript';
+            x.src = 'https://piaozone.soboten.com/chat/frame/v6/entrance.js?sysnum=1617b04db7e945d28a0fca2944f5409b';
+            d.body.appendChild(x);
+        })(window, document, 'zc');
+        zc('config',{
+            channelid: 6
+        })
+    </script>
+</body>
+</html>

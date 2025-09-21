@@ -1,0 +1,84 @@
+.outTurnPage{
+    text-align:center;
+    margin-top: 15px;
+}
+
+.outTurnPage .turnPage{
+    display:inline-block;    
+}
+
+.turnPage{
+    font-size: 12px;
+}
+
+.turnPage .pageItems{
+    display: inline-block;
+    vertical-align: middle;
+}
+.turnPage .preIcon{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: url(img/arrow_left.png) no-repeat center center;
+    vertical-align: middle;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.turnPage .nextIcon{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: url(img/arrow_right.png) no-repeat center center;
+    vertical-align: middle;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    cursor:pointer;
+}
+
+.turnPage .pageItem {
+    color: #999999;
+    margin-right: 10px;
+    min-width: 25px;
+    text-align: center;
+    display:inline-block;
+    line-height: 25px;
+    height: 25px;    
+    vertical-align: middle;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+}
+
+.turnPage .pageItem:hover, 
+.turnPage .pageItem.active{
+    border-color:#3598FF;
+    background: #3598FF;
+    color:#fff;
+    border-radius: 2px;
+}
+
+.turnPage .inputPage{
+    margin-left: 30px;
+    color:#999;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.turnPage .inputPage input{
+    margin-left: 10px;
+    margin-right:3px;
+    color:#999;
+    width: 34px;
+    padding: 4px 0;
+    text-align:center;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+}
+
+.turnPage .inputPage input:focus{
+    border-color:#3598FF;
+}

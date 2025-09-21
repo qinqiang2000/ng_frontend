@@ -1,0 +1,133 @@
+[
+	{
+		"title": "01,01,1100182130,62582180,2020.75,20181128",
+		"itemType": "coverNo",
+        "id": "test0555",
+        "fileType": "",
+		"statusDes": "你是猪吗",
+		"fullStatusDes": "你就是猪就是猪就是猪",
+		"status": 11,
+        "billStatus": 4,
+		"children": [
+			{
+				"title": "封面",
+				"itemType": "title",
+				"id": "11112",
+				"fileType": "",
+				"children": [
+					{
+						"title": "01,01,1100182130,62582180,2020.75,20181128",
+						"imgUrl": "https://api-dev.piaozone.com/test/base/download/files/tenant-files/5368721074/2a89f80507be51753d192dc8716825a5e61c9f8db374ddafbcb56ae8b66af2b7rnucg.jpg",
+						"compressUrl": "https://api-dev.piaozone.com/test/base/download/files/tenant-files/5368721074/2a89f80507be51753d192dc8716825a5e61c9f8db374ddafbcb56ae8b66af2b7rnucg.jpg",
+						"status": 1,
+						"id": "111",
+						"extName": "jpg",
+						"itemType": "file",
+						"fileType": "cover",
+						"labelNum": 0,
+						"angle": 0
+					}
+				]
+			},
+			{
+				"title": "发票",
+				"itemType": "title",
+				"id": "11113",
+				"fileType": "",
+				"children": [
+					{
+						"title": "影像1",
+						"imgUrl": "https://api-sit.piaozone.com/test/base/download/files/tenant-files/5368720902/x8ppbbto68.jpg",
+						"compressUrl": "https://api-sit.piaozone.com/test/base/download/files/tenant-files/5368720902/x8ppbbto68.jpg",
+						"status": 4,
+						"id": "444",
+						"isMatch": "匹配成功",
+						"angle": 270,
+						"itemType": "file",
+						"fileType": "invoice",
+						"labelNum": 4,
+						"extName": "jpg"
+					},
+					{
+						"title": "影像2",
+						"status": 2,
+						"id": "222",
+						"isMatch": "匹配成功",
+						"itemType": "file",
+						"extName": "pdf",
+						"displayFlag": "showOther",
+                        "fileType": "invoice",
+                        "iconList": ["https://feature.kingdee.com:1026/devscm/icons/pc/label/fpy_hwfp.png?v=1.0",
+                        "https://feature.kingdee.com:1026/devscm/icons/pc/label/fpy_dzfp.png?v=1.0",
+                        "https://feature.kingdee.com:1026/devscm/icons/pc/label/fpy_qd.png?v=1.0",
+                        "https://feature.kingdee.com:1026/devscm/icons/pc/label/fpy_qtp.png?v=1.0",
+                        "https://feature.kingdee.com:1026/devscm/icons/pc/label/fpy_qd.png?v=1.0",
+                        "https://feature.kingdee.com:1026/devscm/icons/pc/label/fpy_zhipiao.png?v=1.0"],
+						"docUrl": "https://api.piaozone.com/base/download/pdf/invoice-pdf-storage-pro/SYNC/5368709152/2021-12-27/02e1150c495e865609fa115c357369af736bf4f3f09aeea35d76d78a74b39e6c.pdf",
+						"children" : [
+							{
+								"title": "影像子文件1",
+								"imgUrl": "https://api-sit.piaozone.com/test/base/download/files/tenant-files/5368720902/x8ppbbto68.jpg",
+								"compressUrl": "https://api-sit.piaozone.com/test/base/download/files/tenant-files/5368720902/x8ppbbto68.jpg",
+								"status": 4,
+								"id": "2223",
+								"isMatch": "匹配成功",
+								"angle": 270,
+								"itemType": "file",
+								"fileType": "invoice",
+								"labelNum": 0,
+								"extName": "jpg"
+							},
+							{
+								"title": "影像子文件2",
+								"imgUrl": "https://api-sit.piaozone.com/test/base/download/files/tenant-files/5368720902/x8ppbbto68.jpg",
+								"compressUrl": "https://api-sit.piaozone.com/test/base/download/files/tenant-files/5368720902/x8ppbbto68.jpg",
+								"status": 4,
+								"id": "2224",
+								"isMatch": "匹配成功",
+								"angle": 270,
+								"itemType": "file",
+								"fileType": "invoice",
+								"labelNum": 3,
+								"extName": "jpg"
+							}
+						]
+					},
+					{
+						"title": "影像3",
+						"imgUrl": "https://api-dev.piaozone.com/test/base/download/pdf/invoice-pdf-snapshot-storage/SYNC/5368721074/20201214123456789/2022-11-18/20221118151052712dw43_1.png",
+						"compressUrl": "https://api-dev.piaozone.com/test/base/download/pdf/invoice-pdf-snapshot-storage/SYNC/5368721074/20201214123456789/2022-11-18/20221118151052712dw43_1.png",
+						"status": 5,
+						"isMatch": "未匹配",
+						"itemType": "file",
+                        "fileType": "invoice",
+						"id": "555",
+						"labelNum": 4,
+						"extName": "jpg"
+					}
+				]
+			},
+			{
+				"title": "附件",
+				"itemType": "title",
+				"id": "11115",
+				"fileType": "",
+				"children": [
+					{
+						"title": "影像4",
+						"status": 21,
+						"id": "333",
+						"itemType": "file",
+						"isMatch": "未匹配",
+            			"fileType": "attach",
+						"extName": "xls",
+						"displayFlag": "showOther",
+						"labelNum": null,
+						"docUrl": "https://api.piaozone.com/base/download/pdf/invoice-pdf-storage-pro/SYNC/5368709152/2021-12-27/02e1150c495e865609fa115c357369af736bf4f3f09aeea35d76d78a74b39e6c.pdf",
+                        "attachTypeName": "其他附件"
+                    }
+				]
+			}
+		]
+	}
+]

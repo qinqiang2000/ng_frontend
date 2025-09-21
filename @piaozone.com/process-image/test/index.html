@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件转换测试</title>
+</head>
+<body>
+    <input type="file" id="fileId" />
+    <br />
+    <img src="" id="img" />
+    <script src="https://imgdev-master.piaozone.com/static/gallery/pwyPolyfill.js"></script>
+    <script src="../dist/processImage.min.js"></script>
+    <script>
+        // 也可以通过require方式引入
+        // console.log(processImage);
+        document.getElementById('fileId').onchange = function(e) {
+            processImage.getImgTag(this.files[0]).then((res) => {
+                console.log(res);
+            });
+            // processImage.compressImgFile(this.files[0], { fileLimitQuality: 1, fileLimitSize: 3,  fileLimitPixel: 1500 }).then((res) => {
+            //     console.log(res);
+            // });
+            // processImage.normalize(this.files[0], { quality: 0.95, toType: 'base64', filename: this.files[0].name}).then((res) => {
+            //     console.log(res);
+            //     document.getElementById("img").src = res.data.base64;
+            // });
+        }
+    </script>
+</body>
+</html>

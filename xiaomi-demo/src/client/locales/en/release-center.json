@@ -1,0 +1,86 @@
+{
+  "title": "Release Center",
+  "subtitle": "Manage rule version releases and deployment lifecycle",
+  "tabs": {
+    "releases": "Releases",
+    "approvals": "Approvals", 
+    "rollbacks": "Rollbacks"
+  },
+  "statCards": {
+    "published": "Published",
+    "activeVersions": "Active Versions",
+    "testPassed": "TestPassed",
+    "draft": "Draft"
+  },
+  "ruleTypes": {
+    "all": "All Rule Types",
+    "invoiceEnrichmentEngine": "Invoice Enrichment Engine",
+    "invoiceValidationEngine": "Invoice Validation Engine"
+  },
+  "statusLabels": {
+    "allStatus": "All Status",
+    "draft": "Draft",
+    "testPassed": "TestPassed", 
+    "published": "Published",
+    "actived": "Actived",
+    "deactivate": "Deactivate",
+    "unknown": "Unknown"
+  },
+  "tableHeaders": {
+    "ruleCode": "Rule Code",
+    "ruleName": "Rule Name",
+    "ruleType": "Rule Type",
+    "version": "Version",
+    "status": "Status",
+    "invoiceType": "Invoice Type",
+    "subInvoiceType": "Sub Invoice Type",
+    "publishTime": "Publish Time",
+    "country": "Country",
+    "actions": "Actions"
+  },
+  "actions": {
+    "refresh": "Refresh",
+    "publish": "Publish",
+    "batchPublish": "Batch Publish",
+    "view": "View",
+    "edit": "Edit",
+    "rollback": "Rollback"
+  },
+  "search": {
+    "placeholder": "Search by rule name...",
+    "ruleTypeFilter": "Rule Type:",
+    "statusFilter": "Status:"
+  },
+  "chart": {
+    "title": "Monthly Rule Publication Trends",
+    "months": "Months",
+    "publications": "Publications",
+    "invoiceEnrichmentEngine": "Invoice Enrichment Engine",
+    "invoiceValidationEngine": "Invoice Validation Engine"
+  },
+  "messages": {
+    "loading": "Loading...",
+    "noData": "No data available",
+    "loadingReleases": "Loading release records...",
+    "noReleases": "No release records found",
+    "loadError": "Failed to load release records",
+    "dataLoadingFailed": "Data Loading Failed",
+    "statisticsLoadingFailed": "Statistics Loading Failed",
+    "selectionRequired": "Selection Required",
+    "pleaseSelectRecords": "Please select records to publish",
+    "publishSuccessful": "Publish Successful",
+    "publishFailed": "Publish Failed",
+    "requestFailed": "Request failed",
+    "unknownApiError": "Unknown API error",
+    "apiRequestFailed": "API request failed",
+    "noValidRuleCodes": "No valid rule codes found for selected records",
+    "publishRequestFailed": "Publish request failed",
+    "unexpectedError": "An unexpected error occurred during publishing"
+  },
+  "general": "General",
+  "publishModal": {
+    "batchPublishRules": "Batch Publish Rules",
+    "publishRule": "Publish Rule"
+  },
+  "comingSoon": "Coming Soon"
+}

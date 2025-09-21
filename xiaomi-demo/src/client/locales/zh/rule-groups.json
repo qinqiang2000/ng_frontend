@@ -1,0 +1,53 @@
+{
+  "title": "规则组",
+  "subtitle": "管理规则组和执行顺序",
+  "searchGroups": "搜索规则组",
+  "searchGroupsPlaceholder": "搜索规则组名称...",
+  "searchRulesPlaceholder": "搜索可用规则...",
+  "loading": "正在加载规则组...",
+  "loadingRules": "正在加载可用规则...",
+  "loadingOrder": "正在加载执行顺序...",
+  "noGroups": "未找到规则组",
+  "noRules": "未找到可用规则",
+  "noExecutionOrder": "执行顺序中没有规则",
+  "addRulesHint": "从可用规则库中添加规则",
+  "save": "保存",
+  "cancel": "取消",
+  "addGroup": "新增规则组",
+  "addNewGroup": "新增规则组",
+  "groupName": "规则组名称",
+  "groupNamePlaceholder": "输入规则组名称",
+  "description": "描述",
+  "descriptionPlaceholder": "输入规则组描述",
+  "priority": "优先级",
+  "availableRulesLibrary": "可用规则库",
+  "currentRuleGroup": "当前规则组",
+  "ruleExecutionOrder": "规则执行顺序",
+  "organizationAssignment": "组织分配",
+  "assignedToOrgs": "已分配给 {{count}} 个组织",
+  "ruleTypes": {
+    "validation": "验证规则",
+    "completion": "信息补全规则"
+  },
+  "status": {
+    "draft": "草稿",
+    "testPassed": "测试通过",
+    "published": "已发布",
+    "activated": "已激活",
+    "unknown": "未知"
+  },
+  "messages": {
+    "loadFailed": "加载失败",
+    "loadRulesFailed": "加载可用规则失败",
+    "loadGroupRulesFailed": "加载规则组规则失败",
+    "createFailed": "创建规则组失败",
+    "saveFailed": "保存失败",
+    "groupNameRequired": "规则组名称为必填项",
+    "groupCreated": "规则组创建成功",
+    "groupCreatedSuccess": "规则组\"{{name}}\"创建成功",
+    "failedToLoadGroups": "加载规则组失败",
+    "failedToLoadRules": "加载可用规则失败",
+    "failedToLoadGroupRules": "加载规则组中的规则失败",
+    "unknownError": "未知错误"
+  }
+}

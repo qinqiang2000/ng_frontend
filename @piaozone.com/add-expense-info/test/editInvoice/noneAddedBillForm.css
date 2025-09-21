@@ -1,0 +1,126 @@
+.noneAddedBillForm {
+    padding: 0 10px;
+}
+
+.noneAddedBillForm .clearfix {
+    margin-bottom: 0.7%;
+    font-family: Arial, 'Microsoft YaHei';
+}
+
+
+.noneAddedBillForm input[disabled] {
+    color: #888;
+}
+
+.noneAddedBillForm .outImg {
+    height: 450px;
+    text-align: center;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.noneAddedBillForm .outImg img {
+    max-height: 412px;
+    max-width: 100%;
+}
+
+
+.noneAddedBillForm .inputItems {
+    padding-top: 10px;
+}
+
+.noneAddedBillForm .inputItem {
+    width: 33%;
+    padding-left: 70px;
+    margin-left: 0;
+    border-left: 15px solid transparent;
+    font-size: 12px;
+}
+
+.noneAddedBillForm .inputItem .inputPicker,
+.noneAddedBillForm .inputItem input {
+    font-size: 12px;
+    height: 30px;
+    width: 100%;
+}
+
+.noneAddedBillForm .inputItem.paddLeft110 {
+    padding-left: 110px;
+}
+
+.noneAddedBillForm .inputItem.paddLeft90 {
+    padding-left: 90px;
+}
+
+.noneAddedBillForm .inputItem label {
+    text-align: left;
+    display: inline-block;
+    font-family: 'microsoft yahei';
+    position: absolute;
+    margin-left: -70px;
+    margin-top: 5px;
+}
+
+.noneAddedBillForm .inputItem label.require::before {
+    content: '*';
+    display: inline-block;
+    color: #f00;
+    position: absolute;
+    margin-left: -7px;
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+
+.noneAddedBillForm .inputItem.paddLeft110 label {
+    margin-left: -110px;
+}
+
+.noneAddedBillForm .inputItem.paddLeft90 label {
+    margin-left: -90px;
+}
+
+.noneAddedBillForm .inputItem label .require {
+    color: #f00;
+    vertical-align: middle;
+    margin-right: 1px;
+    font-weight: bold;
+}
+
+.noneAddedBillForm .inputItem.twoCols .colItem {
+    width: 50%;
+    display: inline-block;
+}
+
+.noneAddedBillForm .inputItem.twoCols .colItem.colItem1 {
+    padding-right: 10px;
+}
+
+.noneAddedBillForm .inputItem.twoCols .colItem input {
+    width: 100%;
+}
+
+.noneAddedBillForm .twoCols .joinCut {
+    position: absolute;
+    margin-left: -8px;
+    margin-top: 5px;
+}
+
+.noneAddedBillForm .tip {
+    color: #f93;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+
+.noneAddedBillForm .ant-time-picker {
+    width: auto;
+}
+
+.ant-select .ant-select-selection,
+.inputPicker .ant-input {
+    border-color: #aaa;
+}

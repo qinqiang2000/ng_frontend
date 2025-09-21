@@ -1,0 +1,45 @@
+{
+  "name": "@piaozone.com/image-collect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.jsx",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "dev": "pwy-webpack --dev --config=./buildConfig.js",
+    "build": "pwy-webpack --build --config=./buildConfig.js --progress",
+    "build-lib": "pwy-webpack --build --type=lib --config=./buildConfig-lib.js --progress",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "stylelint": "pwy-stylelint src/**/*.less src/**/*.css",
+    "stylelint-fix": "pwy-stylelint src/**/*.less src/**/*.css --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "maintainers": [
+    "fanlei"
+  ],
+  "keywords": [],
+  "author": "fanlei",
+  "license": "ISC",
+  "dependencies": {
+    "@piaozone.com/scan-image": "^1.0.26",
+    "@piaozone.com/view-pdf": "^1.1.14",
+    "antd": "^3.26.6",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1"
+  },
+  "files": [
+    "src",
+    "test",
+    "index.js",
+    "index.html",
+    "buildConfig.js",
+    "package-lock.json",
+    "readme.md"
+  ],
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.6",
+    "moment-locales-webpack-plugin": "^1.2.0",
+    "react-dom": "^16.13.1",
+    "webpack-bundle-analyzer": "^4.9.0"
+  }
+}

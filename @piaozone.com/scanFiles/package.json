@@ -1,0 +1,20 @@
+{
+  "name": "@piaozone.com/scanFiles",
+  "version": "1.0.74",
+  "description": "piaozone.com scanFiles for web",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.6.0",
+    "@piaozone.com/utils": "^1.0.67",
+    "moment": "^2.24.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scanFiles"
+  ],
+  "author": "Sunny.HB.Bi",
+  "license": "ISC",
+  "maintainers": ["hongbo_bi", "lucy_wang"]
+}

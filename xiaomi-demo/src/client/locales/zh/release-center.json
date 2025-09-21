@@ -1,0 +1,86 @@
+{
+  "title": "发布中心",
+  "subtitle": "管理规则版本发布和部署生命周期",
+  "tabs": {
+    "releases": "发布管理",
+    "approvals": "审批管理", 
+    "rollbacks": "回滚管理"
+  },
+  "statCards": {
+    "published": "已发布",
+    "activeVersions": "活跃版本",
+    "testPassed": "测试通过",
+    "draft": "草稿"
+  },
+  "ruleTypes": {
+    "all": "所有规则类型",
+    "invoiceEnrichmentEngine": "发票补全引擎",
+    "invoiceValidationEngine": "发票验证引擎"
+  },
+  "statusLabels": {
+    "allStatus": "所有状态",
+    "draft": "草稿",
+    "testPassed": "测试通过", 
+    "published": "已发布",
+    "actived": "已激活",
+    "deactivate": "已停用",
+    "unknown": "未知"
+  },
+  "tableHeaders": {
+    "ruleCode": "规则代码",
+    "ruleName": "规则名称",
+    "ruleType": "规则类型",
+    "version": "版本",
+    "status": "状态",
+    "invoiceType": "发票类型",
+    "subInvoiceType": "子发票类型",
+    "publishTime": "发布时间",
+    "country": "国家/地区",
+    "actions": "操作"
+  },
+  "actions": {
+    "refresh": "刷新",
+    "publish": "发布",
+    "batchPublish": "批量发布",
+    "view": "查看",
+    "edit": "编辑",
+    "rollback": "回滚"
+  },
+  "search": {
+    "placeholder": "按规则名称搜索...",
+    "ruleTypeFilter": "规则类型：",
+    "statusFilter": "状态："
+  },
+  "chart": {
+    "title": "每月规则发布趋势",
+    "months": "月份",
+    "publications": "发布数量",
+    "invoiceEnrichmentEngine": "发票补全引擎",
+    "invoiceValidationEngine": "发票验证引擎"
+  },
+  "messages": {
+    "loading": "加载中...",
+    "noData": "暂无数据",
+    "loadingReleases": "正在加载发布记录...",
+    "noReleases": "未找到发布记录",
+    "loadError": "加载发布记录失败",
+    "dataLoadingFailed": "数据加载失败",
+    "statisticsLoadingFailed": "统计数据加载失败",
+    "selectionRequired": "需要选择记录",
+    "pleaseSelectRecords": "请选择要发布的记录",
+    "publishSuccessful": "发布成功",
+    "publishFailed": "发布失败",
+    "requestFailed": "请求失败",
+    "unknownApiError": "未知API错误",
+    "apiRequestFailed": "API请求失败",
+    "noValidRuleCodes": "未找到所选记录的有效规则代码",
+    "publishRequestFailed": "发布请求失败",
+    "unexpectedError": "发布过程中发生意外错误"
+  },
+  "general": "通用",
+  "publishModal": {
+    "batchPublishRules": "批量发布规则",
+    "publishRule": "发布规则"
+  },
+  "comingSoon": "即将推出"
+}

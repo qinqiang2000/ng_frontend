@@ -1,0 +1,118 @@
+{
+  "pageTitle": "审计请求管理",
+  "pageSubtitle": "查看和管理所有审计请求处理状态",
+  "detailTitle": "审计请求验证详情",
+  "stats": {
+    "pending": "待处理",
+    "inProgress": "进行中",
+    "approved": "已批准", 
+    "rejected": "已拒绝"
+  },
+  "buttons": {
+    "refreshStats": "刷新统计",
+    "exportReport": "导出报告",
+    "submitForAudit": "提交审核",
+    "submitting": "提交中...",
+    "refreshList": "刷新列表",
+    "retry": "重试"
+  },
+  "filters": {
+    "searchPlaceholder": "按账单编号搜索"
+  },
+  "statusOptions": {
+    "allStatus": "全部状态",
+    "pending": "1-待处理",
+    "inProgress": "2-进行中",
+    "approved": "3-已批准",
+    "rejected": "4-已拒绝"
+  },
+  "timeOptions": {
+    "today": "今天",
+    "week": "本周",
+    "month": "本月",
+    "quarter": "本季度"
+  },
+  "table": {
+    "title": "审计请求列表",
+    "headers": {
+      "requestId": "请求ID",
+      "companyName": "公司名称",
+      "country": "国家",
+      "billNo": "账单编号",
+      "billName": "账单名称",
+      "ruleGroups": "规则组",
+      "status": "状态",
+      "auditTime": "审核时间",
+      "actions": "操作"
+    }
+  },
+  "messages": {
+    "loading": "正在加载审计请求...",
+    "noData": "未找到审计请求",
+    "successSubmit": "成功提交 {{count}} 个账单进行审核！",
+    "failedSubmit": "成功提交 {{successCount}} 个账单。{{failedCount}} 个失败：{{failedInfo}}",
+    "submitError": "提交账单审核失败"
+  },
+  "tooltips": {
+    "submitForAudit": "提交审核",
+    "ruleGroupDetails": "点击查看规则组详情：{{codes}}"
+  },
+  "components": {
+    "fileDependencies": {
+      "title": "文件依赖",
+      "uploadText": "拖拽文件到此处或点击上传",
+      "dropToUpload": "放开文件以上传",
+      "supportedFormats": "支持PDF、Word、Excel、图片格式",
+      "uploading": "上传中...",
+      "chooseFile": "选择文件"
+    },
+    "informationAnalysis": {
+      "title": "信息分析",
+      "subtitle": "合规审查和证据分析",
+      "refreshData": "刷新数据",
+      "selectedField": "选中字段",
+      "fieldId": "字段ID：{{fieldId}}",
+      "relatedFields": "相关字段和证据链已高亮",
+      "expenseAuditChecklist": "费用审核清单",
+      "loading": "加载中...",
+      "loadingFailed": "加载失败：{{error}}",
+      "noAuditRecords": "无审核规则记录",
+      "quickActions": "快速操作",
+      "resubmitAudit": "重新提交审核",
+      "submitting": "提交中...",
+      "exportReport": "导出报告",
+      "generateReview": "生成审查",
+      "markAsReviewed": "标记为已审查",
+      "evidenceAnalysisDetails": "证据分析详情",
+      "relationshipType": "关系类型",
+      "amountMatchingVerification": "金额匹配验证",
+      "confidenceLevel": "置信度",
+      "evidenceStrength": "证据强度",
+      "strongEvidenceChain": "强证据链"
+    },
+    "canvas": {
+      "loadingBillFiles": "正在加载账单文件...",
+      "failedToLoadFiles": "文件加载失败",
+      "retry": "重试",
+      "noFilesFound": "未找到文件",
+      "noFilesForId": "未找到ID为 {{billId}} 的账单文件",
+      "highlightedRelatedFields": "相关字段和证据链已高亮",
+      "filePreview": "文件预览",
+      "noFilePathAvailable": "无可用文件路径进行预览",
+      "confirmDelete": "您确定要删除这个{{type}}吗？\n\n文件：{{title}}\n\n此操作无法撤销。",
+      "deleteSuccessful": "删除成功",
+      "fileDeletedSuccessfully": "文件删除成功",
+      "deleteFailed": "删除失败",
+      "onlyAttachmentCanDelete": "只能删除附件和发票节点",
+      "invalidFileId": "无效的文件ID",
+      "invalidFileIdFormat": "无效的文件ID格式",
+      "uploadFailed": "上传失败",
+      "invalidBillId": "无效的账单ID",
+      "uploadSuccessful": "上传成功",
+      "successfullyUploaded": "成功上传 {{count}} 个文件",
+      "partialUploadSuccess": "部分上传成功",
+      "uploadPartialResult": "成功：{{successCount}}，失败：{{failedCount}}\n失败文件：{{failedFiles}}",
+      "unknownError": "未知错误"
+    }
+  }
+}

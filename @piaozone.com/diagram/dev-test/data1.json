@@ -1,0 +1,35 @@
+{
+    "vertexList": [
+        {
+            "vid": "a9702c37e5d28fa6dfa9398c5be2c4cc",
+            "number": "CLFBX20190225000418",
+            "fileFd": "d49cf13d649efa043020f607cbb84b9f",
+            "createTime": 1673338463000,
+            "appGroup": "1:985:2023-01",
+            "type": "差旅报销单",
+            "user": "archive",
+            "check": 1,
+            "shortTypeName": "发"
+        },
+        {
+            "vid": "147a569677787edfbd11e5beadbb695a",
+            "number": "2023-01记478记",
+            "fileFd": "db0e487ab8425ef7ea4da36d266e9a7b",
+            "createTime": 1673338489000,
+            "appGroup": "1:985:2023-01",
+            "type": "凭证",
+            "user": "archive",
+            "shortTypeName": "发"
+        }
+    ],
+    "edgeList": [
+        {
+            "src": "147a569677787edfbd11e5beadbb695a",
+            "dest": "a9702c37e5d28fa6dfa9398c5be2c4cc",
+            "edgeType": "synthetic",
+            "propertyMap": {
+                "createTime": 1673338536000
+            }
+        }
+    ]
+}

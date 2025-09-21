@@ -1,0 +1,98 @@
+{
+  "data": {
+    "titleName": "KD-222",
+    "storageCount": 0,
+    "dirPath": "/scan/two/KD-222",
+    "childCount": 2,
+    "fd": "699829978b108533491c605ee2609afa",
+    "order": 1,
+    "childNode": [
+      {
+        "titleName": "invoice",
+        "storageCount": 0,
+        "dirPath": "/scan/two/KD-222/invoice",
+        "childCount": 3,
+        "fd": "753c31b0e7d882fe8b42f18cafe87910",
+        "order": 1,
+        "childNode": [
+          {
+            "storageList": [
+              {
+                "fileName": "2_滴滴出行行程报销单.pdf",
+                "snapshotFds": [
+                  {
+                    "fileName": "82c5e42e8c7038e32e8c57ca19b8fb48.png",
+                    "docUrl": "8dcbf176332951083e391b2e4d015a7c",
+                    "angle": 180,
+                    "pageNum": 1,
+                    "fd": "93ac22deff3c23cf19c99396b1758c366",
+                    "extName": "png"
+                  },
+                  {
+                    "fileName": "5512310c66ee2fc13bf5625682e9362f.png",
+                    "docUrl": "dc1b3bb0596b3d4776fa610330e38ca6",
+                    "angle": 0,
+                    "pageNum": 2,
+                    "fd": "f29b7a0c76b58bf8f27cfe48b8f54a967",
+                    "extName": "png"
+                  }
+                ],
+                "docUrl": "8b82b1574d9f434231094fec0afae4fe",
+                "fd": "ef61eaeec8b2280942d318b2605734ee",
+                "extName": "pdf"
+              },
+              {
+                "fileName": "2021.txt",
+                "docUrl": "5b9380422656413da93e6cea372d35dd",
+                "fd": "f65738e193be631042214c638eb71ec2",
+                "extName": "txt"
+              }
+            ],
+            "titleName": "tow",
+            "storageCount": 2,
+            "dirPath": "/scan/two/KD-222/invoice/tow",
+            "childCount": 0,
+            "fd": "19534def11f93af6ea00c1cd2ca87864",
+            "order": 2
+          }
+        ]
+      },
+      {
+        "storageList": [
+          {
+            "fileName": "2_滴滴出行行程报销单.pdf",
+            "snapshotFds": [
+              {
+                "fileName": "82c5e42e8c7038e32e8c57ca19b8fb48.png",
+                "docUrl": "8dcbf176332951083e391b2e4d015a7c",
+                "angle": 180,
+                "pageNum": 1,
+                "fd": "93ac22deff3c23cf19c99396b1758c36",
+                "extName": "png"
+              },
+              {
+                "fileName": "5512310c66ee2fc13bf5625682e9362f.png",
+                "docUrl": "dc1b3bb0596b3d4776fa610330e38ca6",
+                "angle": 0,
+                "pageNum": 2,
+                "fd": "f29b7a0c76b58bf8f27cfe48b8f54a96",
+                "extName": "png"
+              }
+            ],
+            "docUrl": "8b82b1574d9f434231094fec0afae4fe",
+            "fd": "ef61eaeec8b2280942d318b2605734ee14",
+            "extName": "pdf"
+          }
+        ],
+        "titleName": "cover",
+        "storageCount": 1,
+        "dirPath": "/scan/two/KD-222/cover",
+        "childCount": 0,
+        "fd": "a885f7e1a665305bb6df420839f7c95c",
+        "order": 1
+      }
+    ]
+  },
+  "description": "成功",
+  "errcode": "0000"
+}

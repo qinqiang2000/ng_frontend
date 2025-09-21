@@ -1,0 +1,60 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env", {
+            "targets": {
+                "node": "8.12.0",
+                "chrome": 52,
+                "browsers": [
+                    "last 2 versions",
+                    "not ie <= 9",
+                    "safari 7"
+                ]
+            },
+            "modules": false,
+            "debug": false,
+            "useBuiltIns": "usage",
+            "corejs": 2
+        }],
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+        [
+            "@babel/plugin-transform-runtime", {
+                "corejs": 2,
+                "helpers": true,
+                "regenerator": true,
+                "useESModules": false
+            }
+        ],
+        [ 
+            "import", 
+            {
+                "libraryName": "antd", 
+                "libraryDirectory":"es",
+                "style": true,				
+                "javascriptEnabled": true
+            },
+            "ant"
+            // {
+            //     "libraryName": "@ant-design/icons",
+            //     "libraryDirectory": "lib",  // default: lib
+            //     "javascriptEnabled": true
+            // }
+            // //]
+        ]
+    ],
+    "env": {
+        "development": {
+            "plugins": [
+                ["dva-hmr"]
+            ]            
+        },
+        "production": {
+            "plugins": [
+                ["transform-remove-console", { "exclude": [ "error", "warn"] }]
+            ]
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "name": "@piaozone.com/input-dk-account",
+    "version": "1.0.46",
+    "description": "",
+    "main": "src/index.jsx",
+    "scripts": {
+        "dev": "pwy-webpack --dev --config=./buildConfig.js",
+        "eslint": "pwy-eslint --ext .js,.jsx src",
+        "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+        "test": "pwy-jest"
+    },
+    "devDependencies": {
+        "prop-types": "^15.7.2"
+    },
+    "files": [
+        "src",
+        "test",
+        "dev-test",
+        "buildConfig.js",
+        "readme.md",
+        "package.json",
+        "package-lock.json"
+    ],
+    "keywords": [],
+    "author": "",
+    "maintainers": ["hongbo_bi", "lucy_wang"],
+    "license": "ISC",
+    "dependencies": {
+        "@piaozone.com/fpdk-login": "^1.0.5",
+        "@piaozone.com/pwyConstants": "^1.0.20",
+        "@piaozone.com/scan-image": "^1.0.17",
+        "@piaozone.com/swjgFpdkV4": "^1.0.74",
+        "@piaozone.com/utils": "^1.1.24",
+        "antd": "^3.26.7",
+        "prop-types": "^15.7.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    }
+}

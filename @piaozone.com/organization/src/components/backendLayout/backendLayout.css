@@ -1,0 +1,142 @@
+#root {
+    height: 100%;
+}
+
+.newSellerCms {
+    background: #f5f7fa;
+    min-height: 100%;
+    min-width: 1200px;
+    position: relative;
+}
+
+.newSellerCms .content {
+    position: absolute;
+    background: #f5f7fa;
+    left: 50px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.newSellerCms .content .notActivated {
+    color: #777;
+}
+
+.newSellerCms .contentBox {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+}
+
+.newSellerCms .contentBox .tabsContainer {
+    height: 100%;
+}
+
+.newSellerCms .contentBox .tabsContainer > .ant-tabs-bar .ant-tabs-nav-wrap {
+    background-color: #eaedf0 !important;
+}
+
+.newSellerCms .contentBox .tabsContainer > .ant-tabs-bar .ant-tabs-tab {
+    height: 34px;
+    margin: 0;
+    line-height: 34px;
+    background-color: inherit;
+    border: none;
+}
+
+.newSellerCms .contentBox .tabsContainer > .ant-tabs-bar .ant-tabs-tab-active {
+    background-color: #f4f9ff;
+}
+
+.newSellerCms .contentBox .tabsContainer .ant-tabs-tab-active {
+    border-bottom: 2px solid #1890ff !important;
+}
+
+.newSellerCms .content .outInner {
+    position: absolute;
+    top: 34px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.newSellerCms .content .outInner.clearPadding {
+    padding: 0;
+}
+
+.newSellerCms .content .contentInner {
+    margin: 0 auto;
+    min-width: 1040px;
+    height: 100%;
+
+    /* background-color: #fff;
+    border-radius: 4px;
+    padding-bottom: 20px;
+    border: 1px solid #e2e2e2; */
+}
+
+.newSellerCms .outInput {
+    position: relative;
+}
+
+.newSellerCms .outInput .errTip {
+    position: absolute;
+    left: 10px;
+    bottom: -18px;
+    font-size: 12px;
+    color: #e75856;
+    text-align: left;
+}
+
+.newSellerCms .contentTop {
+    height: 34px;
+    background: #eaedf0;
+    line-height: 34px;
+    font-size: 14px;
+    color: #666;
+    padding-left: 15px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.newSellerCms .contentTop a {
+    color: #666;
+}
+
+.newSellerCms .contentTop span.last {
+    color: #3598ff;
+}
+
+.newSellerCms .contentTop span.slash {
+    color: #bbb;
+    margin: 0 5px 0 3px;
+}
+
+.newSellerCms .bottomBtns {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    box-shadow: 0 -1px 0 0 #e2e2e2;
+    text-align: center;
+}
+
+.newSellerCms .bottomBtns button {
+    margin-top: 15px;
+}
+
+.newSellerCms .bottomBtns button.light {
+    margin-left: 25px;
+}
+
+.newSellerCms .contentBox .content {
+    left: 141px;
+}

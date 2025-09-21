@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pdf转换为图像测试</title>
+</head>
+<body>
+    <div id='root'>
+        <input type="file" id="file" />
+    </div>
+
+    <script src="https://imgdev-master.piaozone.com/static/gallery/pwyPolyfill.js"></script>
+    <script src="../dist/pdfToImage.js"></script>
+    <script src="https://imgdev-master.piaozone.com/static/gallery/llqrcode.min.js"></script>
+    <script>
+        var staticUrl = 'http://localhost/static';
+        document.getElementById('file').onchange = function() {
+            var fileTarget = document.getElementById('file');
+            var file = fileTarget.files[0];
+
+            console.log('file', file);
+            pdfToImage.getPdfDocument({
+                CMAP_URL: staticUrl + '/gallery/pdfjs-dist/2.10.377/cmaps/', // pdfjs字体地址
+                workerSrc: staticUrl + '/gallery/pdfjs-dist/2.10.377/build/pdf.worker.min.js', // pdfjs的worker地址
+                file
+            }).then(function(pdfRes) {
+                console.log('pdfRes', pdfRes);
+                // if (pdfRes.errcode !== '0000') {
+                //     message.info(pdfRes.description);
+                //     return;
+                // }
+                // pdfToImage.getOnePageData(pdfRes.data, 1).then(function(res) {
+                //     console.log('res', res);
+                // })
+            });
+        }
+    </script>
+</body>
+</html>

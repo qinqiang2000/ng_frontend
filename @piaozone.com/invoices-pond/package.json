@@ -1,0 +1,33 @@
+{
+  "main": "src/index.js",
+  "name": "@piaozone.com/invoices-pond",
+  "version": "1.0.46",
+  "description": "",
+  "scripts": {
+    "setup": "set BROWSER=none",
+    "dev": "pwy-webpack --dev --config=./buildConfig.js",
+    "build-dev": "cross-env BABEL_ENV=production webpack --config webpack.config.js --env dev",
+    "build": "cross-env BABEL_ENV=production webpack --config webpack.config.js --env prod",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "stylelint": "pwy-stylelint src/**/*.less src/**/*.css",
+    "stylelint-fix": "pwy-stylelint src/**/*.less src/**/*.css --fix",
+    "prepublish": "npm run eslint"
+  },
+  "dependencies": {
+    "@piaozone.com/editInvoice-pc": "^1.0.38",
+    "@piaozone.com/print-image": "^1.0.11",
+    "@piaozone.com/pwyConstants": "^1.0.34",
+    "@piaozone.com/utils": "^1.1.24",
+    "antd": "^3.26.7",
+    "dva": "^2.4.1",
+    "immutable": "^4.0.0-rc.12",
+    "jsqr": "^1.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}

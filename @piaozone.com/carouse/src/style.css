@@ -1,0 +1,81 @@
+.pwyCarouse {
+    overflow: hidden;
+    position: relative;
+}
+
+.pwyCarouse .pwyCarouseWapper {
+    transition: left 500ms;
+    height: 100%;
+    position: relative;
+}
+
+.pwyCarouse .pwyCarouseItem {
+    float: left;
+    height: 100%;
+}
+
+.pwyCarouse .clearfix {
+    zoom: 1;
+    *display: table;
+}
+
+.pwyCarouse .clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.pwyCarouse .controlBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 33px;
+    height: 33px;
+    margin-top: -16.5px;
+    cursor: pointer;
+    display: none;
+    font-size: 0;
+}
+
+.pwyCarouse:hover .controlBtn {
+    display: block;
+}
+
+.pwyCarouse .controlBtn.prevBtn {
+    left: 0;
+    background: url('./img/left@1x.png') no-repeat center center;
+    z-index: 999999;
+}
+
+.pwyCarouse .controlBtn.nextBtn {
+    right: 0;
+    background: url('./img/right@1x.png') no-repeat center center;
+    z-index: 999999;
+}
+
+
+.pwyCarouse .dots {
+    position: absolute;
+    bottom: 5px;
+    display: block;
+    font-size: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.pwyCarouse .dots .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    font-size: 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.pwyCarouse .dots .dot.active {
+    background-color: #666;
+    cursor: default;
+}

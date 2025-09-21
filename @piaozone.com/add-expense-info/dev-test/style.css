@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 12px;
+    font-family: 'microsoft yahei', arial;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    border: 0;
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: table;
+    border: 0;
+    border-spacing: 0;
+}
+
+table tr {
+    border: 0;
+}
+
+table tr td {
+    border: 0;
+}
+
+input[type='text'] {
+    padding: 7px 0 7px 8px;
+    outline: none;
+    border: 1px solid #aaa;
+    font-family: 'microsoft yahei', arial;
+}
+
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+    -webkit-appearance: none;
+    font-family: 'microsoft yahei', arial;
+}
+
+textarea {
+    -webkit-appearance: none;
+}
+
+textarea.ant-input {
+    border: 1px solid #aaa;
+}
+
+select {
+    line-height: 1.5em;
+    vertical-align: middle;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+select option {
+    padding: 3px 0 3px 5px;
+}
+
+section {
+    *display: block;
+}
+
+.clearfloat {
+    clear: both;
+}
+
+.transparent {
+    filter: progid:dximagetransform.microsoft.alpha(opacity=0);
+    opacity: 0;
+    -moz-opacity: 0;
+}
+
+.disabled {
+    cursor: default !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.inlineBlock {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.ie6 .inlineBlock,
+.ie7 .inlineBlock {
+    display: inline;
+    zoom: 1;
+}
+
+.blocked {
+    display: block;
+}
+
+.visibilityHidden {
+    visibility: hidden;
+}
+
+.height0 {
+    font-size: 1px;
+    height: 1px;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+

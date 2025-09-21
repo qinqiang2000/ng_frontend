@@ -1,0 +1,105 @@
+.newMenuLeft {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 141px;
+    z-index: 100;
+    font-size: 14px;
+    color: #c1cadc;
+    min-height: 100%;
+    font-family: 'microsoft yahei';
+    background: #2d3847;
+}
+
+.newMenuLeft .title span.name {
+    vertical-align: middle;
+}
+
+.newMenuLeft .subList,
+.newMenuLeft .title span {
+    display: none;
+}
+
+.newMenuLeft .subList {
+    width: 239px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.newMenuLeft .title {
+    width: 141px;
+}
+
+.newMenuLeft .title span {
+    display: inline-block;
+}
+
+.newMenuLeft .folder .pullUpIcon {
+    display: block !important;
+}
+
+.newMenuLeft .folder:first-child {
+    margin-top: 10px;
+}
+
+.newMenuLeft .menuIcon {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.newMenuLeft .folder {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.newMenuLeft .folder .title {
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    cursor: pointer;
+    color: #c1cadc;
+    margin: 4px 0;
+    font-size: 12px;
+}
+
+.newMenuLeft .folder.activeFolder {
+    background: #232f41;
+}
+
+.newMenuLeft .folder.close ul {
+    display: none;
+}
+
+.newMenuLeft .folder:hover {
+    background: #232f41;
+}
+
+.newMenuLeft .level2 li {
+    width: 98px;
+    background-color: #232f41;
+    text-align: center;
+    padding: 9px 0;
+}
+
+.newMenuLeft .level2 li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #bfc8da;
+}
+
+.newMenuLeft .level2 li a.active {
+    color: #5aa2ff;
+}
+
+.newMenuLeft .level2 li a:hover {
+    color: #fff;
+    text-decoration: none;
+}

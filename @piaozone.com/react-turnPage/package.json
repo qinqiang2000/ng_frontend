@@ -1,0 +1,17 @@
+{
+  "name": "@piaozone.com/react-turnPage",
+  "version": "0.0.2",
+  "description": "react turnPage",
+  "main": "index.js",
+  "dependencies": {
+	   "react": "^16.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scroll"
+  ],
+  "author": "Sunny.HB.Bi",
+  "license": "ISC"
+}

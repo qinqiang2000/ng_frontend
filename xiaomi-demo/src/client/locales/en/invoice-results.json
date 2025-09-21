@@ -1,0 +1,91 @@
+{
+  "title": "Invoice Results Management",
+  "subtitle": "View invoicing results and tax authority reporting status",
+  "searchPlaceholder": "Search by invoice number...",
+  "invoiceResultsList": "Invoice Results List",
+  "statusDistribution": "Invoice Status Distribution",
+  "filingPerformance": "Tax Authority Filing Performance",
+  "timeRanges": {
+    "today": "Today",
+    "week": "This Week",
+    "month": "This Month",
+    "quarter": "This Quarter"
+  },
+  "statusLabels": {
+    "all": "All Status",
+    "invoiceReady": "Invoice Ready",
+    "reporting": "Reporting",
+    "reported": "Reported",
+    "reportFailed": "Report Failed",
+    "delivering": "Delivering",
+    "delivered": "Delivered",
+    "deliverFailed": "Deliver Failed",
+    "unknown": "Unknown"
+  },
+  "statCards": {
+    "invoiceReady": "Invoice Ready",
+    "reporting": "Reporting",
+    "reported": "Reported", 
+    "reportFailed": "Report Failed",
+    "delivering": "Delivering",
+    "delivered": "Delivered",
+    "deliverFailed": "Deliver Failed",
+    "totalAmount": "Total Amount (USD)",
+    "totalTaxAmount": "Total Tax Amount",
+    "totalCount": "Total Count",
+    "successRate": "Success Rate"
+  },
+  "tableHeaders": {
+    "resultId": "Result ID",
+    "companyName": "Company Name",
+    "invoiceInfo": "Invoice Information",
+    "taxInfo": "Tax Information",
+    "status": "Status",
+    "issueDate": "Issue Date",
+    "actions": "Actions"
+  },
+  "actions": {
+    "view": "View",
+    "download": "Download",
+    "resubmit": "Resubmit",
+    "viewPdf": "View PDF",
+    "viewInvoice": "View Invoice",
+    "downloadPdf": "Download PDF",
+    "refresh": "Refresh",
+    "retry": "Retry"
+  },
+  "messages": {
+    "loading": "Loading...",
+    "noData": "No data available",
+    "loadingResults": "Loading invoice results...",
+    "noResults": "No invoice results found",
+    "loadError": "Failed to load invoice results",
+    "filingPerformanceError": "Failed to load filing performance data",
+    "usdTotalError": "Failed to load USD total data",
+    "statusDataError": "Failed to load invoice status data",
+    "dataLoadingFailed": "Data Loading Failed",
+    "errorLoadingFilingData": "Error loading filing performance data",
+    "noFilingData": "No filing performance data available",
+    "displayingFallbackData": "Displaying fallback data for demonstration."
+  },
+  "charts": {
+    "count": "Count",
+    "percentage": "Percentage",
+    "totalInvoices": "Total Invoices",
+    "successfulFilings": "Successful Filings",
+    "failedFilings": "Failed Filings",
+    "firstSubmissionSuccess": "First Submission Success",
+    "correctedResubmissionSuccess": "Corrected Resubmission Success",
+    "filingFailed": "Filing Failed"
+  },
+  "info": {
+    "invoiceNumber": "Invoice Number",
+    "amount": "Amount",
+    "taxAmount": "Tax Amount",
+    "currency": "Currency",
+    "country": "Country/Region",
+    "taxType": "Tax Type",
+    "company": "Company",
+    "createTime": "Create Time"
+  }
+}

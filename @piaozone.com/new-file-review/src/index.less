@@ -1,0 +1,183 @@
+.image-review {
+    height: 100%;
+    background: linear-gradient(180deg, rgb(175, 175, 175, 0), rgb(118, 118, 118, 1));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.default-page {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-file {
+    background: #fff;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.error-file .error-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error-file .error-text {
+    margin: 20px 0 40px 0;
+    font-size: 16px;
+}
+
+.error-file button {
+    border-radius: 16px;
+}
+
+.image-review .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 52px);
+    padding: 20px 52px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.image-review .image .tips {
+    color: #fff;
+}
+
+.image-review .image-pdf {
+    padding: 0;
+}
+
+.image-review .btn-box {
+    height: 40px;
+    background: #000;
+    border-radius: 20px;
+    opacity: 0.3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .image-review .btn-box {
+        height: 40px;
+        background: #000;
+        border-radius: 20px;
+        opacity: 0.3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        bottom: 50px;
+        transform: translateX(-50%);
+    }
+}
+
+.image-review .btn-box-pdf {
+    bottom: 128px;
+}
+
+.image-review .btn-box:hover {
+    opacity: 0.5;
+}
+
+.image-review .btn-box .btn {
+    width: auto;
+    height: 24px;
+    cursor: pointer;
+    margin: 0 13px;
+}
+
+.image-review .btn-box .btn:first-child {
+    margin-left: 20px;
+}
+
+.image-review .btn-box .btn:last-child {
+    margin-right: 20px;
+}
+
+.drag-box {
+    width: 100%;
+    height: 100%;
+    background: #d8d8d8;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    // text-align: center;
+}
+
+.drag-box img {
+    // user-drag: none; /* 禁止图像拖动 */
+    user-select: none; /* 禁止用户选择内容 */
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.full-box {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.full-box img {
+    width: auto;
+    height: 100%;
+    // user-drag: none; /* 禁止图像拖动 */
+    user-select: none; /* 禁止用户选择内容 */
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.full-box .btn-box {
+    height: 40px;
+    background: #000;
+    border-radius: 20px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.doc-view {
+    width: 100%;
+    height: 100%;
+}
+
+.doc-view iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.doc-view .pdf-bg {
+    background: linear-gradient(180deg, #afafaf 0%, #767676 100%);
+}
+
+.review-box .tabs-render {
+    overflow-y: auto;
+}

@@ -1,0 +1,102 @@
+
+.noneAddedBillForm .require {
+    color: red;
+}
+
+.noneAddedBillForm label.required::before {
+    display: inline-block;
+    content: '*';
+    position: absolute;
+    margin-left: -5px;
+    vertical-align: 0;
+    color: red;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.noneAddedBillForm .clearfix {
+    margin-bottom: 8px;
+    font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei';
+}
+
+.noneAddedBillForm input {
+    width: 190px;
+}
+
+.noneAddedBillForm .outImg {
+    height: 550px;
+    text-align: center;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noneAddedBillForm .outImg img {
+    max-height: 512px;
+    max-width: 100%;
+}
+
+.noneAddedBillForm .inputItem {
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.noneAddedBillForm .inputItem input {
+    font-size: 12px;
+    height: 30px;
+}
+
+.noneAddedBillForm .inputItem.col1 {
+    margin-left: 0;
+}
+
+.noneAddedBillForm .inputItem label {
+    width: 110px;
+    text-align: left;
+    display: inline-block;
+}
+
+.noneAddedBillForm .inputItem label .require {
+    color: #f00;
+    vertical-align: middle;
+    margin-right: 1px;
+    font-weight: bold;
+}
+
+.noneAddedBillForm .joinCut {
+    display: inline-block;
+    width: 10px;
+    text-align: center;
+}
+
+.noneAddedBillForm .tip {
+    color: #ff9933;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.noneAddedBillForm label.alignRight {
+    text-align: right;
+    margin-right: 5px;
+}
+
+.noneAddedBillForm label.width70 {
+    width: 70px;
+}
+
+.noneAddedBillForm label.width85 {
+    width: 85px;
+}
+
+.noneAddedBillForm label.width90 {
+    width: 90px;
+}
+
+.noneAddedBillForm label.width95 {
+    width: 95px;
+}
+
+.noneAddedBillForm .ant-time-picker {
+    width: auto;
+}

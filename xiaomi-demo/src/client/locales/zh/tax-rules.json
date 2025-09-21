@@ -1,0 +1,64 @@
+{
+  "title": "税务规则引擎",
+  "searchPlaceholder": "搜索税务规则...",
+  "addRule": "新增税务规则",
+  "categories": {
+    "vatRules": "增值税规则",
+    "corpTaxRules": "企业所得税规则",
+    "personalTaxRules": "个人所得税规则",
+    "tariffRules": "关税规则",
+    "withholdingTaxRules": "预扣税规则"
+  },
+  "ruleDetails": {
+    "ruleId": "规则编号",
+    "ruleName": "规则名称",
+    "description": "规则描述",
+    "status": "规则状态",
+    "type": "规则类型",
+    "jurisdiction": "税务管辖区",
+    "effectiveDate": "生效日期",
+    "expiryDate": "失效日期",
+    "priority": "优先级别"
+  },
+  "status": {
+    "active": "有效",
+    "inactive": "无效",
+    "draft": "草稿",
+    "pending": "待审核",
+    "deprecated": "已弃用"
+  },
+  "types": {
+    "validation": "验证规则",
+    "calculation": "计算规则",
+    "determination": "税种判定",
+    "exemption": "税收减免",
+    "rate": "税率规则"
+  },
+  "actions": {
+    "edit": "编辑规则",
+    "duplicate": "复制规则",
+    "delete": "删除规则",
+    "activate": "激活规则",
+    "deactivate": "停用规则",
+    "test": "测试规则",
+    "export": "导出规则",
+    "viewHistory": "查看变更历史"
+  },
+  "toolbar": {
+    "filterByStatus": "按状态筛选",
+    "filterByJurisdiction": "按管辖区筛选",
+    "sortBy": "排序方式",
+    "viewMode": "显示模式",
+    "bulkActions": "批量操作"
+  },
+  "ruleEditor": {
+    "title": "税务规则编辑器",
+    "conditions": "规则条件",
+    "actions": "规则动作",
+    "expression": "JEXL表达式",
+    "testData": "测试数据",
+    "validateRule": "验证规则",
+    "saveRule": "保存规则",
+    "publishRule": "发布规则"
+  }
+}

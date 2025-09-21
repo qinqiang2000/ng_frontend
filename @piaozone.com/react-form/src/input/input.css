@@ -1,0 +1,38 @@
+input.myInput[type="text"],
+input.myInput[type="password"]
+{
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    padding: 6px 0 6px 10px;
+    width: 234px;
+    font-size: inherit;
+    color:#333;
+}
+
+
+input.myInput:-moz-placeholder {
+    font-family: "microsoft yahei";
+    color:#aaa;
+}
+
+input.myInput::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-family: "microsoft yahei";
+    color:#aaa;
+}
+
+input.myInput:-ms-input-placeholder{
+    font-family: "microsoft yahei";
+    color:#aaa;
+}
+
+input.myInput::-webkit-input-placeholder{
+    font-family: "microsoft yahei";
+    color:#aaa;
+}
+
+
+input.myInput:focus{
+    background: #FFFFFF;
+    border-color:#3598ff;
+}

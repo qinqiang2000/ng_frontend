@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        .printIframe {
+            width: 0;
+            height: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="printTest()">打印</button>
+    <iframe id="printIframeId" class="printIframe"></iframe>
+    <script src="../dist/paperInvoicePrint.min.js"></script>
+    <script>
+        function printTest() {
+            const paperPrint = new PaperInvoicePrint({
+                printIframeId: 'printIframeId',
+                queryPrintInfo: function(info) { // 使用接口返回的data完整数据
+                    if (info.invoiceNo === '09217066') {
+                        return {"data":{"dataType":1,"invoiceCategory":"02","printType":"0","XMLKey":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iZ2JrIj8-PGJ1c2luZXNzIGNvbW1lbnQ9IuWPkeelqOaJk-WNsCIgaWQ9IjkzMDEwIj4NCiAgPGJvZHkgeXlseGRtPSIxIj4NCiAgICA8ZnBseGRtPjMyPC9mcGx4ZG0-DQogICAgPGR5ZnM-MDwvZHlmcz4NCiAgICA8a3B4eD4NCiAgICAgIDxmcGRtPjAxMjAwMjEwMDEwNTwvZnBkbT4NCiAgICAgIDxmcGhtPjA5MjE3MDY2PC9mcGhtPg0KICAgICAgPHNmd3l4Ymp0ZHlzLz4NCiAgICAgIDxmcHp0PjAwPC9mcHp0Pg0KICAgICAgPGtwZnM-MDA8L2twZnM-DQogICAgICA8a3BycT4yMDI0MTAxNDwva3BycT4NCiAgICAgIDxqcWJoLz4NCiAgICAgIDxza20-5pWw55S156Wo5Y-356CB77yaMjQxMjIwMDAwMDAwNjMyNDUwMDnlhajlm73lop7lgLznqI7lj5Hnpajmn6XpqozlubPlj7DvvJpodHRwczovL2ludi12ZXJpLmNoaW5hdGF4Lmdvdi5jbi88L3NrbT4NCiAgICAgIDxqeW0-MjQxMjIwMDAwMDAwNjMyNDUwMDk8L2p5bT4NCiAgICAgIDx0c3B6Lz4NCiAgICAgIDx6c2ZzPjA8L3pzZnM-DQogICAgICA8emhzbC8-DQogICAgICA8eGhkd3NiaD45MTEyMDEwNTczMDM3MzI4WE48L3hoZHdzYmg-DQogICAgICA8eGhkd21jPuWkqea0peeZvua0i-WMu-iNr-aciemZkOWFrOWPuDwveGhkd21jPg0KICAgICAgPHhoZHdkemRoPuWkqea0peW4guays-WMl-WMuuWFieWkjemBk-ihl-a1t-ays-S4nOi3r-S4jueLruWtkOael-Wkp-ihl-S6pOWPo-aXuua1t-WbvemZheW5v-WcuuWGmeWtl-alvDLlj7fmpbwzMOWxgjMwMDQgMDIyLTI2Mjc3OTc4PC94aGR3ZHpkaD4NCiAgICAgIDx4aGR3eWh6aD7kuK3lm73pk7booYzogqHku73mnInpmZDlhazlj7jlpKnmtKXmsrPljJfmlK_ooYwgMjc2NTc3MjE5NjM3PC94aGR3eWh6aD4NCiAgICAgIDxnaGR3c2JoPjEyMTIwMDAwNDAxMzU0MzI4SjwvZ2hkd3NiaD4NCiAgICAgIDxnaGR3bWM-5aSp5rSl5biC6IK_55ik5Yy76ZmiPC9naGR3bWM-DQogICAgICA8Z2hkd2R6ZGg-5aSp5rSl5biC5rKz6KW_5Yy65L2T6Zmi5YyX546v5rmW6KW_6LevIDAyMjwvZ2hkd2R6ZGg-DQogICAgICA8Z2hkd3loemg-5Lit5Zu95bu66K6-6ZO26KGM6IKh5Lu95pyJ6ZmQ5YWs5Y-45aSp5rSl5rKz6KW_5pSv6KGMIDEyMDAxNjM1NDAwMDUyNTAzMjYyPC9naGR3eWh6aD4NCiAgICAgIDxmeXhtIGNvdW50PSIzIj4NCiAgICAgICAgPGdyb3VwIHhoPSIxIj4NCiAgICAgICAgICA8ZnBoeHo-MDwvZnBoeHo-DQogICAgICAgICAgPHNwbWM-KuWMluWtpuiNr-WTgeWItuWJgirmsK_ljJbpkr7ms6jlsITmtrI8L3NwbWM-DQogICAgICAgICAgPHNwc20vPg0KICAgICAgICAgIDxnZ3hoPjEwbWw6MS4wZzwvZ2d4aD4NCiAgICAgICAgICA8ZHc-5pSvPC9kdz4NCiAgICAgICAgICA8c3BzbD4yMTYwPC9zcHNsPg0KICAgICAgICAgIDxkaj4xLjA2MTk0OTA3PC9kaj4NCiAgICAgICAgICA8amU-MjI5My44MTwvamU-DQogICAgICAgICAgPGhzYnovPg0KICAgICAgICAgIDxzcGJtPjEwNzAzMDIwMzAwMDAwMDAwMDA8L3NwYm0-DQogICAgICAgICAgPHNsPjAuMTM8L3NsPg0KICAgICAgICAgIDxzZT4yOTguMTk8L3NlPg0KICAgICAgICAgIDx6eGJtLz4NCiAgICAgICAgICA8eWh6Y2JzLz4NCiAgICAgICAgICA8bHNsYnMvPg0KICAgICAgICAgIDx6enN0c2dsLz4NCiAgICAgICAgPC9ncm91cD4NCiAgICAgICAgPGdyb3VwIHhoPSIyIj4NCiAgICAgICAgICA8ZnBoeHo-MDwvZnBoeHo-DQogICAgICAgICAgPHNwbWM-KuWMluWtpuiNr-WTgeWItuWJgirmtZPmsK_ljJbpkqDms6jlsITmtrI8L3NwbWM-DQogICAgICAgICAgPHNwc20vPg0KICAgICAgICAgIDxnZ3hoPjEwbWw6MWcqNeaUrzwvZ2d4aD4NCiAgICAgICAgICA8ZHc-55uSPC9kdz4NCiAgICAgICAgICA8c3BzbD42MDA8L3Nwc2w-DQogICAgICAgICAgPGRqPjIuNjU0ODY2Njc8L2RqPg0KICAgICAgICAgIDxqZT4xNTkyLjkyPC9qZT4NCiAgICAgICAgICA8aHNiei8-DQogICAgICAgICAgPHNwYm0-MTA3MDMwMjAzMDAwMDAwMDAwMDwvc3BibT4NCiAgICAgICAgICA8c2w-MC4xMzwvc2w-DQogICAgICAgICAgPHNlPjIwNy4wODwvc2U-DQogICAgICAgICAgPHp4Ym0vPg0KICAgICAgICAgIDx5aHpjYnMvPg0KICAgICAgICAgIDxsc2xicy8-DQogICAgICAgICAgPHp6c3RzZ2wvPg0KICAgICAgICA8L2dyb3VwPg0KICAgICAgICA8Z3JvdXAgeGg9IjMiPg0KICAgICAgICAgIDxmcGh4ej4wPC9mcGh4ej4NCiAgICAgICAgICA8c3BtYz4q5YyW5a2m6I2v5ZOB5Yi25YmCKuiRoeiQhOezluazqOWwhOa2sjwvc3BtYz4NCiAgICAgICAgICA8c3BzbS8-DQogICAgICAgICAgPGdneGg-MjBtbO-8mjEwZzwvZ2d4aD4NCiAgICAgICAgICA8ZHc-5pSvPC9kdz4NCiAgICAgICAgICA8c3BzbD42MDAwPC9zcHNsPg0KICAgICAgICAgIDxkaj4xPC9kaj4NCiAgICAgICAgICA8amU-NjAwMC4wMDwvamU-DQogICAgICAgICAgPGhzYnovPg0KICAgICAgICAgIDxzcGJtPjEwNzAzMDIwMzAwMDAwMDAwMDA8L3NwYm0-DQogICAgICAgICAgPHNsPjAuMTM8L3NsPg0KICAgICAgICAgIDxzZT43ODA8L3NlPg0KICAgICAgICAgIDx6eGJtLz4NCiAgICAgICAgICA8eWh6Y2JzLz4NCiAgICAgICAgICA8bHNsYnMvPg0KICAgICAgICAgIDx6enN0c2dsLz4NCiAgICAgICAgPC9ncm91cD4NCiAgICAgIDwvZnl4bT4NCiAgICAgIDxoamplPjk4ODYuNzM8L2hqamU-DQogICAgICA8aGpzZT4xMjg1LjI3PC9oanNlPg0KICAgICAgPGpzaGo-MTExNzI8L2pzaGo-DQogICAgICA8Yno-5ZCr56iO5Lu377yaIDEuMjAgMy4wMCAxLjEzPC9iej4NCiAgICAgIDxza3IvPg0KICAgICAgPGZoci8-DQogICAgICA8a3ByPuauteWWnOazojwva3ByPg0KICAgICAgPHlmcGRtLz4NCiAgICAgIDx5ZnBobS8-DQogICAgPC9rcHh4Pg0KICA8L2JvZHk-DQo8L2J1c2luZXNzPg0K"},"description":"成功","errcode":"0000"};
+                    } else if (info.invoiceNo === '00044878') {
+                        return {"data":{"XMLKey":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iZ2JrIj8-PGJ1c2luZXNzIGNvbW1lbnQ9IuWPkeelqOaJk-WNsCIgaWQ9IjkzMDEwIj4NCiAgPGJvZHkgeXlseGRtPSIxIj4NCiAgICA8ZnBseGRtPjMzPC9mcGx4ZG0-DQogICAgPGR5ZnM-MDwvZHlmcz4NCiAgICA8a3B4eD4NCiAgICAgIDxmcGRtPjEyMTAyMjMyMTA3MTwvZnBkbT4NCiAgICAgIDxmcGhtPjAwMDQ0ODc4PC9mcGhtPg0KICAgICAgPHNmd3l4Ymp0ZHlzLz4NCiAgICAgIDxmcHp0PjAwPC9mcHp0Pg0KICAgICAgPGtwcnE-MjAyNDEwMTU8L2twcnE-DQogICAgICA8anFiaC8-DQogICAgICA8c2ttPuaVsOeUteelqOWPt-egge-8mjI0OTEyMDAwMDAwMDI0Nzk5NTM55YWo5Zu95aKe5YC856iO5Y-R56Wo5p-l6aqM5bmz5Y-w77yaaHR0cHM6Ly9pbnYtdmVyaS5jaGluYXRheC5nb3YuY24vPC9za20-DQogICAgICA8Z2hmbWM-6a2P5r6cPC9naGZtYz4NCiAgICAgIDxzZnpobS8-DQogICAgICA8Z2hmc2JoPjIyMDEwNDE5OTYwODA0MzgyWDwvZ2hmc2JoPg0KICAgICAgPHNjcXltYz7kuIDmsb0t5aSn5LyX5rG96L2m5pyJ6ZmQ5YWs5Y-4PC9zY3F5bWM-DQogICAgICA8Y2xseD7ovb_ovaY8L2NsbHg-DQogICAgICA8Y3B4aD7lpaXov6rniYwvQVVESUZWNzE0OExBREVHPC9jcHhoPg0KICAgICAgPGNkPumdkuWym-W4gjwvY2Q-DQogICAgICA8aGd6aD5XQUIwNTI0Njc1MTMzNjI8L2hnemg-DQogICAgICA8amt6bXNoLz4NCiAgICAgIDxzamRoLz4NCiAgICAgIDxmZGpobT5OOTI3Njc8L2ZkamhtPg0KICAgICAgPGNqaG0-TEZWMkIyOFk2UjY1MTMzNjI8L2NqaG0-DQogICAgICA8anNoaj4xMzUwMDA8L2pzaGo-DQogICAgICA8eGhkd21jPuWkp-i_nuijlei_quaxvei9pumUgOWUruacjeWKoeaciemZkOWFrOWPuDwveGhkd21jPg0KICAgICAgPHhoZHdzYmg-OTEyMTAyMDA2NzQwNjMxMjBOPC94aGR3c2JoPg0KICAgICAgPGRoPjM5Njg2NjY2PC9kaD4NCiAgICAgIDx6aD4yOTM0NTc4Nzc5ODE8L3poPg0KICAgICAgPGR6Pui-veWugeecgeWkp-i_nuW4gueUmOS6leWtkOWMuuiZueWfjui3rzU1MOWPtzwvZHo-DQogICAgICA8a2h5aD7kuK3lm73pk7booYzogqHku73mnInpmZDlhazlj7jlpKfov57mspnmsrPlj6PmlK_ooYw8L2toeWg-DQogICAgICA8enpzc2w-MC4xMzwvenpzc2w-DQogICAgICA8enpzc2U-MTU1MzAuOTc8L3p6c3NlPg0KICAgICAgPHN3amdkbT4xMjEwMjExMDMwMDwvc3dqZ2RtPg0KICAgICAgPHN3amdtYz7lm73lrrbnqI7liqHmgLvlsYDlpKfov57luILnlJjkupXlrZDljLrnqI7liqHlsYDovpvlr6jlrZDnqI7liqHmiYA8L3N3amdtYz4NCiAgICAgIDxiaHNqPjExOTQ2OS4wMzwvYmhzaj4NCiAgICAgIDx3c3B6aG0vPg0KICAgICAgPGR3Lz4NCiAgICAgIDx4Y3JzPjU8L3hjcnM-DQogICAgICA8bHNsYnMvPg0KICAgICAgPGJ6PuS4gOi9puS4gOelqDwvYno-DQogICAgICA8a3ByPuiUoeaciDwva3ByPg0KICAgICAgPHB5YnM-MTwvcHlicz4NCiAgICA8L2tweHg-DQogIDwvYm9keT4NCjwvYnVzaW5lc3M-DQo","dataType":1,"invoiceCategory":"03","printType":"0"},"description":"成功","errcode":"0000"};
+                    } else if (info.invoiceNo === '00095960') {
+                        return {"data":{"XMLKey":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iZ2JrIj8-PGJ1c2luZXNzIGNvbW1lbnQ9IuWPkeelqOaJk-WNsCIgaWQ9IjkzMDEwIj4NCiAgPGJvZHkgeXlseGRtPSIxIj4NCiAgICA8ZnBseGRtPjM0PC9mcGx4ZG0-DQogICAgPGR5ZnM-MDwvZHlmcz4NCiAgICA8a3B4eD4NCiAgICAgIDxmcGRtPjAyMTAyMjQwMDExNzwvZnBkbT4NCiAgICAgIDxmcGhtPjAwMDk1OTYwPC9mcGhtPg0KICAgICAgPHNmd3l4Ymp0ZHlzLz4NCiAgICAgIDxmcHp0PjAwPC9mcHp0Pg0KICAgICAgPGtwcnE-MjAyNDEwMTU8L2twcnE-DQogICAgICA8anFiaC8-DQogICAgICA8c2ttPuaVsOeUteelqOWPt-egge-8mjI0OTEyMDAwMDAwMDI0ODIyNzE25YWo5Zu95aKe5YC856iO5Y-R56Wo5p-l6aqM5bmz5Y-w77yaaHR0cHM6Ly9pbnYtdmVyaS5jaGluYXRheC5nb3YuY24vPC9za20-DQogICAgICA8Z2ZtYz7lpKfov57lvKDlhYjnlJ_kuozmiYvovabotLjmmJPmnInpmZDlhazlj7g8L2dmbWM-DQogICAgICA8Z2ZkbT45MTIxMDIxM01BRDFVS0tHODA8L2dmZG0-DQogICAgICA8Z2Zkej7ovr3lroHnnIHlpKfov57nu4_mtY7mioDmnK_lvIDlj5HljLrkuJzln47lm6055qCLLTEtMTEtMuWPtzwvZ2Zkej4NCiAgICAgIDxnZmRoPjEzOTQxMTY1MTUwPC9nZmRoPg0KICAgICAgPHhmbWM-5aSn6L-e6KOV6L-q5rG96L2m6ZSA5ZSu5pyN5Yqh5pyJ6ZmQ5YWs5Y-4PC94Zm1jPg0KICAgICAgPHhmZG0-OTEyMTAyMDA2NzQwNjMxMjBOPC94ZmRtPg0KICAgICAgPHhmZHo-6L695a6B55yB5aSn6L-e5biC55SY5LqV5a2Q5Yy66Jm55Z-O6LevNTUw5Y-3PC94ZmR6Pg0KICAgICAgPHhmZGg-Mzk2ODY2NjY8L3hmZGg-DQogICAgICA8Y3B6aD7ovr1CWTcwUzQ8L2Nwemg-DQogICAgICA8ZGp6aD4yMTAwMDgyOTQ2MTU8L2Rqemg-DQogICAgICA8Y2xseD7lsI_lnovovb_ovaY8L2NsbHg-DQogICAgICA8Y2xzYmg-TEZWMkEyQlM1RjQwMzUwOTM8L2Nsc2JoPg0KICAgICAgPGNweGg-5aSn5LyX54mMRlY3MTYwQkJCR0c8L2NweGg-DQogICAgICA8enJkY2xnbHNtYz7lpKfov57luILovabnrqHmiYA8L3pyZGNsZ2xzbWM-DQogICAgICA8anlwbWR3bWM-5aSn6L-e6KOV6L-q5rG96L2m6ZSA5ZSu5pyN5Yqh5pyJ6ZmQ5YWs5Y-4PC9qeXBtZHdtYz4NCiAgICAgIDxqeXBtZHdkej7ovr3lroHnnIHlpKfov57luILnlJjkupXlrZDljLrombnln47ot681NTDlj7c8L2p5cG1kd2R6Pg0KICAgICAgPGp5cG1kd3NiaD45MTIxMDIwMDY3NDA2MzEyME48L2p5cG1kd3NiaD4NCiAgICAgIDxqeXBtZHd5aHpoPuS4reWbvemTtuihjOiCoeS7veaciemZkOWFrOWPuOWkp-i_nuaymeays-WPo-aUr-ihjDI5MzQ1Nzg3Nzk4MTwvanlwbWR3eWh6aD4NCiAgICAgIDxqeXBtZHdkaD4zOTY4NjY2NjwvanlwbWR3ZGg-DQogICAgICA8ZXNjc2NtYy8-DQogICAgICA8ZXNjc2NzYmgvPg0KICAgICAgPGVzY3NjZHovPg0KICAgICAgPGVzY3NjeWh6aC8-DQogICAgICA8ZXNjc2NkaC8-DQogICAgICA8Y2poaj4yMDAwMDwvY2poaj4NCiAgICAgIDxoanNlPjA8L2hqc2U-DQogICAgICA8a3ByPuadqOS4veWonDwva3ByPg0KICAgICAgPGJ6Lz4NCiAgICAgIDxmeGtqYno-MDwvZnhramJ6Pg0KICAgIDwva3B4eD4NCiAgPC9ib2R5Pg0KPC9idXNpbmVzcz4NCg","dataType":1,"invoiceCategory":"04","printType":"0"},"description":"成功","errcode":"0000"};
+                    }
+                },
+                stepFinish: function(info, res) {
+                    console.log('单步打印结果', info, res);
+                },
+                printFinish: function(res) {
+                    console.log('打印结束返回', res);
+                    if (res.errcode !== '0000') {
+                        alert(res.description);
+                    }
+                }
+            });
+            paperPrint.start([{
+                invoiceCode: '021022400117',
+                invoiceNo: '00044878',
+                etaxInvoiceNo: '24912000000024822716'
+            },{
+                invoiceCode: '021022400117',
+                invoiceNo: '00044878',
+                etaxInvoiceNo: '24912000000024822716'
+            }]);
+        }
+    </script>
+</body>
+</html>

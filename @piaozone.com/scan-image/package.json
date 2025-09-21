@@ -1,0 +1,40 @@
+{
+  "name": "@piaozone.com/scan-image",
+  "version": "1.0.44",
+  "description": "",
+  "main": "src/index.jsx",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run eslint",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "dev": "pwy-webpack --dev --config=./buildConfig.js",
+    "build": "pwy-webpack --build --type=lib --config=./buildConfig.js --progress",
+    "build-lib": "pwy-webpack --build --type=lib --config=./buildConfig-lib.js --progress"
+  },
+  "maintainers": [
+    "hongbo_bi",
+    "lucy_wang"
+  ],
+  "dependencies": {
+    "@piaozone.com/icon": "^1.0.4",
+    "@piaozone.com/process-image": "^1.0.24",
+    "@piaozone.com/react-events": "^1.0.3",
+    "@piaozone.com/spin": "^1.0.4",
+    "immutable": "^4.0.0-rc.12",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "files": [
+    "src",
+    "dev-test",
+    "buildConfig.js",
+    "package-lock.json"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

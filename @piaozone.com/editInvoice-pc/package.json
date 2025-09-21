@@ -1,0 +1,21 @@
+{
+  "name": "@piaozone.com/editInvoice-pc",
+  "version": "1.0.57",
+  "description": "edit invoice in pc",
+  "main": "src/index.jsx",
+  "dependencies": {
+    "@piaozone.com/pwyConstants": "^1.0.22",
+    "antd": "^3.17.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "maintainers": [
+    "hongbo_bi",
+    "yuling_h"
+  ],
+  "license": "ISC"
+}

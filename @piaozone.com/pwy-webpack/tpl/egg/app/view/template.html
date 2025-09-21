@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 7]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<!--[if !IE]><!-->
+<html>
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="{{ ctx.app.config.staticUrl }}/static/pcmh/images/icon.jpg" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>pwy-antd-dva</title>
+    {% if ctx.app.config.env !== 'local' -%}
+        <link rel="stylesheet" href="{{ ctx.helper.getAsset('libs.css') }}" />
+        <link rel="stylesheet" href="{{ ctx.helper.getAsset('index.css') }}" />
+    {%- endif %}
+  </head>
+  <body>
+    <div style="display: none;">
+        <div id="dwtcontrolContainer"></div>
+    </div>
+    <div id="root" style="width:100%;height:100%">
+        <!-- HTML_DATA_PLACHOLDER -->
+    </div><!-- __SCRIPT_INITIAL_STATE__ -->
+    <!-- HTML_SCRIPT_PLACHOLDER -->
+    <script type="text/javascript" src="{{ ctx.app.config.staticUrl }}/static/gallery/pwyPolyfill.js"></script>
+    <script type="text/javascript">
+        window.__INITIAL_STATE__ = {
+            pageDirName: '{{ pageDirName }}',
+            webpackPublicPath: '{{ webpackPublicPath }}'
+        };
+        window.staticUrl = "{{ctx.app.config.staticUrl}}";
+    </script>
+    {% if ctx.app.config.env !== 'local' %}
+    <script type="text/javascript" src="{{ ctx.helper.getAsset('vendor.js') }}"></script>
+    <script type="text/javascript" src="{{ ctx.helper.getAsset('libs.js') }}"></script>
+    <script type="text/javascript" src="{{ ctx.helper.getAsset('index.js') }}"></script>
+    {% else %}
+    <script type="text/javascript" src="{{ webpackPublicPath }}/vendor.js"></script>
+    <script type="text/javascript" src="{{ webpackPublicPath }}/libs.js"></script>
+    <script type="text/javascript" src="{{ webpackPublicPath }}/index.js"></script>
+    {% endif %}
+  </body>
+</html>

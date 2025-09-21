@@ -1,0 +1,26 @@
+{
+  "name": "@piaozone.com/scroll-wrapper",
+  "version": "1.0.1",
+  "description": "scroll wrapper",
+  "main": "src/index.jsx",
+  "dependencies": {
+    "better-scroll": "^1.15.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "files": [
+    "src",
+    "dev-test",
+    "buildConfig.js",
+    "package-lock.json"
+  ],
+  "scripts": {
+    "dev": "pwy-webpack --dev --config=./buildConfig.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

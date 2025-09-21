@@ -1,0 +1,27 @@
+{
+  "name": "@piaozone.com/paper-invoice-print",
+  "version": "1.0.16",
+  "description": "数电纸质发票打印",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "pwy-webpack --build --type=lib --config=./buildConfig.js --progress",
+    "eslint": "pwy-eslint --ext .js,.jsx src",
+    "eslint-fix": "pwy-eslint --ext .js,.jsx src --fix",
+    "test": "pwy-jest --type=lib"
+  },
+  "files": [
+    "src",
+    "dist",
+    "test",
+    "buildConfig.js",
+    "readme.md",
+    "package.json"
+  ],
+  "maintainers": [
+    "hongbo_bi",
+    "lucy_wang"
+  ],
+  "keywords": [],
+  "author": "Sunny.HB.Bi",
+  "license": "ISC"
+}

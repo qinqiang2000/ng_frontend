@@ -1,0 +1,9 @@
+.pwyScrollWapper .bscroll-indicator {
+    background: #ccc !important;
+    cursor: grap;
+}
+
+.pwyScrollWapper .bscroll-vertical-scrollbar {
+    top: 0 !important;
+    bottom: 0 !important;
+}

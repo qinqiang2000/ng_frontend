@@ -1,0 +1,15 @@
+{
+  "name": "@piaozone.com/swjgInfo",
+  "version": "1.0.16",
+  "description": "piaozone.com swjgInfo for nodejs or web",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "swjgInfo"
+  ],
+  "author": "Sunny.HB.Bi",
+  "license": "ISC"
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fapiao AI</title>
+    <link rel="shortcut icon" href="/public/images/logo.ico" type="image/x-icon" />
+    {% if env !== 'local' %}
+        <link rel="stylesheet" href="/public/fapiao-ai/css/fapiaoAi.min.css" />
+    {% endif %}
+</head>
+<body>
+    <div id="root"></div>
+    {% if env === 'local' %}
+        <script src="http://localhost:9000/static/js/bundle.js"></script>
+    {% else %}
+        <script src="/public/fapiao-ai/js/fapiaoAi.min.js"></script>
+    {% endif %}
+    <script>
+        if (typeof window.getFapiaoAiInstance === 'function') {
+            const st = getFapiaoAiInstance();
+            st.init();
+        }
+    </script>
+</body>
+</html>

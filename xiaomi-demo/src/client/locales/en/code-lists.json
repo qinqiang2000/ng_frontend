@@ -1,0 +1,190 @@
+{
+  "title": "Code Lists Management",
+  "subtitle": "Manage standard code libraries and mappings",
+  "selectCodeType": "Select Code Type",
+
+  "codeTypes": {
+    "UOM": "UOM",
+    "PRODUCT": "Product Codes",
+    "COMPANY": "Company Codes",
+    "PAYMENT_MEANS": "Payment Means",
+    "CURRENCY": "Currency",
+    "COUNTRY": "Country",
+    "ALLOWANCE_REASON": "Allowance Reasons",
+    "CHARGE_REASON": "Charge Reasons",
+    "TAX_EXEMPTION_REASON": "Tax Exemption Reasons"
+  },
+
+  "kpi": {
+    "standardEntries": "Standard Entries",
+    "mappingCoverage": "Mapping Coverage",
+    "pendingFixes": "Pending Fixes",
+    "completionRate": "Completion rate {{rate}}%"
+  },
+
+  "tabs": {
+    "standardEntries": "Standard Entries",
+    "mappings": "Mappings"
+  },
+
+  "columns": {
+    "scope": "Scope",
+    "code": "Code",
+    "name": "Name",
+    "description": "Description",
+    "status": "Status",
+    "givenCode": "Given Code",
+    "givenName": "Given Name",
+    "standardCode": "Standard Code",
+    "confidence": "Confidence",
+    "source": "Source",
+    "actions": "Actions"
+  },
+
+  "toolbar": {
+    "searchPlaceholder": "Search code or name...",
+    "allCountries": "All Countries",
+    "global": "Global",
+    "template": "Template",
+    "aiMapping": "AI Mapping",
+    "add": "Add",
+    "selectScope": "Select Scope",
+    "selectStatus": "Select Status"
+  },
+
+  "scope": {
+    "default": "Default",
+    "global": "Global",
+    "singapore": "Singapore (SG)",
+    "malaysia": "Malaysia (MY)",
+    "germany": "Germany (DE)",
+    "france": "France (FR)",
+    "china": "China (CN)",
+    "brazil": "Brazil (BR)"
+  },
+
+  "status": {
+    "all": "All Status",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+
+  "source": {
+    "manual": "Manual",
+    "ai": "AI",
+    "import": "Import"
+  },
+
+  "actions": {
+    "delete": "Delete"
+  },
+
+  "drawers": {
+    "addStandard": "Add Standard Entry",
+    "addMapping": "Add Mapping",
+    "editStandard": "Edit Standard Entry",
+    "editMapping": "Edit Mapping"
+  },
+
+  "forms": {
+    "code": "Code",
+    "name": "Name",
+    "description": "Description",
+    "scope": "Scope",
+    "givenCode": "Given Code",
+    "givenName": "Given Name",
+    "standardCode": "Standard Code",
+    "required": "Required",
+    "optional": "Optional",
+    "codePlaceholder": "Enter code",
+    "namePlaceholder": "Enter name",
+    "descriptionPlaceholder": "Enter description (optional)",
+    "givenCodePlaceholder": "Enter given code",
+    "givenNamePlaceholder": "Enter given name (optional)",
+    "selectStandardCode": "Select standard code",
+    "characterCount": "{{count}}/200"
+  },
+
+  "mapping": {
+    "scopeOptional": "Scope (Optional)",
+    "standardCodeOptional": "Standard Code (Optional)",
+    "aiMappingHint": "If Standard Code is not selected, AI will automatically match the best standard code",
+    "loadingAllStandards": "Loading all standard codes...",
+    "showingAllStandards": "Showing all available standard codes",
+    "noStandardCodeSelected": "No standard code selected - AI mapping will be used",
+    "selectScopeToFilter": "Select a scope to filter standard codes, or leave empty to show all",
+    "aiAutoMatch": "AI will automatically find the best matching standard code based on your input"
+  },
+
+  "import": {
+    "title": "Import {{type}}",
+    "fileFormat": "File Format",
+    "selectFile": "Select File",
+    "allowPartial": "Allow partial import (continue on errors)",
+    "uploadHint": "Click to upload or drag and drop",
+    "fileTypeHint": "{{format}} files only",
+    "templateFields": "Template Fields:",
+    "requiredFields": "Required fields",
+    "standardFields": "Code*, Name*, Description, Scope",
+    "mappingFields": "GivenCode*, GivenName, StandardCode*, Scope"
+  },
+
+  "errors": {
+    "validationIssues": "Validation Issues",
+    "errors": "Errors",
+    "warnings": "Warnings",
+    "noIssuesFound": "No Issues Found",
+    "allValidationsPassed": "All validations passed successfully",
+    "affects": "Affects {{count}} {{type}}",
+    "entry": "entry",
+    "entries": "entries",
+    "autoFix": "Auto Fix Issues",
+    "exportReport": "Export Report",
+    "lastChecked": "Last checked: {{time}}"
+  },
+
+  "messages": {
+    "addStandardSuccess": "Standard entry added successfully!",
+    "addMappingSuccess": "Mapping added successfully!",
+    "importSuccess": "Import completed: {{added}} added, {{updated}} updated, {{skipped}} skipped",
+    "noData": "No data found",
+    "noStandardsAvailable": "No standard codes available. Please add some standard entries first.",
+    "noMappingSupport": "This code list type does not support mappings.",
+    "fileRequired": "Please select a file to import",
+    "fieldsRequired": "Code and Name are required",
+    "importFailed": "Import failed. Please try again.",
+    "loadFailed": "Load failed",
+    "fetchFailed": "Failed to fetch code type list, please try again later",
+    "loading": "Loading...",
+    "loadFailedWithError": "Load failed: {{error}}",
+    "reload": "Reload",
+    "confirmDelete": "Are you sure you want to delete this record?",
+    "confirmBatchDelete": "Are you sure you want to delete the selected {{count}} records?",
+    "deleteSuccess": "Delete successful",
+    "deleteFailed": "Delete failed",
+    "recordDeleted": "Record deleted",
+    "batchDeleteSuccess": "Successfully deleted {{count}} records",
+    "noSelection": "No records selected",
+    "pleaseSelectRecords": "Please select records to delete first",
+    "validationFailed": "Validation Failed",
+    "givenCodeRequired": "Given Code is required",
+    "givenCodeTooLong": "Given Code cannot exceed 64 characters",
+    "givenNameRequired": "Given Name is required",
+    "givenNameTooLong": "Given Name cannot exceed 100 characters",
+    "descriptionTooLong": "Description cannot exceed 255 characters"
+  },
+
+  "pagination": {
+    "showing": "Showing {{start}}-{{end}} of {{total}} {{type}}",
+    "entries": "entries",
+    "mappings": "mappings",
+    "previous": "Previous",
+    "next": "Next",
+    "pageInfo": "Page {{current}} / {{total}}",
+    "showingTotal": "Showing {{start}} - {{end}} of {{total}} entries"
+  },
+
+  "templateHint": "Import template fields: Code*, Name, Description (Code is required)"
+}

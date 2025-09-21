@@ -1,0 +1,23 @@
+.organization-orgTree {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.organization-orgTree .search {
+	border-bottom: 1px solid #E1E1E1;
+	height: 54px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.organization-orgTree .search .ant-input-search {
+    width: 88%;
+    font-size: 12px;
+}
+
+.organization-orgTree .tree {
+    flex: 1;
+    overflow-y: auto;
+}

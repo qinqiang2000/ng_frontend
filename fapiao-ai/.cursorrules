@@ -1,0 +1,319 @@
+# Cursor Rules for Egg.js Template Project
+
+## 项目概述
+这是一个基于 Egg.js 框架的企业级 Web 应用模板项目，集成了 Nunjucks 模板引擎、Bootstrap 5 UI 框架，支持前端模板渲染、RESTful API、文件上传、数据库操作等功能。
+
+## 技术栈
+- **后端框架**: Egg.js 3.x
+- **模板引擎**: Nunjucks
+- **前端框架**: Bootstrap 5
+- **数据库**: MySQL, Redis
+- **开发工具**: ESLint, npm
+- **部署**: PM2, Docker (可选)
+
+## 项目结构规范
+
+### 目录结构
+```
+├── app/
+│   ├── controller/          # 控制器层
+│   │   ├── home.js         # 页面控制器
+│   │   ├── health.js       # 健康检查
+│   │   └── api/            # API 控制器目录
+│   ├── service/            # 服务层 (业务逻辑)
+│   ├── model/              # 数据模型层
+│   ├── middleware/         # 中间件
+│   ├── extend/             # 框架扩展
+│   ├── view/               # 模板文件
+│   ├── public/             # 静态资源
+│   └── router.js           # 路由配置
+├── config/                 # 配置文件
+├── test/                   # 测试文件
+└── logs/                   # 日志文件
+```
+
+## 编码规范
+
+### JavaScript/Node.js 规范
+- 使用 ES6+ 语法
+- 优先使用 `const`，需要重新赋值时使用 `let`，避免使用 `var`
+- 使用单引号包裹字符串
+- 使用 4 空格缩进
+- 函数名使用驼峰命名法
+- 类名使用帕斯卡命名法
+- 常量使用大写字母和下划线
+- 文件名使用小写字母和连字符
+
+### Egg.js 特定规范
+- 控制器方法必须是 async 函数
+- 使用 `ctx.validate()` 进行参数验证
+- 错误处理使用统一的响应格式
+- 数据库操作放在 Service 层
+- 配置文件按环境分离
+
+### 前端规范
+- HTML 使用 Nunjucks 模板语法
+- CSS 使用 Bootstrap 5 类名优先
+- JavaScript 使用现代 ES6+ 语法
+- 响应式设计优先考虑移动端
+- 使用 eslint 进行代码检查
+- 使用 editorconfig 进行代码格式化
+
+## 代码模板和最佳实践
+
+### 控制器模板
+```javascript
+'use strict';
+
+const Controller = require('egg').Controller;
+
+class ExampleController extends Controller {
+    async index() {
+        const { ctx } = this;
+
+        try {
+            // 参数验证
+            ctx.validate({
+                page: { type: 'int', required: false, default: 1 },
+                pageSize: { type: 'int', required: false, default: 10 },
+            });
+
+            const { page, pageSize } = ctx.query;
+
+            // 调用服务层
+            const result = await ctx.service.example.list({ page, pageSize });
+
+            // 统一响应格式
+            ctx.body = {
+                code: 200,
+                message: 'success',
+                data: result,
+            };
+        } catch (error) {
+            ctx.logger.error('获取数据失败:', error);
+            ctx.body = {
+                code: 500,
+                message: '服务器内部错误',
+                data: null,
+            };
+        }
+    }
+}
+
+module.exports = ExampleController;
+```
+
+### 服务层模板
+```javascript
+'use strict';
+
+const Service = require('egg').Service;
+
+class ExampleService extends Service {
+    async list({ page = 1, pageSize = 10 }) {
+        const { app } = this;
+
+        try {
+            const offset = (page - 1) * pageSize;
+
+            // 数据库查询
+            const results = await app.mysql.select('table_name', {
+                limit: pageSize,
+                offset,
+            });
+
+            const total = await app.mysql.count('table_name');
+
+            return {
+                list: results,
+                total,
+                page,
+                pageSize,
+            };
+        } catch (error) {
+            this.logger.error('数据库查询失败:', error);
+            throw error;
+        }
+    }
+}
+
+module.exports = ExampleService;
+```
+
+### 模板页面结构
+```html
+{% extends "layout.html" %}
+
+{% block styles %}
+<style>
+    /* 页面特定样式 */
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- 页面内容 -->
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // 页面特定脚本
+</script>
+{% endblock %}
+```
+
+## API 设计规范
+
+### RESTful API 规范
+- GET /api/resource - 获取资源列表
+- GET /api/resource/:id - 获取单个资源
+- POST /api/resource - 创建资源
+- PUT /api/resource/:id - 更新资源
+- DELETE /api/resource/:id - 删除资源
+
+### 响应格式规范
+```javascript
+// 成功响应
+{
+    "code": 200,
+    "message": "success",
+    "data": {
+        // 实际数据
+    }
+}
+
+// 错误响应
+{
+    "code": 400,
+    "message": "参数验证失败",
+    "data": {
+        "errors": [
+            // 错误详情
+        ]
+    }
+}
+```
+
+## 数据库规范
+
+### 表命名规范
+- 使用小写字母和下划线
+- 表名使用复数形式
+- 例如: `users`, `user_profiles`, `order_items`
+
+### 字段命名规范
+- 使用小写字母和下划线
+- 主键统一使用 `id`
+- 创建时间: `created_at`
+- 更新时间: `updated_at`
+- 软删除: `deleted_at`
+
+## 安全规范
+
+### 输入验证
+- 所有用户输入必须验证
+- 使用 `ctx.validate()` 进行参数验证
+- 对敏感操作进行权限检查
+
+### 错误处理
+- 不要在响应中暴露敏感信息
+- 记录详细错误日志
+- 向用户返回友好的错误信息
+
+## 性能优化
+
+### 数据库优化
+- 合理使用索引
+- 避免 N+1 查询问题
+- 使用连接池
+- 适当使用缓存
+
+### 前端优化
+- 图片懒加载
+- CSS/JS 文件压缩
+- 使用 CDN 加载第三方资源
+- 合理使用缓存策略
+
+## 测试规范
+
+### 单元测试
+- 控制器测试覆盖主要业务逻辑
+- 服务层测试覆盖数据处理逻辑
+- 使用 Mock 数据进行测试
+
+### 集成测试
+- API 接口测试
+- 数据库操作测试
+- 文件上传功能测试
+
+## 部署规范
+
+### 环境配置
+- 开发环境: `config.local.js`
+- 测试环境: `config.unittest.js`
+- 生产环境: `config.prod.js`
+
+### 日志管理
+- 按级别记录日志
+- 定期清理日志文件
+- 重要操作记录审计日志
+
+## 代码提示和建议
+
+### 当创建新的控制器时:
+1. 继承自 `Controller` 基类
+2. 方法必须是 async 函数
+3. 使用 `ctx.validate()` 验证参数
+4. 统一错误处理和响应格式
+5. 记录操作日志
+
+### 当创建新的服务时:
+1. 继承自 `Service` 基类
+2. 将业务逻辑封装在服务层
+3. 处理数据库操作异常
+4. 返回标准化的数据格式
+
+### 当创建新的模板时:
+1. 继承自 `layout.html` 基础模板
+2. 使用 Bootstrap 5 组件
+3. 添加响应式设计
+4. 包含必要的 SEO 标签
+
+### 当添加新的 API 时:
+1. 遵循 RESTful 设计原则
+2. 添加参数验证
+3. 实现错误处理
+4. 编写 API 文档
+5. 添加单元测试
+
+## 常用命令
+
+### 开发命令
+- `npm run dev` - 启动开发服务器
+- `npm run debug` - 启动调试模式
+- `npm test` - 运行测试
+- `npm run lint` - 代码检查
+
+### 生产命令
+- `npm start` - 启动生产服务器
+- `npm stop` - 停止服务器
+- `npm run cov` - 代码覆盖率测试
+
+## 注意事项
+
+1. **安全性**: 始终验证用户输入，防止 SQL 注入和 XSS 攻击
+2. **性能**: 合理使用缓存，避免不必要的数据库查询
+3. **可维护性**: 保持代码简洁，添加必要的注释
+4. **可扩展性**: 使用模块化设计，便于功能扩展
+5. **错误处理**: 完善的错误处理和日志记录
+6. **文档**: 及时更新 API 文档和代码注释
+
+## 推荐的 VS Code 扩展
+
+- ESLint - 代码检查
+- Prettier - 代码格式化
+- Nunjucks - 模板语法高亮
+- Bootstrap 5 Quick Snippets - Bootstrap 代码片段
+- Thunder Client - API 测试
+- GitLens - Git 增强
+- Auto Rename Tag - HTML 标签自动重命名
+- Bracket Pair Colorizer - 括号配对着色

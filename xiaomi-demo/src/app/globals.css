@@ -1,0 +1,147 @@
+@import 'remixicon/fonts/remixicon.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ant Design 样式集成 */
+@import 'antd/dist/reset.css';
+
+/* 使用系统字体代替 Google Fonts */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+/* 自定义滚动条样式 */
+/* Webkit 浏览器 (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+::-webkit-scrollbar-corner {
+  background: #f8f9fa;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db #f8f9fa;
+}
+
+/* Ant Design 自定义样式 */
+/* 表格行条纹效果 */
+.ant-table-tbody > tr.bg-gray-25 > td {
+  background-color: #f9fafb !important;
+}
+
+/* 表格悬停效果 */
+.ant-table-tbody > tr:hover > td {
+  background-color: #f3f4f6 !important;
+}
+
+/* 状态徽章样式与项目保持一致 */
+.ant-table .ant-tag {
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid;
+}
+
+/* 表格分页样式调整 */
+.ant-pagination {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ant-pagination-total-text {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* 工具栏样式 */
+.ant-input-search .ant-input-group .ant-input-affix-wrapper {
+  border-radius: 0.375rem;
+}
+
+.ant-btn {
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.ant-btn-primary {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.ant-btn-primary:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+/* 下拉菜单样式 */
+.ant-dropdown-menu {
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* 选择器样式 */
+.ant-select-selector {
+  border-radius: 0.375rem !important;
+}
+
+.ant-select-focused .ant-select-selector,
+.ant-select-selector:focus,
+.ant-select-selector:active {
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2) !important;
+}
+
+/* 输入框样式 */
+.ant-input,
+.ant-input-group-addon {
+  border-radius: 0.375rem;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* 日期选择器样式 */
+.ant-picker {
+  border-radius: 0.375rem;
+}
+
+.ant-picker:focus,
+.ant-picker-focused {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* 表格空状态样式 */
+.ant-empty-description {
+  color: #6b7280;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <input type='file' id='file' multiple="multiple" />
+    <script src="./jquery-2.1.4.min-normal.js"></script>
+    <script src="./pwyPolyfill.js"></script>
+    <script src="../dist/UploadFiles.js"></script>
+    <script type="text/javascript">
+        $(document).on('change', '#file', function(e) {
+            UploadFiles.upload('http://localhost/', e.target.files, {
+                fileLimitSize: 3, // 大于3M才压缩
+                fileQuality: 0.98, // 清晰度
+                fileLimitPixel: 1500, // 原始像素小于该值则不处理
+                stepUploadFinish: function(res) {
+                    console.log('单个文件上传结束', res);
+                },
+                uploadFinish: function() {
+                    console.log('全部文件上传完成');
+                }
+            });
+        })
+    </script>
+</body>
+</html>
